@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{graphicx,setspace,hyperref,amsmath,amsfonts,multirow,ccaption,mdwlist,comment}
+% mini table of contents
+\usepackage{minitoc}
+\dosecttoc % make section toc
+\setcounter{secttocdepth}{2} % subsection depth
+\renewcommand{\stctitle}{} % no title
+\nostcpagenumbers
+
+% optionally include commented environments
+\excludecomment{lessonplan}
+
+\setlength{\marginparwidth}{.5in}
+\usepackage{natbib}
+% Two lines to create in-text full citations for a syllabus
+% And comment out my other standard bibtex commands
+\usepackage{bibentry}
+\newcommand{\reading}[2][]{\noindent --{#1} \bibentry{#2}.\vspace{.25em}\\}
+\newcommand{\seealso}{\noindent \emph{See Also:}\\}
+\newcommand{\topic}[1]{\noindent \textbf{#1}\\}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Syllabus: Using Surveys for Research and Evaluation},    % title
+    pdfauthor={Thomas J. Leeper},     % author
+    pdfsubject={Political Science},   % subject of the document
+    pdfnewwindow=true,      % links in new window
+    pdfborder={0 0 0}
+}
+
+\title{Using Surveys for Research and Evaluation}
+\author{Thomas J. Leeper\\
+Department of Political Science and Government\\
+Aarhus University}
+
+\begin{document}
+\nobibliography*
+
+\maketitle
+
+\faketableofcontents
+
+%\section{Introduction}
+
+Almost every organization – public or private – conducts surveys to understand their customers, clients, constituents, research subjects, and the public at-large. Surveys are therefore a critically important methodological tool for conducting empirical political science research and for evaluating policy, performance, and impact. Nearly every political science student will, in the course of their future career, have to conduct, analyze, or interpret survey-based research.
+
+How do we conduct surveys well so that they provide meaningful insights? How do we write survey questions so that respondents understand them and that those responses generate useful data about relevant constructs? How do we decide whom to interview and how do we interview them effectively? How do we prepare for and manage the implementation of a large survey? How do we analyze the obtained results? This course will provide answers to these questions while training students how to implement a survey data collection and analyze the results thereof. The exam will entail the design, preparation, and pilot testing of a survey on the topic of student's choice.
+
+\section{Objectives}
+The learning objectives for the course are as follows. By the end of the course, students should be able to:
+
+\begin{enumerate}
+\item Identify and analyze the usefulness of survey methods for conducting research and evaluating programs, policies, and outcomes
+\item Identify sources of error and bias in surveys
+\item Explain how sampling procedures enable estimation of population parameters and evaluate the implications of differences in sampling techniques
+\item Demonstrate how to successfully manage large survey data collection efforts
+\item Evaluate the quality of surveys in terms of sampling, interviewing procedures, and questionnaire content 
+\item Apply methodological and substantive knowledge from the course to the design and implementation of an original survey
+\end{enumerate}
+
+\section{Exam}
+The exam for the course involves a home assignment (total 8000 words) that describes the sampling design, questionnaire, implementation plan, and pretesting of a proposed survey.
+
+\clearpage
+\section{Reading Material}
+The assigned material for the course includes empirical articles on relevant topic and a textbook. All readings should be completed before their respective course meeting. \textbf{There is reading assigned on the first day.} The textbook for the course is:\\
+
+\reading{Grovesetal2004}
+
+\clearpage
+\section{Schedule}
+The general schedule for the course is as follows. Details on the readings for each week are provided on the following pages.
+
+\secttoc
+
+\clearpage
+
+\subsection{First meeting}
+\emph{Topic}
+\vspace{1em}
+
+\reading{READING1}
+
+\seealso
+\reading[OTHER READINGS}
+
+
+\clearpage
+\subsection{Second meeting}
+\emph{Topic}
+\vspace{1em}
+
+% load bibtext, but don't generate a bibliography
+\bibliographystyle{plain}
+\nobibliography{Syllabi}
+
+\end{document}
