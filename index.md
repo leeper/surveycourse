@@ -1,4 +1,4 @@
----
+ï»¿---
 layout: default
 title: Home
 ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
@@ -6,7 +6,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
 
 # Using Surveys for Research and Evaluation #
 
-Almost every organization – public or private – conducts surveys to understand their customers, clients, constituents, research subjects, and the public at-large. Surveys are therefore a critically important methodological tool for conducting empirical political science research and for evaluating policy, performance, and impact. Nearly every political science student will, in the course of their future career, have to conduct, analyze, or interpret survey-based research.
+Almost every organization - public or private - conducts surveys to understand their customers, clients, constituents, research subjects, and the public at-large. Surveys are therefore a critically important methodological tool for conducting empirical political science research and for evaluating policy, performance, and impact. Nearly every political science student will, in the course of their future career, have to conduct, analyze, or interpret survey-based research.
 
 How do we conduct surveys well so that they provide meaningful insights? How do we write survey questions so that respondents understand them and that those responses generate useful data about relevant constructs? How do we decide whom to interview and how do we interview them effectively? How do we prepare for and manage the implementation of a large survey? How do we analyze the obtained results? This course will provide answers to these questions while training students how to implement a survey data collection and analyze the results thereof. The exam will entail the design, preparation, and pilot testing of a survey on the topic of student's choice.
 
