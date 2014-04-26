@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: Home
 ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
@@ -24,20 +24,22 @@ The objectives for the course are as follows:
  - Evaluate the quality of surveys in terms of sampling, interviewing procedures, and questionnaire content 
  - Apply methodological and substantive knowledge from the course to the design and implementation of an original survey
 
-You can find a schedule for the course, details of the exam structure, and assigned readings in the [Syllabus](Syllabus.pdf).
+<!--You can find a schedule for the course, details of the exam structure, and assigned readings in the [Syllabus](Syllabus.pdf).-->
 
 ---
 ## Readings ##
 
 In addition to journal articles on the syllabus, the course will use the following textbook:
 
-Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tourangeau, R. (2004). Survey Methodology. Wiley-Interscience.
+Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tourangeau, R. (2004). *Survey Methodology.* Wiley-Interscience.
 
 
 ---
 ## Slides ##
 
-Course slides are available in the [/Slides](Slides) directory.
+Forthcoming
+
+<!--Course slides are available in the [/Slides](Slides) directory.-->
 
 
 ---
@@ -45,7 +47,7 @@ Course slides are available in the [/Slides](Slides) directory.
 
 The exam for the course involves a home assignment (total 8000 words) that describes the sampling design, questionnaire, implementation plan, and pretesting of a proposed survey. The syllabus describes the requirements for this assignment in detail.
 
-In prepration for the exam, students will complete short assignments throughout the term that fulfill portions of the final exam requirements. In other words, the final exam is largely a portfolio of work that students will progressively develop as they learn new skills during the course. The short assignments will be used in class either in small-group discussions or large-group presentations in order to receive early and frequent feedback.
+In preparation for the exam, students will complete short assignments throughout the term that fulfill portions of the final exam requirements. In other words, the final exam is largely a portfolio of work that students will progressively develop as they learn new skills during the course. The short assignments will be used in class either in small-group discussions or large-group presentations in order to receive early and frequent feedback.
 
 Student can then, optionally, meet individually with the instructor before the exam is due to receive additional feedback.
 
