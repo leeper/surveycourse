@@ -16,7 +16,8 @@
 % Two lines to create in-text full citations for a syllabus
 % And comment out my other standard bibtex commands
 \usepackage{bibentry}
-\newcommand{\reading}[2][]{\noindent --{#1} \bibentry{#2}.\vspace{.25em}\\}
+\newcommand{\reading}[2][]{\noindent --{#1} from \bibentry{#2}.\vspace{.25em}\\}
+\newcommand{\textbook}[2][]{\noindent --{#1} from Groves et al.\vspace{.25em}\\} % textbook reference
 \newcommand{\seealso}{\noindent \emph{See Also:}\\}
 \newcommand{\topic}[1]{\noindent \textbf{#1}\\}
 \usepackage[T1]{fontenc}
@@ -49,7 +50,7 @@ Aarhus University}
 
 %\section{Introduction}
 
-Almost every organization – public or private – conducts surveys to understand their customers, clients, constituents, research subjects, and the public at-large. Surveys are therefore a critically important methodological tool for conducting empirical political science research and for evaluating policy, performance, and impact. Nearly every political science student will, in the course of their future career, have to conduct, analyze, or interpret survey-based research.
+Almost every organization --- public or private --- conducts surveys to understand their customers, clients, constituents, research subjects, and the public at-large. Surveys are therefore a critically important methodological tool for conducting empirical political science research and for evaluating policy, performance, and impact. Nearly every political science student will, in the course of their future career, have to conduct, analyze, or interpret survey-based research.
 
 How do we conduct surveys well so that they provide meaningful insights? How do we write survey questions so that respondents understand them and that those responses generate useful data about relevant constructs? How do we decide whom to interview and how do we interview them effectively? How do we prepare for and manage the implementation of a large survey? How do we analyze the obtained results? This course will provide answers to these questions while training students how to implement a survey data collection and analyze the results thereof. The exam will entail the design, preparation, and pilot testing of a survey on the topic of student's choice.
 
@@ -66,11 +67,15 @@ The learning objectives for the course are as follows. By the end of the course,
 \end{enumerate}
 
 \section{Exam}
-The exam for the course involves a home assignment (total 8000 words) that describes the sampling design, questionnaire, implementation plan, and pretesting of a proposed survey.
+The exam for the course involves a home assignment, totaling 8000 words. The exam will take the form of an essay that describes a research question, hypotheses, sampling design, operationalization of constructions, implementation plan, and pilot testing of a proposed survey. A complete questionnaire for that survey, including exact question wordings of all core constructs, must be created and included as a supplemental appendix to the exam paper.
 
-\clearpage
+While officially due at the end of the course, each requisite portion of the exam will complete during the course in the form of weekly written assignments. As such, the exam is a ``portfolio'' of earlier assignments, which simply needs to be made into a single, coherent, finished product. Details on the weekly assignments are listed in the course schedule. Assignments are due on the day they are described in the schedule.
+
+
+
+%\clearpage
 \section{Reading Material}
-The assigned material for the course includes empirical articles on relevant topic and a textbook. All readings should be completed before their respective course meeting. \textbf{There is reading assigned on the first day.} The textbook for the course is:\\
+The assigned material for the course includes a textbook and empirical research articles, all of which are available online. All readings should be completed for the day they are described. \textbf{There is reading assigned on the first day.} The textbook for the course is:\\
 
 \reading{Grovesetal2004}
 
@@ -93,9 +98,26 @@ The general schedule for the course is as follows. Details on the readings for e
 
 
 
+\subsection{(Week 36) --- No meeting}
+\emph{Topic}
+\vspace{1em}
+
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\textbook[Ch.1]{}
+%\reading{ConverseBookSection} % maybe Jean Converse history text
+\reading{Brady2000} % overview of surveys in political science
+
+\seealso
+OTHER READINGS
 
 
 
+
+\clearpage
+\subsection{What can surveys tell us? (Week 37)}
+\emph{Topic}
 % introduction to surveys: why do we do them; what do they tell us; examples
 % polling
 % election studies
@@ -109,34 +131,104 @@ The general schedule for the course is as follows. Details on the readings for e
 % elite surveys: members of parliament, business leaders, etc.
 
 
-% Ethics, AAPOR code
+\vspace{1em}
+\subsubsection*{Assignment Due}
 
-% sampling: unit (HH, individual, company, worker, party, municipality, etc.); population
+\subsubsection*{Readings}
+\textbook[Ch.2]{} % total survey error
+
+\seealso
+
+
+
+
+\clearpage
+\subsection{Designs for Research and Evaluation (Week 38)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+
+\reading[Ch.4--5]{ShadishCookCampbell2002}
+
+% cross-sections, rolling cross-sections, panels, rolling panels, etc.
+\reading{JohnstonBrady2002}
+\reading{Clinton2001} % panel attrition
+
+% survey experiments
+\reading{GainesKuklinskiQuirk2007}
+\reading{DruckmanPetersonSlothuus2013} % maybe
+
+% registry data
+\reading{SoenderskovDinesen2014} % in Danish, maybe
+\reading{Ottosen2011} % Danish survey-registry match (child study)
+\reading{DavidsenKjoellerHelwegLarsen2011} % Danish survey-registry match (DANCOS)
+
+\seealso
+
+
+
+\clearpage
+\subsection{Survey Sampling (Week 39)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\textbook[Ch.3--4]{}
+
+% sampling: unit (HH, individual, company, worker, party, municipality, farms, libraries, high school classrooms, etc.); population
 % sampling frame: address, telephone (landline, mobile), registry
 % sampling: SRS; cluster; stratified; convenience; online panels
 \reading{Bakeretal2010}
 \reading{Berinskyetal2011}
 \reading{Casseseetal2013}
 
+\seealso
 
-% constructs
+\subsubsection*{In-class Activities}
+\begin{itemize}
+\item Identifying possible sampling frames
+\item Constructing a sampling frame
+\item Sampling from within a frame
+\end{itemize}
 
-% cross-sections, rolling cross-sections, panels, rolling panels, etc.
-\reading{JohnstonBrady2002}
-\reading{Clinton2001} % panel attrition
 
-% questionnaire design
-% -- question ordering
-\reading{BishopOldendickTuchfarber1984} % political interest
-\reading{TourangeauRasinski1988} % context effects
+
+
+\clearpage
+\subsection{Questionnaire Design I (Week 40)}
+\emph{Topic}
+% constructs and operationalization
+
+
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\reading{SchaefferPresser2003} % overview
+\reading{AnsolabehereRoddenSnyder2008} % measurement error
+
+\seealso
+
+
+
+\clearpage
+\subsection{Questionnaire Design II (Week 41)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\textbook[Ch.7]{}
+
 
 % open and closed
 \reading{SchumanPresser1979}
 \reading{BrewerGross2005} % substantive example
 
 % -- different types of questions (factual, demographic, autobiographical, opinion, behaviors, etc.)
-\reading{SchaefferPresser2003} % overview
-\reading{MillerGroves1985} % official records
 \reading{TraugottKatosh1979} % vote validation
 \reading{HolbrookKrosnick2013} % turnout wording
 \reading{MillerOrr2008} % DK options
@@ -157,13 +249,26 @@ The general schedule for the course is as follows. Details on the readings for e
 \reading{RevillaSarisKrosnick2013}
 \reading{WilcoxSigelmanCook1989} % thermometers
 
-\reading{AnsolabehereRoddenSnyder2008} % measurement error
-
-% survey experiments
-\reading{GainesKuklinskiQuirk2007}
-\reading{DruckmanPetersonSlothuus2013} %
 
 
+
+
+\seealso
+
+
+\clearpage
+\subsection{No class (Week 42)}
+
+\clearpage
+\subsection{Survey Mode (Week 43)}
+\emph{Topic}
+\vspace{1em}
+
+\subsubsection*{Assignment Due}
+Be prepared to share and briefly present a complete draft of your questionnaire. This does not need to be finalized, as you may want to change question wordings, response categories, or orderings, and add or delete questions.
+
+\subsubsection*{Readings}
+\textbook[Ch.5]{}
 % survey mode: ftf, telephone (landline/mobile), online; CASI; CATI
 \reading{KreuterPresserTourangeau2009}
 \reading{VillarCallegaroYang2013} % progress meters
@@ -171,22 +276,59 @@ The general schedule for the course is as follows. Details on the readings for e
 \reading{MedwayFulton2012} % web response option
 \reading{Smythetal2006}
 
-% pretesting
+
+\seealso
+
+
+
+\clearpage
+\subsection{Questionnaire Design III (Week 44)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+% -- question ordering
+\reading{BishopOldendickTuchfarber1984} % political interest
+\reading{TourangeauRasinski1988} % context effects
+\reading[Ch.2]{SchumanPresser1996}
+
+% web-specific considerations
+% paradata; interviewer-collected data
+
+\seealso
+
+
+
+
+\clearpage
+\subsection{Survey Evaluation and Pilot Testing (Week 45)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\textbook[Ch.8]{}
+
 \reading{Presseretal2004}
 \reading{PresserBlair1994}
 
-% recruitment
-\reading{Dykemaetal2013}
-
-% interviewing/fielding/training, reliability checks, interviewer effects, interviewer biases
-\reading{Kaplowitzetal2011} % invitations
-\reading{SchoberConrad1997} % flexible interviewing
-
-% challenging areas
-\reading{DirscollLidow2014} % Mogadishu, Somali paper
-\reading{LyallBlairImai2013} % Afghanistan survey experiment
+\reading{MillerGroves1985} % official records
 
 
+\seealso
+
+
+
+
+\clearpage
+\subsection{Interactions with Interviewers or Instruments (Week 46)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\textbook[Ch.9, 11]{}
 % response behavior
 \reading{RederRitter1992} % Feeling of knowing
 \reading{BishopTuchfarberOldendick1986} % fictitious issues
@@ -196,33 +338,82 @@ The general schedule for the course is as follows. Details on the readings for e
 \reading{JensenThomsen2013} % self-reported cheating
 % social desirability bias
 
+
+% something about survey ethics: we are inviting ourselves into peoples' lives and asking them to reveal things they might not otherwise say
+
+\seealso
+
+
+
+\clearpage
+\subsection{Fielding (Week 47)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+% recruitment
+\reading{Dykemaetal2013}
+% interviewing/fielding/training, reliability checks, interviewer effects, interviewer biases
+\reading{Kaplowitzetal2011} % invitations
+\reading{SchoberConrad1997} % flexible interviewing
+
+% Krosnick paper on shocking behavior
+
+% participation incentives
+\reading{MartinAbreuWinters2001} % refusal conversion
+
+
+% challenging areas
+\reading{DirscollLidow2014} % Mogadishu, Somali paper
+\reading{LyallBlairImai2013} % Afghanistan survey experiment
+
+
+\seealso
+
+
+
+
+\clearpage
+\subsection{Nonresponse and Data Management (Week 48)}
+\emph{Topic}
+\vspace{1em}
+\subsubsection*{Assignment Due}
+
+\subsubsection*{Readings}
+\textbook[Ch.6, 10]{}
 % nonresponse: unit/item, adaptive survey design
 \reading{CurtinPresserSinger2005}
 \reading{Groves2006}
 \reading{Berinsky2002}
 
+\reading{BehrBellgardtRendtel2005}
+
+% nonresponse rates vs. nonresponse bias
+
+% weighting
+
 % data management and archiving, codebooks, privacy, cleaning/missingness
 % paradata
-% registry data
-\reading{SoenderskovDinesen2014} % in Danish, maybe
-\reading{Ottosen2011} % Danish survey-registry match (child study)
-\reading{DavidsenKjoellerHelwegLarsen2011} % Danish survey-registry match (DANCOS)
 
-
-\subsection{First meeting}
-\emph{Topic}
-\vspace{1em}
-
-\reading{Brady2000} % overview of surveys in political science
 
 \seealso
-\reading[OTHER READINGS}
+
+
+
 
 
 \clearpage
-\subsection{Second meeting}
+\subsection{Student Presentations (Weeks 49--51, as needed)}
 \emph{Topic}
 \vspace{1em}
+\subsubsection*{Assignment Due}
+Each student will distribute a copy of their survey two days prior to class and then provide a 10 minute presentation of their final exam paper.
+
+\subsubsection*{Readings}
+Surveys or any other materials from related to student presentations.
+
+
 
 % load bibtext, but don't generate a bibliography
 \bibliographystyle{plain}
