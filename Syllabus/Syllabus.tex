@@ -16,8 +16,8 @@
 % Two lines to create in-text full citations for a syllabus
 % And comment out my other standard bibtex commands
 \usepackage{bibentry}
-\newcommand{\reading}[2][]{\noindent --{#1} from \bibentry{#2}.\vspace{.25em}\\}
-\newcommand{\textbook}[2][]{\noindent --{#1} from Groves et al.\vspace{.25em}\\} % textbook reference
+\newcommand{\reading}[2][]{\noindent -- {#1}\bibentry{#2}.\vspace{.25em}\\}
+\newcommand{\textbook}[2][]{\noindent -- {#1} from Groves et al.\vspace{.25em}\\} % textbook reference
 \newcommand{\seealso}{\noindent \emph{See Also:}\\}
 \newcommand{\topic}[1]{\noindent \textbf{#1}\\}
 \usepackage[T1]{fontenc}
@@ -66,18 +66,19 @@ The learning objectives for the course are as follows. By the end of the course,
 \item Apply methodological and substantive knowledge from the course to the design and implementation of an original survey
 \end{enumerate}
 
-\section{Exam and Assignments}
-The exam for the course involves a home assignment, totaling 8000 words. The exam will take the form of an essay that describes a research question, hypotheses, sampling design, operationalization of constructions, implementation plan, and pilot testing of a proposed survey. A complete questionnaire for that survey, including exact question wordings of all core constructs, must be created and included as a supplemental appendix to the exam paper.
+\section{Exam and Weekly Assignments}
+The exam for the course involves a home assignment, totaling 8000 words. The exam will take the form of an essay that describes a research question, hypotheses, sampling design, operationalization of constructions, implementation plan, and pilot testing of a proposed survey. A complete questionnaire for that survey, including exact question wordings of all core constructs, must be created and included as a supplemental appendix to the exam paper. Students are welcome to meet with the instructor near the end of the semester to discuss their survey and and exam paper.
 
-While officially due at the end of the course, each requisite portion of the exam will complete during the course in the form of weekly written assignments that progressively evaluate student learning. As such, the exam is a ``portfolio'' of these earlier assignments, which will need to be made into a single, coherent, finished product reflecting peer and instructor feedback from earlier. The exam paper should also include a concluding section (approximately one page) reflecting on the evolution of your survey plan from its initial origins at the beginning of the course to its final state, with emphasis on how what you learned in the course influenced your final survey design.
+While officially due at the end of the course, each requisite portion of the exam can be completed during the semester in the form of weekly written assignments that progressively evaluate student learning. As such, the exam is a ``portfolio'' of these earlier assignments, which will need to be made into a single, coherent, finished product reflecting peer and instructor feedback from earlier. The exam paper should also include a concluding section (up to one page) reflecting on the evolution of the survey plan from its initial origins at the beginning of the course to its final state, with emphasis on how what you learned in the course influenced the final survey design.
 
 Details on the weekly assignments are listed in the course schedule. Assignments are due on the day they are described in the schedule.
 
+Finally, students will sign up each week to provide a short, five-minute presentation of one of the (non-textbook) readings and lead a short discussion about its contents and the implications thereof for survey design. Students are expected to give at least two such presentations during the semester.
 
 
 %\clearpage
 \section{Reading Material}
-The assigned material for the course includes a textbook and empirical research articles, all of which are available online. All readings should be completed for the day they are described. \textbf{There is reading assigned on the first day.} The textbook for the course is:\\
+The assigned material for the course includes a textbook and empirical research articles, all of which are available online or in the printed course packet. All readings should be completed for the day they are described. {\em There is reading assigned on the first day.} The textbook for the course is:\\
 
 \reading{Grovesetal2004}
 
@@ -100,7 +101,7 @@ The general schedule for the course is as follows. Details on the readings for e
 
 
 
-\subsection{No meeting (Week 36)}
+\subsection{No class (Week 36)}
 \emph{Topic}
 \vspace{1em}
 
@@ -136,18 +137,21 @@ None. See short assignment for next week.
 \subsubsection*{Assignment Due}
 Find a survey online. This can be any survey (a national election study, a political poll, a survey of childhood health, a survey of political interest organizations, a survey of businesses, etc.). Write one half page describing the survey project's research objective, the population of cases being surveyed, any important details about how the survey is designed or implemented, and the important constructs measured in the survey. Briefly evaluate why the survey is interesting or important. Be prepared to share a summary if this essay in class.
 
+\subsection*{In-Class Activities}
+\begin{itemize}
+\item Mostly lecture and discussion
+\item Generate and discuss ideas for possible final exam projects
+\end{itemize}
+
 \subsubsection*{Readings}
 \textbook[Ch.2]{} % total survey error
-
-\reading[Ch.4--5]{ShadishCookCampbell2002}
-
+\reading[Ch.4--5]{ShadishCookCampbell2001}
 % cross-sections, rolling cross-sections, panels, rolling panels, etc.
 \reading{JohnstonBrady2002}
+\reading{Lynnetal2005} % longitudinal
+\reading{Sanders2012} % deliberative polls
 \reading{Reinischetal1995} % registry data
-% something here on deliberative polls
-
-% survey experiments
-\reading{GainesKuklinskiQuirk2007}
+\reading{GainesKuklinskiQuirk2007} % survey experiments
 %\reading{DruckmanPetersonSlothuus2013}
 
 \seealso
@@ -165,25 +169,25 @@ Find a survey online. This can be any survey (a national election study, a polit
 \subsubsection*{Assignment Due}
 What do you want to know? What is your research question? In one page, describe a topic of interest to political science that you can address with a survey. It can be a question about the prevalence of something (e.g., a condition or behavior), the level of something (e.g., opinions or income), the effect of an intervention on an outcome (e.g., an outcome expected to respond to a randomized treatment or a real-world policy), or similar. Describe your topic and your research question. Then, describe what construct or constructs you need to measure in your survey in order answer your question. Speculate briefly about how you might measure those constructs in a survey.
 
-\subsubsection*{Readings}
-% sampling: unit (HH, individual, company, worker, party, municipality, farms, libraries, high school classrooms, etc.); population
-% sampling frame: address, telephone (landline, mobile), registry
-\textbook[Ch.3]{}
-
-
-% convenience sampling
-
-
-
-
-\seealso
-
 \subsubsection*{In-Class Activities}
 \begin{itemize}
 % possibly have outside people present (Lotte, Stubager, Emily?, Kim?)
 \item Identifying possible sampling frames for various populations
 \item Simple Random Sampling (SRS) from within a frame
 \end{itemize}
+
+\subsubsection*{Readings}
+% sampling: unit (HH, individual, company, worker, party, municipality, farms, libraries, high school classrooms, etc.); population
+% sampling frame: address, telephone (landline, mobile), registry
+\textbook[Ch.3]{}
+\reading[Selections from]{Lohr2009} % sampling
+\reading{BerinskyHuberLenz2012} % convenience sampling
+\reading{Casseseetal2013}
+\reading{Yeageretal2011}
+\reading{ChangKrosnick2009}
+% Danish online panel article?
+
+\seealso
 
 
 
@@ -196,25 +200,24 @@ What do you want to know? What is your research question? In one page, describe 
 \subsubsection*{Assignment Due}
 Think about a survey you have participated in, either as a respondent or as an interviewer. What was the survey about? How were you recruited to participate in the survey? Was the survey conducted on a representative sample or a convenience sample? In one half page, discuss your experience and reflections on the survey. In another half page, discuss trade-offs between representative and convenience sampling.
 
-
-\subsubsection*{Readings}
-\textbook[Ch.4]{}
-
-% sampling: SRS; cluster; stratified; online panels
-\reading{Bakeretal2010}
-\reading{Berinskyetal2011}
-\reading{Casseseetal2013}
-
-% sampling error
-
-\seealso
+% discuss sampling error
 
 \subsubsection*{In-Class Activities}
 \begin{itemize}
-\item Stratified and cluster sampling from a frame
 \item Mean and proportion estimates, and their variances
+\item Stratified and cluster sampling from a frame
 \item Design effects
 \end{itemize}
+
+\subsubsection*{Readings}
+\textbook[Ch.4]{}
+\reading[Selections from]{Lohr2009} % sampling
+% sampling: SRS; quota; cluster; stratified; online panels
+\reading{Bakeretal2010}
+\reading{Berinskyetal2011}
+\reading{Burnhametal2006}
+
+\seealso
 
 
 
@@ -224,20 +227,24 @@ Think about a survey you have participated in, either as a respondent or as an i
 \emph{Topic}
 % constructs and operationalization
 
-
 \vspace{1em}
 \subsubsection*{Assignment Due}
 What is your population of cases that you intend to survey? Do you plan to do a census or only interview a sample of the population? If a sample, what is the sampling frame and how did you construct it? How are individuals sampled from your sampling frame? How large of a sample do you plan to collect to obtain sufficiently precise estimates of constructs? In one written page, provide answers to these questions and be prepared to discuss your plans in class.
+
+\subsubsection*{In-Class Activities}
+\begin{itemize}
+\item Concept definition
+\item Measuring Political (Left--Right) Ideology
+\item Measuring factual political knowledge
+\item Measuring opinions
+\end{itemize}
 
 
 \subsubsection*{Readings}
 \reading{SchaefferPresser2003} % overview
 \reading{AnsolabehereRoddenSnyder2008} % measurement error
 \reading{ZallerFeldman1992}
-
-
-% -- opinion questions
-\reading{KrosnickJuddWittenbrink2005}
+\reading{KrosnickJuddWittenbrink2005} % -- opinion questions
 \reading{Krosnicketal2002} % ``no opinion'' options
 
 % -- different types of questions (factual, demographic, autobiographical, opinion, behaviors, etc.)
@@ -249,14 +256,7 @@ What is your population of cases that you intend to survey? Do you plan to do a 
 \reading{RevillaSarisKrosnick2013}
 \reading{WilcoxSigelmanCook1989} % thermometers
 
-
-
 \seealso
-
-\subsubsection*{In-Class Activities}
-\begin{itemize}
-\item 
-\end{itemize}
 
 
 
@@ -270,35 +270,27 @@ What is your population of cases that you intend to survey? Do you plan to do a 
 \subsubsection*{Assignment Due}
 Given your research question
 
-\subsubsection*{Readings}
-\textbook[Ch.7]{}
-
-
-% sensitive questions
-\reading{HolbrookKrosnick2010}
-\reading{Glynn2013}
-\reading{TourangeauSmith1996}
-
-\reading{TraugottKatosh1979} % vote validation
-\reading{HolbrookKrosnick2013} % turnout wording
-
-% reference periods
-\reading{Price} % journalism quarterly
-\reading{BurtonBlair2011} % maybe
-
-
 % experimental comparison of questions (within and between subjects)
-
-
-\seealso
-
-
 
 \subsubsection*{In-Class Activities}
 \begin{itemize}
+\item Brainstorm methods of measuring various sensitive questions
 \item Design a list experiment for a sensitive question
 \end{itemize}
 
+
+\subsubsection*{Readings}
+\textbook[Ch.7]{}
+% sensitive questions
+\reading{TourangeauSmith1996}
+\reading{HolbrookKrosnick2010}
+\reading{Glynn2013}
+\reading{TraugottKatosh1979} % vote validation
+\reading{BurtonBlair2011} % reference periods
+\reading{Price1993}
+
+\seealso
+\reading{HolbrookKrosnick2013} % turnout wording
 
 
 
@@ -313,6 +305,11 @@ Given your research question
 \emph{In what mode, or format, do respondents provide answers to questions? Survey interviewing was originally entirely face-to-face, with interviewers reading questions aloud and recording answers on paper. With advances in both technology and scientific understanding of survey responding, there are now numerous modes and formats in which respondents can provide answers. What impact does mode have on responding? How does it affect quality, validity, and cost of surveys? And how does mode influence the kinds of questions that can be asked and the way that respondents engage with the survey interview?}
 \vspace{1em}
 
+\subsubsection*{In-Class Activities}
+\begin{itemize}
+\item Try out different interview modes in pairs
+\end{itemize}
+
 \subsubsection*{Assignment Due}
 Be prepared to share and briefly present a complete draft of your questionnaire. This does not need to be finalized, as you may want to add or delete questions, or change question wordings, response categories, or orderings particularly in-light of discussions about survey mode.
 
@@ -320,20 +317,14 @@ Be prepared to share and briefly present a complete draft of your questionnaire.
 \textbook[Ch.5]{}
 % survey mode: ftf, telephone (landline/mobile), online; CASI; CATI; mobile
 \reading{KreuterPresserTourangeau2009}
+\reading{MedwayFulton2012} % web response option
+
+% online mode
 \reading{VillarCallegaroYang2013} % progress meters
 \reading{Couperetal2013} % grids
-\reading{MedwayFulton2012} % web response option
 \reading{Smythetal2006}
 
-
 \seealso
-
-
-\subsubsection*{In-Class Activities}
-\begin{itemize}
-\item Try out different interview modes in pairs
-\end{itemize}
-
 
 
 
@@ -341,39 +332,41 @@ Be prepared to share and briefly present a complete draft of your questionnaire.
 \clearpage
 \subsection{Questionnaire Design III (Week 44)}
 \emph{Now that you've written a full questionnaire and thought about how you'll gather answers to its questions from respondents, consider how to organize questions and what kind of supplemental data (other than that personally supplied by respodnents) may be of interest to your study.}
+
+% do respondents provide the same answers in different modes?
+% registry data
+% paradata
+% interviewer-collected data
+
 \vspace{1em}
 \subsubsection*{Assignment Due}
-
-\subsubsection*{Readings}
-% -- question ordering
-\reading{BishopOldendickTuchfarber1984} % political interest
-\reading{TourangeauRasinski1988} % context effects
-\reading[Ch.2]{SchumanPresser1996}
-
-% questionnaire length
-
-% paradata; interviewer-collected data; registry data?
-
-
-% open and closed
-\reading{SchumanPresser1979}
-\reading{BrewerGross2005} % substantive example
-
-
-% registry data
-\reading{SoenderskovDinesen2014} % in Danish, maybe
-\reading{Ottosen2011} % Danish survey-registry match (child study)
-\reading{DavidsenKjoellerHelwegLarsen2011} % Danish survey-registry match (DANCOS)
-
-
-
-\seealso
 
 \subsubsection*{In-Class Activities}
 \begin{itemize}
 \item 
 %\item Presentation by Kim about registry data?
 \end{itemize}
+
+
+\subsubsection*{Readings}
+% -- question ordering
+\reading{BishopOldendickTuchfarber1984} % political interest
+\reading{TourangeauRasinski1988} % context effects
+\reading[Ch.2 from ]{SchumanPresser1996}
+
+% questionnaire length (rolloff; satisficing; quality); split-designs to address length
+\reading{GalesicBosnjak2009}
+
+% open and closed
+\reading{SchumanPresser1979}
+\reading{BrewerGross2005} % substantive example
+
+\reading{SoenderskovDinesen2014} % in Danish, maybe
+\reading{Ottosen2011} % Danish survey-registry match (child study)
+\reading{DavidsenKjoellerHelwegLarsen2011} % Danish survey-registry match (DANCOS)
+
+
+\seealso
 
 
 
@@ -386,22 +379,24 @@ Be prepared to share and briefly present a complete draft of your questionnaire.
 \subsubsection*{Assignment Due}
 
 
+\subsubsection*{In-Class Activities}
+\begin{itemize}
+\item Try cognitive interviewing in class
+\item Develop pre-testing plan for surveys
+\end{itemize}
 
 \subsubsection*{Readings}
 \textbook[Ch.8]{}
 
 \reading{Presseretal2004}
 \reading{PresserBlair1994}
+\reading{BeattyWillis2007}
 
 \reading{MillerGroves1985} % official records
-
+% focus groups?
 
 \seealso
 
-\subsubsection*{In-Class Activities}
-\begin{itemize}
-\item Try cognitive interviewing in class
-\end{itemize}
 
 
 
@@ -413,71 +408,64 @@ Be prepared to share and briefly present a complete draft of your questionnaire.
 \subsubsection*{Assignment Due}
 In one page, describe a plan for pilot testing your survey. What techniques will you use to assess your questions, your planned survey mode, and the overall quality of your instrument? How many people do you need to pilot the survey on? Be prepared to discuss these plans in detail and revise them in response to feedback during class.
 
-\subsubsection*{Readings}
-\textbook[Ch.9, 11]{}
-% response behavior
-\reading{RederRitter1992} % Feeling of knowing
-\reading{BishopTuchfarberOldendick1986} % fictitious issues
-\reading{Davis1997} % race of interviewer
-\reading{Krosnick1991} % satisficing
-\reading{Prior2009b} % overreported exposure
-\reading{JensenThomsen2013} % self-reported cheating
+% satisficing
 % social desirability bias
-
-
 % something about survey ethics: we are inviting ourselves into peoples' lives and asking them to reveal things they might not otherwise say
-
-\seealso
-
 
 \subsubsection*{In-Class Activities}
 \begin{itemize}
-\item 
+\item Take a survey and record your thoughts and feelings during the instrument
 \end{itemize}
 
+\subsubsection*{Readings}
+\textbook[Ch.9, 11]{}
+\reading{Krosnick1991} % satisficing
+\reading{RederRitter1992} % Feeling of knowing
+\reading{BishopTuchfarberOldendick1986} % fictitious issues
+\reading{Davis1997} % race of interviewer
+\reading{Prior2009b} % overreported exposure
+\reading{JensenThomsen2013} % self-reported cheating
+
+\seealso
 
 
 
 \clearpage
 \subsection{Recruitment and Fielding (Week 47)}
 \emph{Topic}
+
+% recruitment
+% interviewing/fielding/training
+% interviewer monitoring and reliability checks, interviewer effects, interviewer biases
+% disposition codes
+% participation incentives
+% challenging areas
+
 \vspace{1em}
 \subsubsection*{Assignment Due}
 Considering the feedback on the previous assignment and the new details you've learned about respondent behavior and the interactions between respondents and interviewers, begin implementing the pilot testing of your survey. In 1--2 written pages, report your initial findings from pilot testing, reflect on what those findings mean for your planned survey, and describe changes you will make to your survey plan based on the pilot testing.
-
-
-\subsubsection*{Readings}
-% recruitment
-\reading{Dykemaetal2013}
-% interviewing/fielding/training, reliability checks, interviewer effects, interviewer biases
-\reading{Kaplowitzetal2011} % invitations
-\reading{SchoberConrad1997} % flexible interviewing
-
-% Krosnick paper on shocking behavior
-
-% participation incentives
-\reading{MartinAbreuWinters2001} % refusal conversion
-
-
-% challenging areas
-\reading{DriscollLidow2014} % Mogadishu, Somali paper
-\reading{LyallBlairImai2013} % Afghanistan survey experiment
-
-% adaptive survey design
-\reading{Groves2006}
-
-
-% disposition codes
-
-\seealso
-
 
 \subsubsection*{In-Class Activities}
 \begin{itemize}
 \item Practice writing out recruitment materials
 \item Discuss survey fielding scenarios
+\item Generate disposition codes for sampled units
 \end{itemize}
 
+\subsubsection*{Readings}
+\reading{Dykemaetal2013}
+\reading{Kaplowitzetal2011} % invitations
+\reading{ConradSchober2000}
+% Krosnick paper on shocking behavior
+\reading{MartinAbreuWinters2001} % refusal conversion
+\reading{DriscollLidow2014} % Mogadishu, Somali paper
+\reading{Groves2006} % adaptive survey design
+
+
+\seealso
+\reading{SchoberConrad1997}
+\reading{LyallBlairImai2013} % Afghanistan survey experiment
+\reading{Linketal2006}
 
 
 
@@ -485,42 +473,39 @@ Considering the feedback on the previous assignment and the new details you've l
 \clearpage
 \subsection{Nonresponse and Data Management (Week 48)}
 \emph{Topic}
-\vspace{1em}
-\subsubsection*{Assignment Due}
-% something about writing a field plan
 
-
-\subsubsection*{Readings}
-\textbook[Ch.6, 10]{}
 % nonresponse: unit/item
-\reading{CurtinPresserSinger2005}
-\reading{Berinsky2002}
-
 % response rate calculation
-\reading{AAPORStandardDefinitions2011}
-
-% nonresponse rates vs. nonresponse bias
-
+% attrition
+% weighting
 % imputation
 
-% attrition
-\reading{BehrBellgardtRendtel2005}
-\reading{Clinton2001} % panel attrition
-
-% weighting
-\reading[]{}
-
-% data management and archiving, codebooks, privacy, cleaning/missingness
-
-\seealso
-
+\vspace{1em}
+\subsubsection*{Assignment Due}
+Using your questionnaire (or a subset of 10-20 questions thereof), conduct a pilot interview. Find a friend family member, or classmate to serve as an interviewer. Explain to them the point of the study, and have them read the questionnaire and ask any clarifying questions. Then, find another friend, family member or classmate to serve as a respondent. Observe (either in-person or via an audio recording) the survey interview. Discuss with the interviewer and the respondent their reactions to the survey interview (e.g., any points of confusion, whether it was interesting/enjoyable or uninteresting/annoying). In one-page, document what occurred during the interview, note any challenges the interviewer and respondent faced, and reflect on how the pilot testing might lead to any changes in your planned survey.
 
 \subsubsection*{In-Class Activities}
 \begin{itemize}
 \item Calculate response rates from disposition codes
+%\item Generate survey weights
 \item Cleaning, coding, and imputation
 \item Create a codebook from a questionnaire
 \end{itemize}
+
+\subsubsection*{Readings}
+\textbook[Ch. 6 and 10]{}
+\reading{CurtinPresserSinger2005}
+\reading{AAPORStandardDefinitions2011}
+\reading{Keeteretal2006}
+\reading{Berinsky2002}
+\reading{BehrBellgardtRendtel2005}
+\reading[]{} % weighting
+
+% data management and archiving, codebooks, privacy, cleaning/missingness
+
+\seealso
+\reading{Groves2006}
+\reading{Clinton2001} % panel attrition
 
 
 
@@ -529,17 +514,15 @@ Considering the feedback on the previous assignment and the new details you've l
 \subsection{Student Presentations (Weeks 49--51, as needed)}
 \vspace{1em}
 \subsubsection*{Assignment Due}
-Each student will distribute a copy of their survey two days prior to class and then provide a 10--15 minute presentation of their final exam paper. In the presentation, you should present your research question, sampling plan, and details of the survey mode and questionnaire. Based on details from last week, be prepared to discuss issues of refusals, nonresponse, and dropoff/attrition.
-
-When not presenting, provide feedback to fellow students on their planned surveys.
+Each student will distribute a copy of their survey two days prior to class and then provide a 10--15 minute presentation of their final exam paper. In the presentation, you should present your research question, sampling plan, and details of the survey mode and questionnaire. Based on details from last week, be prepared to discuss issues of refusals, nonresponse, and dropoff/attrition. When not presenting, students are expected to provide feedback to classmates on their presentations and planned surveys.
 
 \subsubsection*{Readings}
-None assigned, though students may distribute surveys or any other materials related to their presentations.
+None assigned, though students may distribute surveys or any other materials related to their presentations no later than 24 hours prior to their presentation.
 
 
 
 % load bibtext, but don't generate a bibliography
 \bibliographystyle{plain}
-\nobibliography{Syllabi}
+\nobibliography{Syllabus}
 
 \end{document}
