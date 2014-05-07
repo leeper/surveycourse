@@ -24,7 +24,7 @@ The objectives for the course are as follows:
  - Evaluate the quality of surveys in terms of sampling, interviewing procedures, and questionnaire content 
  - Apply methodological and substantive knowledge from the course to the design and implementation of an original survey
 
-<!--You can find a schedule for the course, details of the exam structure, and assigned readings in the [Syllabus](Syllabus/Syllabus.pdf).-->
+You can find a schedule for the course, details of the exam structure, and assigned readings in the [Syllabus](Syllabus/Syllabus.pdf).
 
 ---
 ## Readings ##
