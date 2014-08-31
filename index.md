@@ -10,7 +10,7 @@ Almost every organization - public or private - conducts surveys to understand t
 
 How do we conduct surveys well so that they provide meaningful insights? How do we write survey questions so that respondents understand them and that those responses generate useful data about relevant constructs? How do we decide whom to interview and how do we interview them effectively? How do we prepare for and manage the implementation of a large survey? How do we analyze the obtained results? This course will provide answers to these questions while training students how to implement a survey data collection and analyze the results thereof. The exam will entail the design, preparation, and pilot testing of a survey on the topic of student's choice.
 
-This course is being taught as a master seminar at Aarhus University during Fall term 2014.
+This course is being taught as a master seminar at Aarhus University during Fall term 2014. We meet Mondays from 11:00-14:00 in Building 1325 room 336.
 
 ---
 ## Course Objectives and Syllabus ##
