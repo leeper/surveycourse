@@ -31,7 +31,7 @@ You can find a schedule for the course, details of the exam structure, and assig
 
 In addition to journal articles on the syllabus, the course will use the following textbook:
 
-Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tourangeau, R. (2004). *Survey Methodology.* Wiley-Interscience.
+Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tourangeau, R. (2009). *Survey Methodology.* Wiley-Interscience.
 
 
 ---
