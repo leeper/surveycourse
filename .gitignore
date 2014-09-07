@@ -1,8 +1,12 @@
 # subdirectories to ignore #
 Misc/
+Syllabus/
+Lessons/*.*
 
 # filetypes to ignore #
 *.docx
 
 # files to ignore #
-*.*
+!Lessons/*.pdf
+!Lessons/*.tex
+!Lessons/*.bib
