@@ -1,12 +1,19 @@
 # subdirectories to ignore #
 Misc/
-Syllabus/
-Lessons/*.*
+Syllabus/*.*
+Activities/*.*
+Slides/*.*
 
 # filetypes to ignore #
 *.docx
 
 # files to ignore #
-!Lessons/*.pdf
-!Lessons/*.tex
-!Lessons/*.bib
+!Activities/*.pdf
+!Activities/*.tex
+!Activities/*.bib
+!Syllabus/*.pdf
+!Syllabus/*.tex
+!Syllabus/*.bib
+!Slides/*.pdf
+!Slides/*.tex
+!Slides/*.bib

@@ -51,5 +51,5 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
  - Short writing activity
    - Generate three possible research topics/questions
    - Discuss in small groups
-   - Homework: Select one and write
+   - Homework: Select one and write it up
  

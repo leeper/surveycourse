@@ -4,6 +4,10 @@ This repository holds materials for a course on survey design and implementation
 
 The course website can be found at: http://www.thomasleeper.com/surveycourse
 
+## Lesson Plans ##
+
+ - [Week 1](Lessons/Week1.md)
+
 ## Why GitHub? ##
 
 Read more about why this course is on GitHub [here](fork.md).
