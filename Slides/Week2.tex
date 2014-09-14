@@ -1,0 +1,425 @@
+\documentclass[compress, 12pt]{beamer} %Makes presentation
+
+\input{preamble}
+
+\title{Who is being surveyed?}
+
+\date[]{September 15, 2014}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{\tableofcontents}
+
+\section{Review of Last Week}
+\frame{\tableofcontents[currentsection, hideothersubsections,]}
+
+\frame{
+	\frametitle{Paul Lazarsfeld (1901--1976)}
+	\begin{itemize}\itemsep1em
+		\item Originally from Austria; spent career at Columbia University
+		\item Pioneered the study of mass media (Princeton Radio Project)
+		\begin{itemize}
+			\item \textit{The War of the Worlds} (1938)
+		\end{itemize}
+		\item Created the survey panel to study radio impact
+		\item First ever election surveys: \textit{The People's Choice} (1940) and \textit{Voting} (1948)
+		\item Two-step flow of influence: \textit{Personal Influence}
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Criteria for Causal Inference}
+	\begin{enumerate}\itemsep1em
+		\item Relationship
+		\item Temporal precedence
+		\item Nonconfounding
+		\item Mechanism
+		\item Level of analysis
+	\end{enumerate}
+}
+
+
+\frame{
+	\frametitle{Assignment for this week}
+	\begin{enumerate}\itemsep1em
+		\item Form groups of 3 (or so)
+		\item Present your research question idea(s)
+		\item Give feedback to your peers on the idea
+		\item Share some with the whole class
+	\end{enumerate}
+}
+
+
+\section{New Material to Cover}
+\frame{\tableofcontents[currentsection]}
+
+
+\subsection{Total Survey Error}
+\frame{\tableofcontents[currentsubsection, subsectionstyle=show/shaded, sectionstyle=show/hide]}
+ 
+\frame{
+	\frametitle{Total Survey Error}
+	\begin{itemize}\itemsep2em
+		\item<1-> Envision the perfect survey!
+		\item Errors introduced in design, implementation, and analysis
+		\item Late 20th-century survey research focused on minimizing particular sources of error
+		\item ``Total Survey Error'' approach is about trade-offs between all sources of error, costs, and time
+	\end{itemize}
+}
+
+ 
+\subsection{Populations}
+\frame{\tableofcontents[currentsubsection, subsectionstyle=show/shaded, sectionstyle=show/hide]}
+
+\frame{
+	\frametitle{Inference Population}
+	\begin{itemize}\itemsep2em
+		\item We want to speak to a population
+		\item But what population is it?
+		\item<2-> Example: ``The Danish population''
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Population Census}
+	\begin{itemize}\itemsep2em
+		\item All population units are in study
+		\item<2-> History of national censuses
+			\begin{itemize}
+				\item<2-> Denmark 1769--1970 (sporadic)
+				\item<2-> U.S. 1790 (decennial)
+				\item<2-> India 1871 (decennial)
+			\end{itemize}
+		\item<3-> Other kinds of census
+			\begin{itemize}
+				\item<3-> Citizen registry
+				\item<3-> Commercial, medical, government records
+				\item<3-> ``Big data''
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Advantages and Disadvantages}
+	\begin{itemize}\itemsep2em
+		\item Advantages
+			\begin{itemize}
+				\item<2-> Perfectly representative
+				\item<2-> Sample statistics are population parameters
+			\end{itemize}
+		\item Disadvantages
+			\begin{itemize}
+				\item<3-> Costs
+				\item<3-> Feasibility
+				\item<3-> Need
+			\end{itemize}		
+	\end{itemize}
+}
+
+
+\subsection{Representativeness}
+\frame{\tableofcontents[currentsubsection, subsectionstyle=show/shaded, sectionstyle=show/hide]}
+
+\frame{
+	\frametitle{Representativeness}
+	\begin{itemize}\itemsep2em
+		\item What does it mean for a sample to be representative?
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Obtaining Representativeness}
+	\begin{itemize}\itemsep2em
+		\item<1-> Quota sampling (common prior to the 1940s)
+		\item<2-> Simple random sampling
+		\item<3-> Advanced survey designs (discuss next week)
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Convenience Samples}
+	\begin{itemize}\itemsep2em
+		\item<1-> What is a convenience sample?
+		\item<2-> Different types:
+			\begin{itemize}
+				\item<2-> Passive/opt-in
+				\item<2-> Sample of convenience (not a sample per se)
+				\item<2-> Sample matching
+				\item<2-> Online panels
+			\end{itemize}
+		\item<3-> ``Purposive'' samples (common in qualitative studies)
+	\end{itemize}
+}
+
+\frame{\frametitle{Questions about convenience samples?}}
+
+
+\subsection{Sampling Frames}
+\frame{\tableofcontents[currentsubsection, subsectionstyle=show/shaded, sectionstyle=show/hide]}
+
+\frame{
+	\frametitle{Sampling Frames}
+	\begin{itemize}\itemsep2em
+		\item Enumeration (listing) of all units eligible for sample selection
+		\item Two flavors:
+			\begin{itemize}
+				\item Random sample from an ordered list
+				\item Systematic sampling from a randomized list
+			\end{itemize}
+		\item Building a sampling frame
+			\begin{itemize}
+				\item Combine existing lists
+				\item Canvass/enumerate from scratch
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Big considerations}
+	\begin{itemize}\itemsep2em
+		\item Coverage!
+			\begin{itemize}
+				\item Undercoverage
+				\item Overcoverage
+			\end{itemize}
+		\item<2-> What is a unit?
+		\item<3-> Clustering
+		\item<4-> Overlap between units
+		\item<5-> List maintenance
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Multi-frame Designs}
+	\begin{itemize}\itemsep2em
+		\item Construct one sample from multiple sampling frames
+		\item E.g., ``Dual-frame'' (landline and mobile)
+		\item Analytically complicated
+			\begin{itemize}
+				\item Overlap of frames
+				\item Sample probabilities in each frame
+			\end{itemize} 
+	\end{itemize}
+}
+
+
+\subsection{Sampling without a Frame}
+\frame{\tableofcontents[currentsubsection, subsectionstyle=show/shaded, sectionstyle=show/hide]}
+
+\frame{
+	\frametitle{Sampling without a Sampling Frame}
+	\begin{itemize}\itemsep2em
+		\item Sometimes we have a population that can be sampled but not (easily) enumerated in full
+		\item<2-> Examples
+			\begin{itemize}
+				\item<2-> Protest attendees
+				\item<3-> Streams (e.g., people buying groceries)
+				\item<4-> Points in time
+			\end{itemize}
+		\item<5-> Population is the sampling frame
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Rare or ``hidden'' populations}
+	\begin{itemize}\itemsep2em
+		\item Big concern: coverage!
+		\item<2-> Solutions?
+			\begin{itemize}
+				\item<3-> Snowball sampling
+				\item<3-> Informant sampling
+				\item<3-> Targeted sampling
+				\item<3-> Respondent-driven sampling
+			\end{itemize}
+		\item<3-> How does RDS work?
+	\end{itemize}
+}
+
+
+\frame{\frametitle{Questions?}}
+
+
+\frame{
+	\frametitle{Activity!}
+	\begin{itemize}\itemsep2em
+		\item Work in pairs
+		\item Develop two sampling frames/sampling strategies for a population
+		\item Share with class and discuss
+	\end{itemize}
+}
+
+\subsection{Simple Random Sampling}
+\frame{\tableofcontents[currentsubsection, subsectionstyle=show/shaded, sectionstyle=show/hide]}
+
+\frame{
+	\frametitle{Simple Random Sampling (SRS)}
+	\begin{itemize}\itemsep2em
+		\item Advantages
+			\begin{itemize}
+				\item Simplicity of sampling
+				\item Simplicity of analysis
+			\end{itemize}
+		\item Disadvantages
+			\begin{itemize}
+				\item Need sampling frame and units without any structure
+				\item Possibly expensive
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Sample Estimates from an SRS}
+	\begin{itemize}\itemsep2em
+		\item Each unit in frame has equal probability of selection
+		\item Sample statistics are unweighted
+		\item Variances are easy to calculate
+		\item Easy to calculate sample size need for a particular variance
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Sample mean}
+	\begin{equation}
+	\bar{y} = \frac{1}{n}\sum_{i=1}^{n}y_i
+	\end{equation}
+	where $y_i = $ value for a unit, and\\
+	$n = $ sample size
+	
+	\begin{equation}
+	SE_{\bar{y}} = \sqrt{(1-f)\frac{s^2}{n}}
+	\end{equation}
+	where $f = $ proportion of population sampled,\\
+	$s^2 = $ sample variance, and\\
+	$n = $ sample size
+}
+
+\frame{
+	\frametitle{Sample proportion}
+	\begin{equation}
+	\bar{y} = \frac{1}{n}\sum_{i=1}^{n}y_i
+	\end{equation}
+	where $y_i = $ value for a unit, and\\
+	$n = $ sample size
+	
+	\begin{equation}
+	SE_{\bar{y}} = \sqrt{\frac{(1-f)}{(n-1)}p(1-p)}
+	\end{equation}
+	where $f = $ proportion of population sampled,\\
+	$p = $ sample proportion, and\\
+	$n = $ sample size
+}
+
+\frame{
+	\frametitle{Estimating sample size}
+	\begin{itemize}
+		\item Imagine we want to conduct a political poll
+		\item We want to know what percentage of the public will vote for which coalition/party
+		\item How big of a sample do we need to make a relatively precise estimate of voter support?
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Estimating sample size}
+	\begin{equation}
+		Var(p) = (1-f)\frac{p(1-p)}{n-1}
+	\end{equation}
+	
+	Given the large population:	
+	\begin{equation}
+		Var(p) = \frac{p(1-p)}{n-1}
+	\end{equation}
+	
+	\vspace{1em}
+	Need to solve the above for $n$.
+	\begin{equation}
+	\only<2->{n = \frac{p(1-p)}{v(p)} = \frac{p(1-p)}{SE^2}}
+	\end{equation}
+}
+
+\frame{
+	\frametitle{Estimating sample size}
+    Determining sample size requires:
+    	\begin{itemize}
+    		\item A possible value of $p$
+    		\item A desired precision (SE)
+    	\end{itemize}
+	\vspace{1em}
+	If support for each coalition is evenly matched ($p = 0.5$):
+	\begin{equation}
+	n = \frac{0.5(1-0.5)}{SE^2} = \frac{0.25}{SE^2}
+	\end{equation}
+}
+
+\frame{
+	\frametitle{Estimating sample size}
+	What precision (margin of error) do we want?
+	\begin{itemize}
+		\item +/- 2 percentage points: $SE = 0.01$
+			\begin{equation}
+			n = \frac{0.25}{0.01^2} = \frac{0.25}{0.0001} = 2500
+			\end{equation}
+		\item<2-> +/- 5 percentage points: $SE = 0.025$
+			\begin{equation}
+			n = \frac{0.25}{0.000625} = 400
+			\end{equation}
+		\item<3-> +/- 0.5 percentage points: $SE = 0.0025$
+			\begin{equation}
+			n = \frac{0.25}{0.00000625} = 40,000
+			\end{equation}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Important considerations}
+	\begin{itemize}\itemsep1em
+		\item Required sample size depends on $p$ and $SE$
+		\item<2-> In large populations, population size is irrelevant
+		\item<3-> In small populations, precision is influenced by the proportion of population sampled
+		\item<4-> In anything other than an SRS, sample size calculation is more difficult
+		\item<5-> Much political science research assumes SRS even though a more complex design is actually used
+	\end{itemize}
+}
+
+\frame{\frametitle{Questions about SRS?}}
+
+\section{Preview of Next Week}
+\frame{\tableofcontents[currentsection, hideothersubsections]}
+
+\frame{
+	\frametitle{Next week's agenda}
+	\begin{itemize}\itemsep1em
+		\item Stratified sampling
+		\item Cluster sampling
+		\item Estimates, variances, and design effects
+		\item Discuss sampling schemes in published research
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Presentations?}
+	\begin{itemize}\itemsep1em
+		\item Burnham et al.: Mortality in Iraq
+		\item Reinisch et al.: Registry data study
+		\item Walker and Enticott: Surveying public managers
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Assignment for next week}
+	\begin{itemize}\itemsep1em
+		\item Find a real survey or published study based on a survey
+		\item Figure out its population, sampling frame, and sample
+		\item Write up 0.5-1.0 pages discussing and evaluating its sampling approach
+		\item We will discuss these in class next week
+	\end{itemize}
+}
+
+
+\appendix
+\frame{}
+
+\end{document}

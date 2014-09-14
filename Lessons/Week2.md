@@ -17,30 +17,173 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
       - Mechanism
       - Level of analysis
    - Uses of surveys
-     - From research questions to designs
- - Activities
+     - From research questions to designs:
+       - Description/prevalence
+       - Changes
+       - Effects
+ - Activity I
    - Discuss research question ideas
      - Small groups
      - Share a couple of ideas
-   - Develop a sampling frame for a population and research question (prevalence, changes, effects)
-   - SRS activity
-   - 
  - New Material
    - Total Survey Error
+     - The perfect survey is a perfect census of a population where everyone answers all questions, each of which is measured perfectly
+     - Errors can occur in any part of survey design, implementation, and analysis
+     - Previous approaches to survey work focused on minimizing one kind of error
+       - E.g., finding the best way to reduce sampling error
+       - E.g., trying to minimize errors respondents make in understanding and answer questions
+     - Total survey error is about trade-offs between different sources of error and trying to minimize them all within specific time and budget constraints
+       - E.g., we can spend a lot of time trying to increase our response rate, but the cost of doing so might not matter if we don't have money to properly process data
+       - E.g., we can design an incredibly complex strategy of recruiting respondents, but the challenge of implementing it may not be worth the cost in terms of the overall reduction in survey error
    - Populations
+     - In research, this is rarely explicit
+       - Residents population of a country
+       - Citizens of a country
+       - Voting age population of a country or actual voters
+       - Adults
+       - All human beings
+       - All human beings in similar political systems
+       - Other examples
+         - Government employees
+         - All countries, states, regions, cities
+         - All political candidates for office this year, all time, everywhere
      - Census
+       - National census
+         - In Denmark: 1769 (approximately every 5-20 years after, give or take)
+           - Ended in 1970 (Registry started in 1968)
+         - Largest in world: India; 2011 implementation used to create a population registry
+         - United States began in 1790; implemented every 10 years
+       - Census in other populations
+         - Population Registry or complete listing of some kind
+           - Individual residents
+           - Membership lists
+           - Registered corporations
+           - Publicly traded firms on stock exchanges
+         - Commercial records
+           - Every transaction between a business and a customer
+           - Every patient to have visited a hospital
+         - "Big data"
+           - Every public post on Twitter
+           - In U.S., every campaign contribution to any candidate or election committee over $50
+       - Nice features
+         - Perfectly representative (assuming correct implementation and no loss of data)
+         - Sample statistics are population parameters
+       - Problems
+         - Costs (India 2011: $370 billion; U.S. 2010: $13 billion)
+         - Feasibility
+           - May not be able to enumerate everyone
+           - Impractical
+         - Need
+           - If we have the population, there's a strong possibility we don't need to collect new data
+           - Often little added value of a census over a large, population-representative sample
      - Representative sample
+       - How do we define representativeness?
+         - Face similarity (only applies to measured dimensions)
+         - Same properties as sample: mean, variance, covariance structure, etc.
+       - Quota sampling
+       - Random sampling guarantees, in expectation, a representative sample
+       - This does not guarantee that a sample statistic matches a population parameter in any given sample
+       - Indeed, we cannot know the accuracy of any particular sample statistic w/o already knowing the population parameter
+     - Activity II (not implemented this time)
+       - Simple random sampling
+       - Everyone takes a sample in the form of a bag of candy and estimates a statistic
+       - Discuss sampling error (due to sampling variance)
+       - Compare to larger sample size
+       - Coverage errors:
+         - Overcoverage error: a different kind of candy
+         - Undercoverage error: Fotex doesn't sell a random sample of this particular kind of candy
      - Convenience samples
+       - Passive/Opt-in samples (online, advertisements, MTurk, etc.) (unknown biases)
+       - True samples of convenience: students, friends, etc. (known biases)
        - Valuable if "representative"
-       - What does representative mean?
        - YouGov sample matching method
+       - Randomly sampled individuals recruited into a panel
+   - Purposive sampling
+     - This is almost always misleading
+     - If we want to know what, e.g., "pregnant women between 20-30" think, we need a sampling frame; the individuals we recruit through "purposive" sampling are not guaranteed to be representative
    - Sampling Frames
-     - Enumeration then random sampling
-     - Systematic sampling of a randomized enumeration
-   - Sampling w/o a Sampling Frame
-     - Systematic sampling procedures
-     - Heaney and Rojas rally example
+     - Definition: Enumeration of all units eligible for sample selection
+       - All units in the frame have a non-zero probability of selection into our sample
+       - All other units have a zero probability of selection into our sample
+     - Process
+       - Enumeration then random sampling
+       - Systematic sampling of a randomized enumeration
+     - Sometimes have to create sampling frame from scratch ("canvassing"/"enumeration")
+     - In practice
+       - Frames are rarely perfect (Coverage error)
+         - Undercoverage (missing population units)
+           - Sample of internet users
+         - Ineligible units or overcoverage (units in frame not in population)
+           - Summer homes
+           - Non-citizens
+       - Decisions
+         - What is a household?
+           - Homeless
+           - Hotels
+           - Nontraditional housing
+         - Who is a resident of a household?
+           - e.g., if your boyfriend/girlfriend stays with you some of the time, are they eligible to complete a study of your household?
+         - At what point in time is someone in the frame?
+           - e.g., Censuses often talk about residence at a specific date, even if data are collected at another time
+       - Clustering
+         - Multiple population units in a household
+           - Sample all individuals
+           - Randomly sample w/in household (individuals in large households underrepresented)
+         - Multiple students in a given classroom (the BA methods course activity)
+         - Multiple crimes that occurred simultaneously (if crime is the unit of analysis)
+       - Repeated listing of units in the frame
+         - Telephone numbers: household and mobile numbers
+         - Email addresses: work, school, and personal numbers
+       - List maintenance
+         - Registry is a nice example: probably relatively clean
+         - Voter registration lists in the United States
+         - Customer and member lists
+           - Units are deceased or no longer in the population
+           - Valid unit but not contactable
+       - Updating during data collection
+       - Multi-frame
+         - "Dual frame" (HH telephones and mobile telephones)
+         - Online and telephone
+         - Complicated because it requires figuring out the proportion of units in both frames (overlap)
+           - E.g. from book
+             - list of farms in a geographic area and list of farmers from a government agency or trade group
+             - significant overlap between frames but there may still be undercoverage and overcoverage
+   - Random/representative sampling w/o a Sampling Frame
+     - Systematic sampling of a complete but unenumerated population
+       - Heaney and Rojas rally example
+       - Random walk
      - Sampling from a stream of units (has to assume order is random and all units are from same distribution)
+       - Customers in a store
+       - Products coming off an assembly line at a factory
+       - E.g., "Every third person"
+     - Random sampling of times/events
+       - Animal behavior research: observe animals all day, record at random sample of time points
+       - Study of water quality: random samples of days/times
+     - Small, rare, or "hidden" populations: snowball sampling, respondent-driven sampling, etc.
+       - Big concern w/ one kind of coverage error: overcoverage!
+       - Problems w/ snowball sampling
+         - All individuals are drawn from connections (direct or indirect) to an initial pool
+         - Biased toward cooperative subjects
+         - "masking": selection is made by other respondents who may have incentives to refer or not refer a participant
+         - Sampling from networks biased toward individuals with large networks and individuals who are central in networks
+       - Key-informant sampling
+         - Do not have access to a representative sample of the hidden population
+       - Targeted sampling
+         - Basically trying to construct a sampling frame
+       - Respondent-driven sampling
+         - Differences from snowball sampling
+           - Incentives: primary (participation) and secondary (recruitment of others)
+           - Snowball-sampled individuals participate in an opt-in fashion (investigators do not know about them unless they participate)
+         - Procedure
+           - Select "seed" respondents
+           - Seeds recruit secondary wave of participants
+           - New participants offered the same incentive structure
+           - Remove duplicates
+           - Targeting of specific subpopulations
+         - Who is Heckathorn trying to sample? What happens in that sampling process?
+   - Activity III
+     - Develop a sampling frame for a population and research question (prevalence, changes, effects)
+     - Or, develop an alternative sampling scheme that does not require a full sampling frame
    - Simple Random Sampling
      - Finite population correction
      - Benefits:
@@ -50,12 +193,48 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
      - Downsides:
        - May not be possible if population cannot be enumerated
        - May be expensive (possible to significantly reduce costs w/ a clustered or stratified design)
+         - E.g., HH survey in Afghanistan: incredibly difficult to randomly sample individuals (even if we had a sampling frame for them)
    - Sample size estimation
+     - Mean
+       - $v(\bar{y}) = (1-f)\frac{s^2}{n}$, where $f$ is proportion of population sampled
+     - Proportion
+       - $v(p) = (1-f)\frac{p(1-p)}{n-1}$, where $f$ is proportion of population sampled
      - Margin of error
-     
+       - $Estimate +/- 2 * SE$
+     - Example
+       - What will voter turnout be?
+       - Which party or coalition will win the election?
+       - Math:
+         - $Var(p) = (1-f)\frac{p(1-p)}{n-1}$
+         - $Var(p) = \frac{p(1-p)}{n-1}$
+         - Solve for $n$
+         - $n = \frac{p(1-p)}{v(p)} = \frac{p(1-p)}{SE^2}$
+         - Guess value of $p$
+         - $n = \frac{0.5(1-0.5)}{SE^2} = \frac{0.25}{SE^2} $
+         - Pick intended value of $SE$
+         - $n = \frac{0.25}{0.01^2} = \frac{0.25}{0.0001} = 2500$
+         - If $SE=0.025$, $n = \frac{0.25}{0.000625} = 400$
+         - If $SE=0.0025$, $n = \frac{0.25}{0.00000625} = 40,000$
+         - Given an intended margin of error, the largest sample you will need is for a close proportion
+         - Small samples are possible if the population proportion is closer to 0 or 1
+         - If $p=0.9$, $n = \frac{0.9(1-0.9)}{0.01^2} = \frac{0.09}{0.0001} = 900$
+         - In smaller populations (e.g., political candidates, mayors, school teachers, small town), we need to account for the finite population correction
+           - With smaller population, we are calculating something closer to a census, so variances are even smaller with a given sample size
+     - This is the kind of data analysis you almost always do in practice
+       - We need to use different formulae for standard errors in more complex designs
+       - Most data are not collected via simple random random samples (except some telephone surveys)
+       - Most research ignores sample design and just analyzes everything as if it is a random sample
+ - Sign up for presentations for next week
+   - Burnham et al.: Iraq civilian fatality study
+   - Reinisch et al.: In-utero environment and intelligence study
+   - Walker and Enticott: Public administration study
+ - Assignment for next week
+   - Find a survey that's out there in the world
+   - Study its target population, sampling frame, and sampling strategy
+   - Write up to one page describing that, which you will share in class
+   - It may be helpful to look for a survey in some way similar to your proposed final project (but it need not be)
  - Preview of next week: Sampling Techniques
    - Estimates and variances
    - Stratified sampling
    - Cluster sampling
    - Design effects
- 
