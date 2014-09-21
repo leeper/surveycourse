@@ -1,0 +1,255 @@
+---
+layout: default
+title: Week 3: Sampling Techniques
+ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
+---
+
+# Sampling Techniques #
+
+## Outline ##
+
+ - Activity I
+   - Discuss assignment
+     - Pick one survey from each of your groups that sounds the most interesting and share it with the class
+ - Review of last week
+   - What is a population? What is a sampling frame? What is a sample?
+   - How do we create a sampling frame?
+   - How do we sample? (Enumerate then randomly select; or be able to directly sample from population w/o enumeration)
+   - Activity II
+     - Sampling frame activity from last week
+   - What is the process of determining the necessary sample size for a study (assuming SRS)?
+ - Readings for this week
+   - Walker and Enticott
+     - What's the unit of analysis? What's the population?
+       - Because unit of analysis is organization; they build a pseudo-panel using potential different designated reporters
+     - What's the sampling frame? How well is the population covered by this frame?
+     - How are individual respondents sampled?
+   - Reinisch et al.
+     - Is the point of this to understand prevalence, changes, or causal effects?
+     - How does the survey come into this?
+     - What is the unit of analysis? What is the population?
+     - What is the sampling plan? How well is the population covered by the sampling frame?
+     - Is this a survey or a census?
+     - Why matching/stratification?
+
+ - New Material
+   - Total Survey Error
+     - We have focused on coverage error: the extent to which our sampling frame matches our population
+     - Now we also start thinking about sampling error: error due to not taking a census of our enumerated sampling frame units
+     - Sources of sampling error:
+       - Sampling (i.e., not doing a census)
+       - Sample size
+       - Unequal probabilities of selection
+       - Failure to stratify on known (important!) variables
+       - Cluster sampling
+     - A minimal amount of sampling error is unavoidable, but design decisions influence the amount of sampling error
+     - Last week with SRS, we saw what baseline sampling error looks like in terms of our uncertainty about an inference
+
+   - Probably versus non-probability samples (esp. online panels)
+     - What are the major issues raised here?
+       - Recruitment/sampling/reprsentativeness
+       - Online data collection (mode, satisficing, respondent qualities, response rates)
+       - Adjustments/weights
+     - How are online panelists recruited?
+       - Exacerbated non-response bias: individuals who might agree to participate in one study might be unwilling to be in a panel
+     - How are individual panelists sampled for an individual study from the total panel pool?
+       - SRS? Stratification? Purposive?
+     - How good is coverage for an online panel? How would we assess it?
+     - Does stratified sampling of an online panel solve concerns about representativeness?
+     - Talk about more later: response rates and response biases
+       - Even though panel might be representative, respondents might not be
+       - This affects all types of data collection
+     - How long should someone be eligible to be a member of an online panel?
+     - Quota sampling and purposive sampling
+       - Common in marketing research
+       - Quota sampling collects fixed numbers of individuals with specified characteristics
+       - Purposive sampling simply tries to obtain a set group of individuals (e.g., doctors, pregnant women)
+       - We don't know probability of selection, so we can't technically generalize to any population
+       - May be valuable in: pilot testing, experimental research, qualitative research
+   
+   - Stratified sampling
+     - Why?
+       - Use information already known about units
+       - Avoid certain kinds of sampling errors (i.e., randomly missing units that are known to differ from one another)
+       - Representative samples of subgroups
+       - Often, obtain lower variances assuming that sample variances differ across strata
+       - Relationship between stratification and coverage:
+         - If we want to study a subpopulation and we can identify units from our population in advance, whole population surveys massively over-cover
+         - Examples:
+           - Studying attitudes of immigrants, if we can stratify on immigration status then we develop a better sampling frame
+           - We want to study immigrants but can't identify that conclusively from the registry, we might stratify by a characteristic that might be associated with immigrant status (e.g., the individual's family surname)
+       - Rare populations:
+         - If we can guess where (geographically or within identifiable strata) rare population units might exist, we can allocate more resources to areas where units are likely to be while retaining a representative sample (once weighted) of the whole population
+         - Example: We want to find the population of people who have been victims of a particular type of crime that is underreported (e.g., sexual assault; petty theft); we can stratify our population by aggregate crime rates and sample more individuals from areas with higher crime rates in an effort to find these individuals
+     - Why not?
+       - Is complexity of stratification worth gains in precision, given increased difficulty and possibly cost?
+       - If strata are known/identifiable but similar, there's little gain in precision
+     - Examples
+       - Registry-based sampling
+       - Sampling when we already know information (e.g., business size; students' education/major; etc.)
+       - Repeated interviews
+         - Some people were hard to contact in first round; others were easy
+         - We can stratify on this factor to try to make sure we get enough of each; spend more resources on hard-to-reach
+     - Estimates
+       - Within-strata estimates are simple means/proportions/counts because of SRS
+       - Sample-level estimate is weighted average of strata-specific estimates (weights are stratum population proportions)
+       - Within-strata variances are simple variances around the stratum-specific estimate
+       - Sample-level variance is weighted average of strata-specific variances (weights are squared stratum population proportions)
+     - How many strata?
+       - We can stratify on as many variables as we want and have access to prior to sampling
+       - We should pick variables that are related to our outcome of interest
+       - Example:
+         - We want a representative sample of the Danish population
+         - We want to know about voting intentions in next election (sometime prior to Sep. 2015)
+         - What should we stratify on in an ideal world?
+       - Cochran (1961): 5-6 strata for each variable is sufficient
+       - Problem of dimensionality
+         - Demonstrate using variables we identified
+     - Allocation to strata
+       - Proportional allocation
+         - Self-weighting (nice!)
+       - Allocation for specified precision within each stratum
+         - Want to have representative sample of ethnic Danes and immigrants
+         - We can stratify based on information from the registry and then oversample immigrants
+         - Not self-weighting!
+       - Optimal allocation
+         - Most efficient use of sample size to minimize variance (uncertainty) of estimates
+         - Requires knowledge (or educated guesses) about variance between strata
+     - Design effect
+       - Design effect: $d^2 = \frac{Var_stratified(y)}{Var_SRS(y)}$
+       - If 1, the design we're talking about has the same variance as an SRS of the same size
+       - If larger than 1, our design yields less precise estimates
+       - If smaller than 1, our design yields more precise estimates
+       - Convert design effect into effective sample size $n_effective = \frac{n}{d}$
+       - Considerations
+         - Design effects are meant to compare same-sized sampling plans
+         - Design effects are variable-specific
+     
+     - An example
+       - We want to know the rate of crime victimization in the Danish population
+       - We think the immigrant population is at a higher risk of crime victimization
+       - Immigrant population is 12% of the population; native-born population is 88% of the population
+     - Sampling variance in SRS
+       - Assume 1000 individuals in sample
+       - Estimate is just $p = \frac{Victims}{n}$
+       - SE is $\sqrt{\frac{p(1-p)}{n-1}} = \sqrt{\frac{p(1-p)}{999}}$
+     - Sampling variance for each strata in SRS
+       - Depends on how many individuals from each group are actually sampled
+       - Assume 1000 individuals and perfect sample realization: 880 native Danes and 120 immigrants
+         - Overall estimate is just $\frac{Victims}{n}$
+         - SE is $\sqrt{\frac{p(1-p)}{n-1}}$
+         - For native Danes: $\sqrt{\frac{p(1-p)}{879}}$
+         - For immigrants: $\sqrt{\frac{p(1-p)}{119}}$
+         - Assume $p=0.1$:
+           - $SE(p) = \sqrt{\frac{0.09}{999}} = 0.0095$
+           - $SE(p_native) = \sqrt{\frac{0.09}{879}} = 0.010$
+           - $SE(p_imm) = \sqrt{\frac{0.09}{119}} = 0.028$
+         - Much more uncertainty about estimate for immigrants (assuming similar values of $p$)
+       - If sample realization was different (and under- or over-sampled immigrants) estimates would contain excess error
+       - Sampling variance in simple stratified sample
+       - We will explicitly sample exactly 880 native Danes and 120 immigrants (no other realization possible)
+       - Overall estimate is just $\sum_{h=1}^{H}\frac{N_h}{N}p_h$
+         - For native Danes: $\sqrt{\frac{p(1-p)}{879}}$
+         - For immigrants: $\sqrt{\frac{p(1-p)}{119}}$
+       
+       - Proportionate Allocation I (Assume equal estimates/proportions in each strata ($p=0.1$))
+         - SE for native Danes: $\sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{0.09}{879}} = 0.010$
+         - SE for immigrants: $\sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{0.09}{119}} = 0.028$
+         - CI for native Danes: $0.10 +/- 0.020 = (0.080,0.120)$
+         - CI for immigrants: $0.10 +/- 0.056 = (0.044,0.156)$
+         - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
+           - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+           - $Var(p) = (\frac{0.09}{879})(.88^2) + \frac{0.09}{119})(.12^2))$
+           - $SE(p) = 0.0095$
+         - Design effect: $d^2 = \frac{0.0095^2}{0.0095^2} = 1$, effective sample size of 1000
+       
+       - Proportionate Allocation II (Assume unequal estimates/proportions in each strata)
+         - Assume: $p_native=0.1$ and $p_imm=0.3$ (thus $p_pop = 0.124$)
+       - SRS: 
+           - $SE(p) = \sqrt{\frac{0.124(1-0.124)}{n-1}} = 0.0104$
+           - $SE(p_native) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.09}{879}} = 0.010$
+           - $SE(p_imm) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.21}{119}} = 0.040$
+           - CI for native Danes: $0.10 +/- 0.020 = (0.08,0.12)$
+             - CI for immigrants: $0.20 +/- 0.080 = (0.12,0.28)$
+         - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
+           - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+           - $Var(p) = (\frac{0.09}{879})(.88^2) + \frac{0.21}{119})(.12^2))$
+           - $SE(p) = 0.01022$
+           - Here we are just a very small amount more uncertain about $p$ than when proportions for natives and immigrants were equal because we have a small number of observations in the more variable strata (immigrants)
+           - In most cases, stratification is no worse than SRS
+         - Design effect: $d^2 = \frac{0.01022^2}{0.0095^2} = 1.157$
+         - Effective sample size: $n_effective = \frac{n}{sqrt(d^2)} = 932$
+       
+       - Disproportionate allocation I (pre-specified stratum-specific precision)
+         - Sampling variance for each strata in allocation based on specified precision
+         - Above we had $SE(p_native) = 0.01$ and $SE(p_imm) = 0.04$
+         - Let's say we want $SE(p_h) = 0.02$
+         - Necessary sample size:
+           - $n_h = \frac{p(1-p)}{v(p)} = \frac{p(1-p)}{SE^2}$
+           - $n_native = \frac{0.09}{0.02^2} = 225$
+           - $n_imm = \frac{0.21}{0.02^2} = 525$
+           - $n_total = 225 + 525 = 750$
+         - Design effect
+           - $SE_SRS(p) = \sqrt{\frac{0.124(1-0.124)}{750-1}} = 0.012$
+           - $d^2 = \frac{0.02^2}{0.012^2} = 2.\bar{7}$
+           - $n_effective = \frac{n}{sqrt(d^2)} = 450$
+         - Assuming equal proportions ($p = 0.124$) in each stratum, then equal sample sizes for each stratum
+           - $n = 2 * \frac{0.124}{0.02^2} = 2 * 310 = 620$
+           - $SE_SRS(p) = \sqrt{\frac{0.124(1-0.124)}{620-1}} = 0.013$
+           - $d^2 = \frac{0.02^2}{0.013^2} = 2.367$
+           - $n_effective = \frac{n}{sqrt(d^2)} = 403$
+         
+       - Disproportionate allocation II (Neyman allocation)
+         - Number of cases from each strata should be based on within-strata variance
+         - Problems
+           - This doesn't work well for proportions (because variances of proportions are constrained)
+           - Also, this only works for one variable at a time
+             - A survey meant to measure multiple things may not be able to apply this method vary well
+         - To highlight assume $p_native=0.01$ and $p_imm=0.50$  (thus $p_pop = 0.0688$)
+         - SRS: 
+           - $SE(p) = \sqrt{\frac{0.0688(1-0.0688)}{n-1}} = 0.008$
+         - Determine strata allocation
+           - $n_h = n \frac{W_h S_h}{\sum{h=1}{H}W_h S_h}$
+           - $\sum{h=1}{H}W_h S_h} = (0.88 * 0.0099) + (0.12 * 0.25) = 0.0087 + 0.03 = 0.0387$
+           - $n_native = 1000 \frac{0.0087}{0.0387} = 225$
+           - $n_imm = 1000 \frac{0.03}{0.0387} = 775$
+         - Now we can calculate variances from this allocation/design:
+           - $SE(p_native) = \sqrt{\frac{p(1-p)}{225}} = \sqrt{\frac{0.0099}{225}} = 0.000044$
+           - $SE(p_imm) = \sqrt{\frac{p(1-p)}{775}} = sqrt{\frac{.25}{775}} = 0.000322$
+           - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+           - $Var(p) = (\frac{0.0099}{225})(.88^2) + \frac{0.25}{775})(.12^2))$
+           - $SE(p) = 0.00622$
+         - Design effect: $d^2 = \frac{0.00622^2}{0.008^2} = 0.6045$
+         - Translate design effect back into effective overall sample size: $n_effective = \frac{n}{sqrt(d^2)} = 1286$
+     
+       - Considerations
+         - We can sometimes get gains in precision (reductions in uncertainty) by stratification
+         - This means we can obtain the same precision as a smaller SRS or better precision than a same-sized SRS
+         - Depends a bit on what strata we choose and how variable they are
+         - These techniques only really work if we have one focal variable
+           - What might be a good stratification for improving precision for one variable might have no effect or a detrimental effect on precision of other variables
+         - Design effects are variable-specific
+         - These calculations do not factor in time, cost, or feasibility
+           - While it may be good from a survey error perspective to sample more or less from particular strata, the costs of sampling units from different strata may differ
+           - Designing and implementing a stratified sampling plan may be more difficult than an SRS
+     
+  - Assignment for next week
+   - Write about:
+     - What is your research topic/question?
+     - What is your population?
+     - What is your sampling frame? How does it over-cover or under-cover your population?
+     - How do you plan to sample?
+     - How big of a sample do you need?
+   - Process
+     - Optional: Meet with me Tuesday/Wednesday
+     - Email me your assignment (by Saturday night)
+     - Present it in class next week
+ 
+ - Preview of next week: Questionnaire Design I
+   - Deal with cluster sampling
+   - Concept definition
+   - Operationalizing common political science concepts as questions
+     - Opinion questions
+     - Factual questions
+   - In-class
+     - Develop questions for these kinds of constructs and discuss
