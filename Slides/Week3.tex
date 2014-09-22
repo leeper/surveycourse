@@ -2,9 +2,9 @@
 
 \input{preamble}
 
-\title{Who is being surveyed?}
+\title{Sampling Techniques}
 
-\date[]{September 15, 2014}
+\date[]{September 22, 2014}
 
 \begin{document}
 
@@ -19,7 +19,7 @@
 	\frametitle{Assignment for this week}
 	\begin{enumerate}\itemsep1em
 		\item Form groups of 3 (or so)
-		\item Discuss the surveys you identified online
+		\item Discuss the sampling plans for the surveys you identified online
 		\item Select one of those from your group to present to the class
 		\item Think about: coverage, representativeness, sample size
 	\end{enumerate}
@@ -44,6 +44,7 @@
 	\frametitle{Activity!}
 	\begin{itemize}\itemsep2em
 		\item Work in pairs
+		\item Pick one of the two populations
 		\item Develop two sampling frames/sampling strategies for a population
 		\item Share with class and discuss
 	\end{itemize}
@@ -52,11 +53,10 @@
 
 \againframe<4-5>{lastweek}
 
+\frame{\frametitle{Questions about sampling strategies?}}
+
 \section{New Material to Cover}
 \frame{\tableofcontents[currentsection]}
-
-\subsection{Readings}
-\frame{\tableofcontents[currentsubsection]}
 
 \subsection{Total Survey Error}
 \frame{\tableofcontents[currentsubsection]}
@@ -87,6 +87,8 @@
 }
 
 
+\subsection{Readings}
+\frame{\tableofcontents[currentsubsection]}
 
 \frame{
 	\frametitle{Readings for this week}
@@ -99,15 +101,34 @@
 
 
 
+
 \subsection{Online Panels}
 \frame{\tableofcontents[currentsubsection]}
 
 \frame{
-	\frametitle{Advantages and Disadvantages}
-	\begin{itemize}\itemsep2em
+	\frametitle{Online panels/Non-Probability Surveys}
+	\begin{itemize}
+	\item What are the major issues raised in the AAPOR Report?
+	\item<2-> How are online panelists recruited?
+	\item<3-> How good is the coverage for an online panel? How would we evaluate it?
+	\item<4-> How are panelists recruited into studies?
+	\item<5-> Does stratified sampling of panelists solve concerns about representativeness?
+	\item<6-> How do we assess response rates for an online panel?
+	\item<7-> How long should someone be eligible to be in an online panel?
 	\end{itemize}
 }
 
+\frame{
+	\frametitle{Purposive and Quota Sampling}
+	\begin{itemize}\itemsep1em
+	\item What is purposive sampling?
+	\item What is quota sampling?
+	\item What concerns do we have about these methods?
+	\item When are they appropriate?
+	\end{itemize}
+}
+
+\frame{\frametitle{Questions about non-probability sampling?}}
 
 \subsection{Stratified Sampling}
 \frame{\tableofcontents[currentsubsection]}
@@ -122,22 +143,371 @@
 			\end{itemize}
 		\item Disadvantages
 			\begin{itemize}
-				\item Need sampling frame and units without any structure
+				\item Need complete sampling frame
 				\item Possibly expensive
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Stratified Sampling}
+	\begin{itemize}\itemsep2em
+		\item What is it?
+		\item Why do we do?
+		\item<2-> Most useful when subpopulations are:
+		    \begin{enumerate}
+		    \item identifiable in advance
+		    \item differ from one another
+		    \item have low within-stratum variance
+		    \end{enumerate}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Stratified Sampling}
+	\begin{itemize}\itemsep2em
+		\item Advantages
+			\begin{itemize}
+				\item<2-> Avoid certain kinds of sampling errors
+				\item<2-> Representative samples of subpopulations
+				\item<2-> Often, lower variances (greater precision of estimates)
+			\end{itemize}
+		\item<3-> Disadvantages
+			\begin{itemize}
+				\item<4-> Need complete sampling frame
+				\item<4-> Possibly (more) expensive
+				\item<4-> No advantage if strata are similar
+				\item<4-> Analysis is more potentially more complex than SRS
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Outline of Process}
+	\begin{enumerate}\itemsep1em
+		\item Identify our population
+		\item Construct a sampling frame
+		\item Identify variables we already have that are related to our survey variables of interest
+		\item Stratify or subset or sampling frame based on these characteristics
+		\item Collect an SRS (of some size) within each stratum
+		\item Aggregate our results
+	\end{enumerate}
+}
+
+\frame{
+	\frametitle{Estimates from a stratified sample}
+	\begin{itemize}\itemsep2em
+		\item Within-strata estimates are calculated just like an SRS
+		\item Within-strata variances are calculated just like an SRS
+		\vspace{1em}
+		\item Sample-level estimates are weighted averages of stratum-specific estimates
+		\item Sample-level variances are weighted averages of strataum-specific variances
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Design effect}
+	\begin{itemize}\itemsep2em
+        \item What is it?
+		\item<2-> Ratio of variances in a design against a same-sized SRS
+		\item<3-> $d^2 = \frac{Var_{stratified}(y)}{Var_{SRS}(y)}$
+		\item<4-> Possible to convert design effect into an \textit{effective sample size}:
+		\item<4-> $n_{effective} = \frac{n}{d}$
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{How many strata?}
+	\begin{itemize}\itemsep2em
+		\item How many strata can we have in a stratified sampling plan?
+		\item<2-> As many as we want, up to the limits of sample size
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{How do we allocate sample units to strata?}
+	\begin{itemize}\itemsep2em
+		\item Proportional allocation
+		\item Optimal precision
+		\item Allocation based on stratum-specific precision objectives
+	\end{itemize}
+}
+
+
+\frame{\frametitle{Questions about stratified sampling?}}
+
+\subsection{An Extended Example}
+\frame{\tableofcontents[currentsubsection]}
+
+\frame{
+	\frametitle{Example Setup}
+	\begin{itemize}\itemsep2em
+		\item Interested in individual-level rate of crime victimization in Denmark
+		\item We think rates differ among native-born and immigrant populations
+		\item Assume immigrants make up 12\% of population
+		\item Compare uncertainty from different designs ($n=1000$)
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{SRS}
+	\begin{itemize}\itemsep1em
+		\item Assume equal rates across groups ($p=0.10$)
+		\item Overall estimate is just $\frac{Victims}{n}$
+		\item $SE(p) = \sqrt{\frac{p(1-p)}{n-1}}$
+		\item $SE(p) = \sqrt{\frac{0.09}{999}} = 0.0095$
+		\item<2-> SEs for subgroups (native-born and immigrants)?
+		\item<3-> What happens if we don't get any immigrants in our sample?
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Proportionate Allocation I}
+	\begin{itemize}\itemsep0.75em
+		\item Assume equal rates across groups
+		\item Sample 880 native-born and 120 immigrant individuals
+		\item $SE(p) = \sqrt{Var(p)}$, where
+		    \begin{itemize}\itemsep0.75em
+		    \item $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+		    \item $Var(p) = (\frac{0.09}{879})(.88^2) + (\frac{0.09}{119})(.12^2)$
+		    \item $SE(p) = 0.0095$
+		    \end{itemize}
+		\item Design effect: $d^2 = \frac{0.0095^2}{0.0095^2} = 1$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Proportionate Allocation I}
+	\begin{itemize}\itemsep0.75em
+		\item Note that in this design we get different levels of uncertainty for subgroups
+		\item $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{0.09}{879}} = 0.010$
+		\item $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}} = \sqrt{\frac{0.09}{119}} = 0.028$
+	\end{itemize}
+}
+
+
+
+\frame{
+	\frametitle{Proportionate Allocation IIa}
+	\begin{itemize}\itemsep2em
+		\item Assume different rates across groups (immigrants higher risk)
+		\item $p_{native}=0.1$ and $p_{imm}=0.3$ (thus $p_{pop} = 0.124$)
+		\item $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+		\item $Var(p) = (\frac{0.09}{879})(.88^2) + \frac{0.21}{119})(.12^2))$
+		\item $SE(p) = 0.01022$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Proportionate Allocation IIa}
+	\begin{itemize}\itemsep2em
+        \item $SE(p) = 0.01022$
+		\item Compare to SRS:
+		    \begin{itemize}
+		        \item $SE(p) = \sqrt{\frac{0.124(1-0.124)}{n-1}} = 0.0104$
+		    \end{itemize}
+		\item Design effect: $d^2 = \frac{0.01022^2}{0.0104^2} = 0.9657$
+		\item $n_{effective} = \frac{n}{sqrt(d^2)} = 1017$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Proportionate Allocation IIa}
+	\begin{itemize}\itemsep2em
+        \item Subgroup variances are still different
+        \item $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.09}{879}} = 0.010$
+        \item $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.21}{119}} = 0.040$
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Proportionate Allocation IIb}
+	\begin{itemize}\itemsep2em
+		\item Assume different rates across groups (immigrants lower risk)
+		\item $p_{native}=0.3$ and $p_{imm}=0.1$ (thus $p_{pop} = 0.276$)
+		\item $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+		\item $Var(p) = (\frac{0.21}{879})(.88^2) + \frac{0.09}{119})(.12^2))$
+		\item $SE(p) = 0.014$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Proportionate Allocation IIb}
+	\begin{itemize}\itemsep2em
+		\item $SE(p) = 0.014$
+		\item Compare to SRS:
+		    \begin{itemize}
+		        \item $SE(p) = \sqrt{\frac{0.276(1-0.276)}{n-1}} = 0.0141$
+		    \end{itemize}
+		\item Design effect: $d^2 = \frac{0.014^2}{0.0141^2} = 0.9859$
+		\item $n_{effective} = \frac{n}{sqrt(d^2)} = 1007$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Proportionate Allocation IIa}
+	\begin{itemize}\itemsep2em
+        \item Subgroup variances are still different
+        \item $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.21}{879}} = 0.0155$
+        \item $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.09}{119}} = 0.0275$
+	\end{itemize}
+}
+
+
+
+\frame{
+	\frametitle{Proportionate Allocation IIc}
+	\begin{itemize}\itemsep2em
+		\item Look at same design, but a different survey variable (household size)
+		\item Assume: $\bar{y}_{native}=4$ and $\bar{Y}_imm=6$ (thus $\bar{Y}_{pop} = 4.24$)
+		\item Assume: $Var(Y_{native}) = 1$ and $Var(Y_imm) = 3$ and $Var(Y_{pop}) = 4$
+		\item $Var(\bar{y}) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{s_h^2}{n_h}$
+		\item $SE(\bar{y}) = \sqrt{\frac{1^2}{880}(.88^2) + \frac{3^2}{120}(.12^2)} = 0.0443$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Proportionate Allocation IIc}
+	\begin{itemize}\itemsep2em
+		\item $SE(\bar{y}) = 0.0443$
+		\item Compare to SRS:
+		    \begin{itemize}
+		        \item $SE(\bar{y}) = \sqrt{\frac{s^2}{n}} = \sqrt{4/1000} = 0.0632$
+		    \end{itemize}
+		\item Design effect: $d^2 = \frac{0.0443^2}{0.0632^2} = 0.491$
+		\item $n_{effective} = \frac{n}{sqrt(d^2)} = 1427$
+		\item<2-> Why is $d^2$ so much larger here?
+	\end{itemize}
+}
+
+
+
+\frame{
+	\frametitle{Disproportionate Allocation I}
+	\begin{itemize}\itemsep1em
+        \item Previous designs obtained different precision for subgroups
+		\item Design to obtain stratum-specific precision (e.g., $SE(p_h) = 0.02$)
+		\item $n_h = \frac{p(1-p)}{v(p)} = \frac{p(1-p)}{SE^2}$
+		\item $n_{native} = \frac{0.09}{0.02^2} = 225$
+		\item $n_{imm} = \frac{0.21}{0.02^2} = 525$
+		\item $n_{total} = 225 + 525 = 750$
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Disproportionate Allocation II}
+	\begin{itemize}\itemsep2em
+		\item Neyman optimal allocation
+		\item How does this work?
+		    \begin{itemize}
+		        \item Allocate cases to strata based on within-strata variance
+		        \item Only works for one variable at a time
+		        \item Need to know within-strata variance
+		    \end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Disproportionate Allocation II}
+	\begin{itemize}\itemsep1em
+		\item Assume big difference in victimization
+		\item $p_{native}=0.01$ and $p_{imm}=0.50$  (thus $p_{pop} = 0.0688$)
+		\item Allocate according to: $n_h = n \frac{W_h S_h}{\sum_{h=1}^{H} W_h S_h}$
+		\item $\sum_{h=1}^{H} W_h S_h = (0.88 * 0.0099) + (0.12 * 0.25) = 0.0387$
+		\item $n_{native} = 1000 \frac{0.0087}{0.0387} = 225$
+		\item $n_{imm} = 1000 \frac{0.03}{0.0387} = 775$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Disproportionate Allocation II}
+	\begin{itemize}\itemsep2em
+		\item $SE(p_{native}) = \sqrt{\frac{p(1-p)}{225}} = \sqrt{\frac{0.0099}{225}} = 0.00663$
+		\item $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{775}} = \sqrt{\frac{.25}{775}} = 0.01796$
+		\item $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+		\item $Var(p) = (\frac{0.0099}{225})(.88^2) + (\frac{0.25}{775})(.12^2)$
+		\item $SE(p) = 0.00622$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Disproportionate Allocation II}
+	\begin{itemize}\itemsep2em
+		\item $SE(p) = 0.00622$
+		\item Compare to SRS:
+		    \begin{itemize}
+		        \item $SE(p) = \sqrt{\frac{0.0688(1-0.0688)}{n-1}} = 0.008$
+		    \end{itemize}
+        \item Design effect: $d^2 = \frac{0.00622^2}{0.008^2} = 0.6045$
+        \item $n_{effective} = \frac{n}{sqrt(d^2)} = 1286$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Final Considerations}
+	\begin{itemize}\itemsep2em
+		\item Reductions in uncertainty come from creating homogeneous groups
+		\item Estimates of design effects are variable-specific
+		\item Sampling variance calculations do not factor in time, costs, or feasibility
+	\end{itemize}
+}
+
+
+\frame{\frametitle{Questions about stratified sampling?}}
+
+\subsection{Cluster Sampling}
+\frame{\tableofcontents[currentsubsection]}
+
+\frame{
+	\frametitle{Cluster Sampling}
+	\begin{itemize}\itemsep2em
+		\item What is it?
+		\item Why do we do?
+		\item<2-> Most useful when:
+		    \begin{enumerate}
+		    \item Population has a clustered structure
+		    \item Unit-level sampling is expensive or not feasible
+            \item Clusters are similar
+		    \end{enumerate}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Cluster Sampling}
+	\begin{itemize}\itemsep2em
+		\item Advantages
+			\begin{itemize}
+				\item<2-> Cost savings!
+				\item<2-> Capitalize on clustered structure
+			\end{itemize}
+		\item<3-> Disadvantages
+			\begin{itemize}
+				\item<4-> Units tend to cluster for complex reasons (self-selection)
+				\item<4-> Major increase in uncertainty if clusters differ from each other
+				\item<4-> Complex to design (and possibly to administer)
+				\item<4-> Analysis is much more complex than SRS or stratified sample
 			\end{itemize}
 	\end{itemize}
 }
 
 
 \frame{
-	\frametitle{Important considerations}
-	\begin{itemize}\itemsep1em
-		\item 
+	\frametitle{Example: Burnham et al.}
+	\begin{itemize}\itemsep2em
+		\item What is the research question?
+		\item<2-> What are the population and unit of analysis?
+		\item<3-> What is the sampling strategy? Why?
+		\item<4-> What do they find?
 	\end{itemize}
 }
 
-
-
+\frame{\frametitle{Questions about cluster sampling?}}
 
 \section{Preview of Next Week}
 \frame{\tableofcontents[currentsection]}

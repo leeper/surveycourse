@@ -57,6 +57,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
        - SRS? Stratification? Purposive?
      - How good is coverage for an online panel? How would we assess it?
      - Does stratified sampling of an online panel solve concerns about representativeness?
+     - Talk about Yeager et al. RDD versus Online article (from Week 2)
      - Talk about more later: response rates and response biases
        - Even though panel might be representative, respondents might not be
        - This affects all types of data collection
@@ -121,7 +122,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
        - If 1, the design we're talking about has the same variance as an SRS of the same size
        - If larger than 1, our design yields less precise estimates
        - If smaller than 1, our design yields more precise estimates
-       - Convert design effect into effective sample size $n_effective = \frac{n}{d}$
+       - Convert design effect into effective sample size $n_{effective} = \frac{n}{d}$
        - Considerations
          - Design effects are meant to compare same-sized sampling plans
          - Design effects are variable-specific
@@ -138,13 +139,13 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
        - Depends on how many individuals from each group are actually sampled
        - Assume 1000 individuals and perfect sample realization: 880 native Danes and 120 immigrants
          - Overall estimate is just $\frac{Victims}{n}$
-         - SE is $\sqrt{\frac{p(1-p)}{n-1}}$
-         - For native Danes: $\sqrt{\frac{p(1-p)}{879}}$
-         - For immigrants: $\sqrt{\frac{p(1-p)}{119}}$
+         - $SE(p) = \sqrt{\frac{p(1-p)}{n-1}}$
+         - $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}}$
+         - $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}}$
          - Assume $p=0.1$:
            - $SE(p) = \sqrt{\frac{0.09}{999}} = 0.0095$
-           - $SE(p_native) = \sqrt{\frac{0.09}{879}} = 0.010$
-           - $SE(p_imm) = \sqrt{\frac{0.09}{119}} = 0.028$
+           - $SE(p_{native}) = \sqrt{\frac{0.09}{879}} = 0.010$
+           - $SE(p_{imm}) = \sqrt{\frac{0.09}{119}} = 0.028$
          - Much more uncertainty about estimate for immigrants (assuming similar values of $p$)
        - If sample realization was different (and under- or over-sampled immigrants) estimates would contain excess error
        - Sampling variance in simple stratified sample
@@ -154,39 +155,38 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
          - For immigrants: $\sqrt{\frac{p(1-p)}{119}}$
        
        - Proportionate Allocation I (Assume equal estimates/proportions in each strata ($p=0.1$))
-         - SE for native Danes: $\sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{0.09}{879}} = 0.010$
-         - SE for immigrants: $\sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{0.09}{119}} = 0.028$
+         - $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{0.09}{879}} = 0.010$
+         - $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}} = \sqrt{\frac{0.09}{119}} = 0.028$
          - CI for native Danes: $0.10 +/- 0.020 = (0.080,0.120)$
          - CI for immigrants: $0.10 +/- 0.056 = (0.044,0.156)$
-         - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
+         - $SE(p) = \sqrt{Var(p)}$, where
            - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
            - $Var(p) = (\frac{0.09}{879})(.88^2) + \frac{0.09}{119})(.12^2))$
            - $SE(p) = 0.0095$
          - Design effect: $d^2 = \frac{0.0095^2}{0.0095^2} = 1$, effective sample size of 1000
        
-       - Proportionate Allocation II (Assume unequal estimates/proportions in each strata)
-         - Assume: $p_native=0.1$ and $p_imm=0.3$ (thus $p_pop = 0.124$)
+       - Proportionate Allocation IIa (Assume unequal estimates/proportions in each strata)
+         - Assume: $p_{native}=0.1$ and $p_{imm}=0.3$ (thus $p_{pop} = 0.124$)
        - SRS: 
            - $SE(p) = \sqrt{\frac{0.124(1-0.124)}{n-1}} = 0.0104$
-           - $SE(p_native) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.09}{879}} = 0.010$
-           - $SE(p_imm) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.21}{119}} = 0.040$
+           - $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.09}{879}} = 0.010$
+           - $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.21}{119}} = 0.040$
              - CI for native Danes: $0.10 +/- 0.020 = (0.08,0.12)$
              - CI for immigrants: $0.30 +/- 0.080 = (0.12,0.28)$
          - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
            - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
            - $Var(p) = (\frac{0.09}{879})(.88^2) + \frac{0.21}{119})(.12^2))$
            - $SE(p) = 0.01022$
-           - Here we are just a very small amount more uncertain about $p$ than when proportions for natives and immigrants were equal because we have a small number of observations in the more variable strata (immigrants)
-           - In most cases, stratification is no worse than SRS
-         - Design effect: $d^2 = \frac{0.01022^2}{0.0095^2} = 1.157$
-         - Effective sample size: $n_effective = \frac{n}{sqrt(d^2)} = 932$
+           - In most cases, stratification is no worse than SRS and slightly better
+         - Design effect: $d^2 = \frac{0.01022^2}{0.0104^2} = 0.9657$
+         - Effective sample size: $n_{effective} = \frac{n}{sqrt(d^2)} = 1017$
          
-       - Proportionate Allocation III (switch the proportions and variances)
-         - Assume: $p_native=0.3$ and $p_imm=0.1$ (thus $p_pop = 0.276$)
-       - SRS: 
+       - Proportionate Allocation IIb (switch the proportions and variances)
+         - Assume: $p_{native}=0.3$ and $p_{imm}=0.1$ (thus $p_{pop} = 0.276$)
+         - SRS: 
            - $SE(p) = \sqrt{\frac{0.276(1-0.276)}{n-1}} = 0.0141$
-           - $SE(p_native) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.21}{879}} = 0.0155$
-           - $SE(p_imm) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.09}{119}} = 0.0275$
+           - $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.21}{879}} = 0.0155$
+           - $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.09}{119}} = 0.0275$
              - CI for native Danes: $0.30 +/- 0.031 = (0.269,0.331)$
              - CI for immigrants: $0.10 +/- 0.055 = (0.045,0.155)$
          - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
@@ -195,27 +195,40 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
            - $SE(p) = 0.014$
            - Here we are just a very small amount more uncertain about $p$ than when proportions for natives and immigrants were equal because we have a small number of observations in the more variable strata (immigrants)
            - In most cases, stratification is no worse than SRS
-         - Design effect: $d^2 = \frac{0.014^2}{0.0095^2} = 2.172$
-         - Effective sample size: $n_effective = \frac{n}{sqrt(d^2)} = 679$
+         - Design effect: $d^2 = \frac{0.014^2}{0.0141^2} = 0.9859$
+         - Effective sample size: $n_{effective} = \frac{n}{sqrt(d^2)} = 1007$
+         
+       - Proportionate Allocation IIc (different variable)
+         - Look at a continuous variable (household size)
+         - Assume: $\bar{y}_native=4$ and $\bar{Y}_imm=6$ (thus $\bar{Y}_pop = 4.24$)
+         - Assume: $Var(Y_native) = 1$ and $Var(Y_imm) = 3$ (thus $\Var(Y_pop) = 4$)
+         - SRS:
+           - $SE(\bar{y}) = \sqrt{\frac{s^2}{n}} = \sqrt{4/1000} = 0.0632$
+         - Stratified sample
+           - $Var(\bar{y}) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{s_h^2}{n_h}$
+           - $SE(\bar{y}) = \sqrt{\frac{1^2}{880}(.88^2) + \frac{3^2}{120}(.12^2)} = 0.0443$
+         - Design effect:
+           - $d^2 = \frac{0.0443^2}{0.0632^2} = 0.491$
+           - Effective sample size: $n_{effective} = \frac{n}{sqrt(d^2)} = 1427$
        
        - Disproportionate allocation I (pre-specified stratum-specific precision)
          - Sampling variance for each strata in allocation based on specified precision
-         - Above we had $SE(p_native) = 0.01$ and $SE(p_imm) = 0.04$
+         - Above we had $SE(p_{native}) = 0.01$ and $SE(p_{imm}) = 0.04$
          - Let's say we want $SE(p_h) = 0.02$
          - Necessary sample size:
            - $n_h = \frac{p(1-p)}{v(p)} = \frac{p(1-p)}{SE^2}$
-           - $n_native = \frac{0.09}{0.02^2} = 225$
-           - $n_imm = \frac{0.21}{0.02^2} = 525$
+           - $n_{native} = \frac{0.09}{0.02^2} = 225$
+           - $n_{imm} = \frac{0.21}{0.02^2} = 525$
            - $n_total = 225 + 525 = 750$
          - Design effect
            - $SE_SRS(p) = \sqrt{\frac{0.124(1-0.124)}{750-1}} = 0.012$
            - $d^2 = \frac{0.02^2}{0.012^2} = 2.\bar{7}$
-           - $n_effective = \frac{n}{sqrt(d^2)} = 450$
+           - $n_{effective} = \frac{n}{sqrt(d^2)} = 450$
          - Assuming equal proportions ($p = 0.124$) in each stratum, then equal sample sizes for each stratum
            - $n = 2 * \frac{0.124}{0.02^2} = 2 * 310 = 620$
            - $SE_SRS(p) = \sqrt{\frac{0.124(1-0.124)}{620-1}} = 0.013$
            - $d^2 = \frac{0.02^2}{0.013^2} = 2.367$
-           - $n_effective = \frac{n}{sqrt(d^2)} = 403$
+           - $n_{effective} = \frac{n}{sqrt(d^2)} = 403$
          
        - Disproportionate allocation II (Neyman allocation)
          - Number of cases from each strata should be based on within-strata variance
@@ -223,22 +236,22 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
            - This doesn't work well for proportions (because variances of proportions are constrained)
            - Also, this only works for one variable at a time
              - A survey meant to measure multiple things may not be able to apply this method vary well
-         - To highlight assume $p_native=0.01$ and $p_imm=0.50$  (thus $p_pop = 0.0688$)
+         - To highlight assume $p_{native}=0.01$ and $p_{imm}=0.50$  (thus $p_{pop} = 0.0688$)
          - SRS: 
            - $SE(p) = \sqrt{\frac{0.0688(1-0.0688)}{n-1}} = 0.008$
          - Determine strata allocation
            - $n_h = n \frac{W_h S_h}{\sum{h=1}{H}W_h S_h}$
            - $\sum{h=1}{H}W_h S_h} = (0.88 * 0.0099) + (0.12 * 0.25) = 0.0087 + 0.03 = 0.0387$
-           - $n_native = 1000 \frac{0.0087}{0.0387} = 225$
-           - $n_imm = 1000 \frac{0.03}{0.0387} = 775$
+           - $n_{native} = 1000 \frac{0.0087}{0.0387} = 225$
+           - $n_[imm} = 1000 \frac{0.03}{0.0387} = 775$
          - Now we can calculate variances from this allocation/design:
-           - $SE(p_native) = \sqrt{\frac{p(1-p)}{225}} = \sqrt{\frac{0.0099}{225}} = 0.000044$
-           - $SE(p_imm) = \sqrt{\frac{p(1-p)}{775}} = sqrt{\frac{.25}{775}} = 0.000322$
+           - $SE(p_{native}) = \sqrt{\frac{p(1-p)}{225}} = \sqrt{\frac{0.0099}{225}} = 0.00663$
+           - $SE(p_{imm}) = \sqrt{\frac{p(1-p)}{775}} = sqrt{\frac{.25}{775}} = 0.01796$
            - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
            - $Var(p) = (\frac{0.0099}{225})(.88^2) + \frac{0.25}{775})(.12^2))$
            - $SE(p) = 0.00622$
          - Design effect: $d^2 = \frac{0.00622^2}{0.008^2} = 0.6045$
-         - Translate design effect back into effective overall sample size: $n_effective = \frac{n}{sqrt(d^2)} = 1286$
+         - Translate design effect back into effective overall sample size: $n_{effective} = \frac{n}{sqrt(d^2)} = 1286$
      
        - Considerations
          - We can sometimes get gains in precision (reductions in uncertainty) by stratification
