@@ -18,21 +18,8 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
    - Activity II
      - Sampling frame activity from last week
    - What is the process of determining the necessary sample size for a study (assuming SRS)?
- - Readings for this week
-   - Walker and Enticott
-     - What's the unit of analysis? What's the population?
-       - Because unit of analysis is organization; they build a pseudo-panel using potential different designated reporters
-     - What's the sampling frame? How well is the population covered by this frame?
-     - How are individual respondents sampled?
-   - Reinisch et al.
-     - Is the point of this to understand prevalence, changes, or causal effects?
-     - How does the survey come into this?
-     - What is the unit of analysis? What is the population?
-     - What is the sampling plan? How well is the population covered by the sampling frame?
-     - Is this a survey or a census?
-     - Why matching/stratification?
-
  - New Material
+
    - Total Survey Error
      - We have focused on coverage error: the extent to which our sampling frame matches our population
      - Now we also start thinking about sampling error: error due to not taking a census of our enumerated sampling frame units
@@ -44,6 +31,20 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
        - Cluster sampling
      - A minimal amount of sampling error is unavoidable, but design decisions influence the amount of sampling error
      - Last week with SRS, we saw what baseline sampling error looks like in terms of our uncertainty about an inference
+
+   - Readings for this week
+     - Walker and Enticott
+       - What's the unit of analysis? What's the population?
+         - Because unit of analysis is organization; they build a pseudo-panel using potential different designated reporters
+       - What's the sampling frame? How well is the population covered by this frame?
+       - How are individual respondents sampled?
+     - Reinisch et al.
+       - Is the point of this to understand prevalence, changes, or causal effects?
+       - How does the survey come into this?
+       - What is the unit of analysis? What is the population?
+       - What is the sampling plan? How well is the population covered by the sampling frame?
+       - Is this a survey or a census?
+       - Why matching/stratification?
 
    - Probably versus non-probability samples (esp. online panels)
      - What are the major issues raised here?
@@ -169,8 +170,8 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
            - $SE(p) = \sqrt{\frac{0.124(1-0.124)}{n-1}} = 0.0104$
            - $SE(p_native) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.09}{879}} = 0.010$
            - $SE(p_imm) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.21}{119}} = 0.040$
-           - CI for native Danes: $0.10 +/- 0.020 = (0.08,0.12)$
-             - CI for immigrants: $0.20 +/- 0.080 = (0.12,0.28)$
+             - CI for native Danes: $0.10 +/- 0.020 = (0.08,0.12)$
+             - CI for immigrants: $0.30 +/- 0.080 = (0.12,0.28)$
          - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
            - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
            - $Var(p) = (\frac{0.09}{879})(.88^2) + \frac{0.21}{119})(.12^2))$
@@ -179,6 +180,23 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
            - In most cases, stratification is no worse than SRS
          - Design effect: $d^2 = \frac{0.01022^2}{0.0095^2} = 1.157$
          - Effective sample size: $n_effective = \frac{n}{sqrt(d^2)} = 932$
+         
+       - Proportionate Allocation III (switch the proportions and variances)
+         - Assume: $p_native=0.3$ and $p_imm=0.1$ (thus $p_pop = 0.276$)
+       - SRS: 
+           - $SE(p) = \sqrt{\frac{0.276(1-0.276)}{n-1}} = 0.0141$
+           - $SE(p_native) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.21}{879}} = 0.0155$
+           - $SE(p_imm) = \sqrt{\frac{p(1-p)}{119}} = sqrt{\frac{.09}{119}} = 0.0275$
+             - CI for native Danes: $0.30 +/- 0.031 = (0.269,0.331)$
+             - CI for immigrants: $0.10 +/- 0.055 = (0.045,0.155)$
+         - SE for whole-sample estimate is $\sqrt{Var(p)}$, where
+           - $Var(p) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{p_h(1-p_h)}{n_h - 1}$
+           - $Var(p) = (\frac{0.21}{879})(.88^2) + \frac{0.09}{119})(.12^2))$
+           - $SE(p) = 0.014$
+           - Here we are just a very small amount more uncertain about $p$ than when proportions for natives and immigrants were equal because we have a small number of observations in the more variable strata (immigrants)
+           - In most cases, stratification is no worse than SRS
+         - Design effect: $d^2 = \frac{0.014^2}{0.0095^2} = 2.172$
+         - Effective sample size: $n_effective = \frac{n}{sqrt(d^2)} = 679$
        
        - Disproportionate allocation I (pre-specified stratum-specific precision)
          - Sampling variance for each strata in allocation based on specified precision
