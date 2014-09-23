@@ -8,7 +8,9 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
 
 ## Outline ##
 
-  - Review last week
+  - Continue stratified sampling from last week
+
+  - 
 
   - Cluster sampling (equal cluster sizes)
      - Why do we cluster sample?
@@ -50,7 +52,12 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
          - Unequal probabilities of selection if a fixed "second-stage" fraction is used (thus raw sample is not representative)
          - If variance in cluster size is large, a fixed "second-stage" sampling fraction can produce vastly different sample sizes (and associated costs and variances)
        - 
-  - Activity I
+  - Activity I: Cluster sampling
+
+  - Combining stratified and cluster sampling
+    - Example: Population of Denmark, stratified by region, and clustered samples w/in region
+  
+  - Activity II
     - Small-group discussion of assignment
     - Give advice to your classmate on their sampling plan
     - Questions from this?
