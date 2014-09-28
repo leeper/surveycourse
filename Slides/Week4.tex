@@ -12,7 +12,7 @@
 
 \frame{\tableofcontents}
 
-\section{Stratified Sampling: An Example}
+\section{Stratified Sampling}
 \frame{\tableofcontents[currentsection]}
 
 \frame{
@@ -234,8 +234,8 @@
 
 \frame{\frametitle{Questions about stratified sampling?}}
 
-\subsection{Cluster Sampling}
-\frame{\tableofcontents[currentsubsection]}
+\section{Cluster Sampling}
+\frame{\tableofcontents[currentsection]}
 
 \frame{
 	\frametitle{Cluster Sampling}
@@ -271,6 +271,52 @@
 
 
 \frame{
+	\frametitle{Cluster Sampling}
+	\begin{itemize}\itemsep2em
+		\item Number of stages
+			\begin{itemize}
+				\item One-stage sampling
+				\item Two- or more-stage sampling
+			\end{itemize}
+		\item Number of clusters
+		\item Sample size w/in clusters
+		\item Everything depends on variability of clusters
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Sampling Variance for Cluster Sampling}
+	\begin{itemize}\itemsep2em
+		\item Sampling variance depends on \textit{between}-cluster variation:\\
+		$Var(\bar{y}) = (\frac{1-f}{a})(\frac{1}{a-1})(\sum_{\alpha=1}^{a}(\bar{y}_{\alpha} - \bar{y})^2)$
+		\item When \textit{between}-cluster variance is high, \textit{within}-cluster variance is likely to be low
+			\begin{itemize}
+				\item ``Cluster homogeneity''
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Design Effect for Cluster Sampling}
+	\begin{itemize}\itemsep2em
+		\item Cluster samples almost always less \textit{statistically} efficient than SRS
+		\item Design Effect depends on cluster homogeneity:
+		\begin{itemize}\itemsep1em
+			\item $d^2 = \frac{Var_{clustered}(y)}{Var_{SRS}(y)}$
+			\item $d^2 = 1 + (n_{cluster}-1)roh$
+		\end{itemize}
+		\item \textit{roh} (\textit{intraclass correlation coefficient}):
+		\begin{itemize}
+			\item Proportion of unit-level variance that is between-clusters
+			\item Generally positive and small (about 0.00 to 0.10)
+		\end{itemize}
+	\end{itemize}
+}
+
+\frame{\frametitle{Questions about cluster sampling?}}
+
+\frame{
 	\frametitle{Example: Burnham et al.}
 	\begin{itemize}\itemsep2em
 		\item What is the research question?
@@ -280,20 +326,15 @@
 	\end{itemize}
 }
 
-\frame{\frametitle{Questions about cluster sampling?}}
-
-\section{Complex Survey Designs}
-\frame{\tableofcontents[currentsection]}
-
 \frame{
 	\frametitle{Complex Survey Designs}
 	\begin{itemize}\itemsep2em
 		\item Often stratification and clustering are used together
-		\item The choice of design must:
-			\begin{itemize}
-				\item Be worth increased cost
-				\item Improve efficiency
-			\end{itemize}
+		\item The choice of design must do at least one of:\\
+		\begin{itemize}
+			\item Improve statistical efficiency
+			\item Improve ease/cost of implementation
+		\end{itemize}
 		\item Design effects
 		\item Weights
 	\end{itemize}
@@ -304,7 +345,223 @@
 \section{Questionnaire Design}
 \frame{\tableofcontents[currentsection]}
 
+\frame{
+	\frametitle{Concept definition and Operationalization}
+	\begin{itemize}\itemsep2em
+		\item Questionnaires start with concept definition
+		\item Multiple ways to operationalize any concept
+		\item Important concepts may require multiple measures
+	\end{itemize}
+}
 
+\frame{
+	\frametitle{Topics of questions}
+	\begin{itemize}\itemsep2em
+		\item Evaluations (opinions, attitudes, etc.)
+		\item Recall (behavior, events, knowledge, etc.)
+		\item Demographics (age, sex, ethnicity, etc.)
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Structure of a question}
+	\begin{itemize}\itemsep1em
+		\item Survey context
+		\item Survey mode
+		\item Vignette or introductory text
+		\item Question itself
+		\item Response format and options
+		\item Follow-ups, branches, checks, validation, clarification
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Evaluative questions}
+	\begin{itemize}\itemsep2em
+		\item Name an object of evaluation
+		\item Possibly describe that object
+		\item Ask for an transformation of the evaluation onto a set of responses
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Response options for evaluative questions}
+	\begin{itemize}\itemsep1em
+		\item Ratings
+			\begin{itemize}
+				\item Bipolar
+				\item Branching
+				\item Unipolar
+			\end{itemize}
+		\item Scales/Thermometers
+		\item Agree-disagree
+		\item Forced choices
+		\item Open-ended
+		\item Rankings (note: need alternatives to rank against)
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Extended Example}
+	\begin{itemize}\itemsep2em
+		\item Public opinion survey in Denmark
+		\item Construct: Opinion toward Danish involvement in air strikes on Islamic State militants in Iraq and Syria
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Rating (bipolar)}
+	Do you support or oppose Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+	\begin{itemize}
+		\item Strongly support
+		\item Somewhat support
+		\item Neither support nor oppose
+		\item Somewhat oppose
+		\item Strongly oppose
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Rating (branching)}
+	Do you support or oppose Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+	\begin{itemize}
+		\item Support
+		\item Neither support nor oppose
+		\item Oppose
+	\end{itemize}
+	\vspace{1em}
+	Would you say that you strongly [support|oppose] or somewhat [support|oppose] Denmark's participation?
+	\begin{itemize}
+		\item Strongly
+		\item Somewhat
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Rating (bipolar)}
+	Are you favorable or unfavorable toward Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+	\begin{itemize}
+		\item Very favorable
+		\item Somewhat favorable
+		\item Neither favorable nor unfavorable
+		\item Somewhat unfavorable
+		\item Strongly unfavorable
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Rating (unipolar)}
+	To what extent do you support Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+	\begin{itemize}
+		\item Strongly
+		\item Moderately
+		\item Somewhat
+		\item Not at all
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Rating (unipolar)}
+	How favorable are you toward Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+	\begin{itemize}
+		\item Extremely favorable
+		\item Very favorable
+		\item Moderately favorable
+		\item Somewhat favorable
+		\item Not at all favorable
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Numbered Scale}
+	On a scale from 1 to 5, with 1 being ``strongly oppose'' and 5 being ``strongly support,'' to what extent do you support Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+	\begin{enumerate}
+		\item Strongly oppose
+		\item 
+		\item 
+		\item 
+		\item Strongly support
+	\end{enumerate}
+}
+
+\frame{
+	\frametitle{Example: Thermometer}
+	We would like to get your feelings toward some of political policies. Please rate your support for the policy using something we call the feeling thermometer. Ratings between 50 degrees and 100 degrees mean that you feel favorable and warm toward the policy. Ratings between 0 degrees 
+	and 50 degrees mean that you don't feel favorable toward the 
+	policy. You would rate the policy at the 50 degree mark if you don't feel 
+	particularly favorable or unfavorable toward. 
+	
+	Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria.
+	\begin{itemize}
+		\item 0--100 slider
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Example: Agree/Disagree (bipolar)}
+	To what extent do you agree with the following statement: I support Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria.
+	\begin{itemize}
+		\item Strongly agree
+		\item Somewhat agree
+		\item Neither agree nor disagree
+		\item Somewhat disagree
+		\item Strongly disagree
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Agree/Disagree (unipolar)}
+	To what extent do you agree with the following statement: I support Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria.
+	\begin{itemize}
+		\item Agree completely
+		\item Agree to a large extent
+		\item Agree to a moderate extent
+		\item Agree a little bit
+		\item Agree not at all
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Forced choice}
+	When thinking about Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria, which of the following comes closer to your opinion:
+	\begin{itemize}
+		\item Denmark should participate in air strikes
+		\item Denmark should not participate in air strikes
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Example: Open-ended}
+	In your own words, how would you describe your opinion on Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria?
+}
+
+
+\frame{
+	\frametitle{Additional Considerations}
+	\begin{itemize}\itemsep1em
+		\item How many response categories?
+		\item Middle category (presence and label)
+		\item ``no opinion'' and/or ``don't know'' options
+		\item Probe if ``no opinion'' or ``don't know''?
+		\item Branching format?
+		\item Order of response categories
+		\item Changes based on survey mode
+	\end{itemize}
+}
+
+
+\frame{\frametitle{Questions about writing evaluative questions?}}
+
+
+\frame{
+	\frametitle{Activity!}
+	\begin{itemize}\itemsep2em
+		\item Generate questions in pairs
+		\item Discuss with the class
+	\end{itemize}
+}
 
 
 
