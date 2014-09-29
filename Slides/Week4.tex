@@ -16,6 +16,55 @@
 \frame{\tableofcontents[currentsection]}
 
 \frame{
+	\frametitle{Review: Stratified Sampling}
+	\begin{itemize}\itemsep2em
+		\item What is it?
+		\item Why do we do it?
+		\item Most useful when subpopulations are:
+		    \begin{enumerate}
+		    \item identifiable in advance
+		    \item differ from one another
+		    \item have low within-stratum variance
+		    \end{enumerate}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Review: Outline of Process}
+	\begin{enumerate}\itemsep1em
+		\item Identify our population
+		\item Construct a sampling frame
+		\item Identify variables we already have that are related to our survey variables of interest
+		\item Stratify or subset or sampling frame based on these characteristics
+		\item Collect an SRS (of some size) within each stratum
+		\item Aggregate our results
+	\end{enumerate}
+}
+
+\frame{
+	\frametitle{Review: Estimates from a stratified sample}
+	\begin{itemize}\itemsep2em
+		\item Within-strata estimates are calculated just like an SRS
+		\item Within-strata variances are calculated just like an SRS
+		\vspace{1em}
+		\item Sample-level estimates are weighted averages of stratum-specific estimates
+		\item Sample-level variances are weighted averages of strataum-specific variances
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Review: Design effect}
+	\begin{itemize}\itemsep2em
+		\item Ratio of variances in a design against a same-sized SRS
+		\item $d^2 = \frac{Var_{stratified}(y)}{Var_{SRS}(y)}$
+		\item Possible to convert design effect into an \textit{effective sample size}:
+		\item $n_{effective} = \frac{n}{d}$
+	\end{itemize}
+}
+
+
+\frame{
 	\frametitle{Example Setup}
 	\begin{itemize}\itemsep2em
 		\item Interested in individual-level rate of crime victimization in Denmark
@@ -123,7 +172,7 @@
 }
 
 \frame{
-	\frametitle{Proportionate Allocation IIa}
+	\frametitle{Proportionate Allocation IIb}
 	\begin{itemize}\itemsep2em
 		\item Subgroup variances are still different
 		\item $SE(p_{native}) = \sqrt{\frac{p(1-p)}{879}} = \sqrt{\frac{.21}{879}} = 0.0155$
@@ -137,8 +186,8 @@
 	\frametitle{Proportionate Allocation IIc}
 	\begin{itemize}\itemsep2em
 		\item Look at same design, but a different survey variable (household size)
-		\item Assume: $\bar{y}_{native}=4$ and $\bar{Y}_imm=6$ (thus $\bar{Y}_{pop} = 4.24$)
-		\item Assume: $Var(Y_{native}) = 1$ and $Var(Y_imm) = 3$ and $Var(Y_{pop}) = 4$
+		\item Assume: $\bar{y}_{native}=4$ and $\bar{Y}_{imm}=6$ (thus $\bar{Y}_{pop} = 4.24$)
+		\item Assume: $Var(Y_{native}) = 1$ and $Var(Y_{imm}) = 3$ and $Var(Y_{pop}) = 4$
 		\item $Var(\bar{y}) = \sum_{h=1}^{H}(\frac{N_h}{N})^2 \frac{s_h^2}{n_h}$
 		\item $SE(\bar{y}) = \sqrt{\frac{1^2}{880}(.88^2) + \frac{3^2}{120}(.12^2)} = 0.0443$
 	\end{itemize}
@@ -359,15 +408,17 @@
 	\begin{itemize}\itemsep2em
 		\item Evaluations (opinions, attitudes, etc.)
 		\item Recall (behavior, events, knowledge, etc.)
-		\item Demographics (age, sex, ethnicity, etc.)
+		\begin{itemize}
+		    \item Demographics (age, sex, ethnicity, etc.)
+		\end{itemize}
 	\end{itemize}
 }
 
 \frame{
 	\frametitle{Structure of a question}
 	\begin{itemize}\itemsep1em
-		\item Survey context
 		\item Survey mode
+		\item Survey context
 		\item Vignette or introductory text
 		\item Question itself
 		\item Response format and options
@@ -381,7 +432,12 @@
 	\begin{itemize}\itemsep2em
 		\item Name an object of evaluation
 		\item Possibly describe that object
-		\item Ask for an transformation of the evaluation onto a set of responses
+		\item Ask for a transformation of the evaluation onto a set of responses
+		\item Individuals differ in how they form opinions
+		    \begin{itemize}
+		        \item Memory-based processing
+		        \item Online processing
+		    \end{itemize}
 	\end{itemize}
 }
 
@@ -487,11 +543,9 @@
 
 \frame{
 	\frametitle{Example: Thermometer}
-	We would like to get your feelings toward some of political policies. Please rate your support for the policy using something we call the feeling thermometer. Ratings between 50 degrees and 100 degrees mean that you feel favorable and warm toward the policy. Ratings between 0 degrees 
-	and 50 degrees mean that you don't feel favorable toward the 
-	policy. You would rate the policy at the 50 degree mark if you don't feel 
-	particularly favorable or unfavorable toward. 
+	We would like to get your feelings toward some of political policies. Please rate your support for the policy using something we call the feeling thermometer. Ratings between 50 degrees and 100 degrees mean that you feel favorable and warm toward the policy. Ratings between 0 degrees and 50 degrees mean that you don't feel favorable toward the policy. You would rate the policy at the 50 degree mark if you don't feel particularly favorable or unfavorable toward.
 	
+	\vspace{1em}
 	Denmark's participation in U.S.-led air strikes on Islamic State (IS) in Iraq and Syria.
 	\begin{itemize}
 		\item 0--100 slider
@@ -545,6 +599,10 @@
 		\item Middle category (presence and label)
 		\item ``no opinion'' and/or ``don't know'' options
 		\item Probe if ``no opinion'' or ``don't know''?
+		    \begin{itemize}
+                \item Encourage guessing?
+    		    \item Clarify/describe object of evaluation?
+		    \end{itemize}
 		\item Branching format?
 		\item Order of response categories
 		\item Changes based on survey mode
