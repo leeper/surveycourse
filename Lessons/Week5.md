@@ -10,11 +10,18 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
 
   - Validity
     - Construct validity
+      - How do we know if answers are "true"?
+      - Reliability
+      - Predictive validity
+      - Face validity
+      
     - Validation studies
       - We can validate some kinds of behaviors
       - Registry-based validation
       - Vote validation (U.S.)
       - Media behavior studies
+    - Designated reporter on behalf of whole unit
+      - Common in household and organizational studies
     - Paradata and collecting supplemental data
   
   - Recall questions
@@ -22,7 +29,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
     - Behavior
     - DK probes?
   
-  - Factors affecting memory
+  - Factors affecting recall-type questions
     - Question misunderstanding
       - "Excessive complexity" (Groves et al.)
       - Vague concepts
@@ -43,37 +50,52 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
     - In recall questions
     - In evaluative questions
   
-  - Group brainstorm: Types of sensitive questions
-    - Moral activities (e.g., sex, health topics, etc.)
-    - Illegal activity (e.g., drugs, crimes, etc.)
-    - Attitudes toward particular groups
-    - Personal relationships
-    - Money (e.g., income or spending)
-    - Religion
-    - 
-    
-  
   - Sensitive questions
     - In recall questions
     - In evaluative questions
+    - Group brainstorm: Sensitive Topics
+      - Moral activities (e.g., sex, health topics, etc.)
+      - Illegal activity (e.g., drugs, crimes, etc.)
+      - Attitudes toward particular groups
+      - Personal relationships
+      - Money (e.g., income or spending)
+      - Religion
+    - Sensitivity might also be influenced by other things
+      - Race/gender/etc. of interviewer
+      - Survey mode
+      - Broader context or survey context
+      - Concerns about respondent privacy
+  
   - Activity: Sensitive questions from the respondent perspective
     - Pair activity
       - Read questions to one another, record your reactions to the question
     - Individual activity
       - Complete a sensitive questionnaire and record your reactions
   
-  - Addressing sensitivity with question context
+  - Discussion
+    - What reactions did you have to sensitive questions?
+    - Is it okay to ask sensitive questions? Is it ethical?
+    - Do we need to forewarn people that a study might be sensitive?
+    - 
   
-  - Addressing sensitivity with question wording
-    - Activity: Item Count Technique or List Experiment
-      - Practice writing a list experiment
-      - Brainstorm other ideas that we could use to solicit sensitive responses
+  - What consequences do sensitive questions have?
+    - Item nonresponse
+    - Unit nonresponse
+    - Dropoff
+    - Misreporting
+    - Suspicion
+    - Others?
   
-  - Addressing recall and sensitivity with modes
-    - Modes might be hugely influential
-    - Tourangeau and Smith give us a glimpse of this
-    - We'll talk more about mode next week
-  
+  - Addressing sensitivity
+    - How do we address sensitivity with question context?
+    - Brainstorm principles for how to write/word sensitive questions
+    - Addressing sensitivity with question wording
+      - Activity: Item Count Technique or List Experiment
+        - Practice writing a list experiment
+    - Addressing recall and sensitivity with modes
+      - Modes might be hugely influential
+      - Tourangeau and Smith give us a glimpse of this
+      - We'll talk more about mode next week
   
   - Preview of next week (two weeks from now)
     - No class during Kartofflerferie
@@ -82,4 +104,6 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
       - Budget
       - Comparison of modes for recruitment and response
     - Assignment
-      - Outline of your complete questionnaire
+      - For this week: Start to have an idea of core constructs
+      - For next week: Outline of your complete questionnaire
+      - Discuss in groups with the remaining time
