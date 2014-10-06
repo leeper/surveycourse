@@ -8,12 +8,16 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
 
 ## Outline ##
 
+  - Anything to discuss from last time?
+
   - Validity
     - Construct validity
       - How do we know if answers are "true"?
-      - Reliability
-      - Predictive validity
       - Face validity
+      - Multi-item reliability
+      - Over-time reliability
+      - Predictive validity
+      - Match survey marginals to prior or population estimates
       
     - Validation studies
       - We can validate some kinds of behaviors
@@ -27,7 +31,16 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
   - Recall questions
     - Knowledge
     - Behavior
-    - DK probes?
+    - Events
+    
+    
+  - DK probes?
+  
+  - Ways of measuring behaviors
+    - Providing counts of behaviors
+    - Providing rates of behaviors
+    - Listing specific behavioral events
+      - Follow-ups about specific events
   
   - Factors affecting recall-type questions
     - Question misunderstanding
@@ -41,14 +54,15 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
       - "Telescoping" (Burton and Blair): misattributing events to particular periods
     - Reporting on behalf of others
   
-  - Ways of measuring behaviors
-    - Listing specific events
-    - Providing counts of events
-    - Follow-ups about specific events    
-  
-  - Social desirability
-    - In recall questions
-    - In evaluative questions
+  - Motivated misreporting
+    - Examples
+      - Voting more than you actually do
+      - Reporting less TV use and more exercise than reality
+      - Supporting something you oppose
+      - Expressing a neutral rather than negative attitude
+    - Social desirability
+      - In recall questions
+      - In evaluative questions
   
   - Sensitive questions
     - In recall questions
@@ -65,8 +79,18 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
       - Survey mode
       - Broader context or survey context
       - Concerns about respondent privacy
-  
+    - What consequences do sensitive questions have?
+      - Item nonresponse
+      - Unit nonresponse
+      - Dropoff
+      - Misreporting
+      - Suspicion
+      - Others?
+   
   - Activity: Sensitive questions from the respondent perspective
+    - Example with a volunteer:
+      - Have you ever in your life had a period of time lasting several days or longer when most of the day you felt sad, empty or depressed?
+      - Would you say you are for or against allowing child pornography because it's a from of free speech?
     - Pair activity
       - Read questions to one another, record your reactions to the question
     - Individual activity
@@ -76,15 +100,6 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
     - What reactions did you have to sensitive questions?
     - Is it okay to ask sensitive questions? Is it ethical?
     - Do we need to forewarn people that a study might be sensitive?
-    - 
-  
-  - What consequences do sensitive questions have?
-    - Item nonresponse
-    - Unit nonresponse
-    - Dropoff
-    - Misreporting
-    - Suspicion
-    - Others?
   
   - Addressing sensitivity
     - How do we address sensitivity with question context?
