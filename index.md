@@ -42,6 +42,7 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
  - Week 3: [Slides](Slides/Week3.pdf)
  - Week 4: [Slides](Slides/Week4.pdf), [Activity](Activities/Week4.pdf)
  - Week 5: [Slides](Slides/Week5.pdf), Activity [(Version A)](Activities/Week5a.pdf) [(Version B)](Activities/Week5b.pdf)
+ - Week 6: [Slides](Slides/Week6.pdf), [Activity](Activities/Week6.pdf)
 
 ---
 ### Exam, assignments, and one-on-one meetings ###
