@@ -121,6 +121,7 @@
             	\item Questionnaire development
             	\item Interviewer training
             	\item Data cleaning and analysis
+            	\item Lottery-style respondent incentives
         	\end{itemize}
 	\end{itemize}
 }
@@ -139,7 +140,7 @@
             	\item Postage
             	\item Materials (e.g., questionnaires)
             	\item Travel time
-            	\item Respondent incentives
+            	\item Per-response respondent incentives
         	\end{itemize}
 	\end{itemize}
 }
@@ -162,6 +163,114 @@
 
 
 \frame{
+    \frametitle{An Example}
+    \begin{itemize}\itemsep1em
+        \item Telephone survey ($n=1000$)
+        \item Simple SRS telephone number sampling frame
+        \item Interview takes 15 minutes
+        \item Ten respondents paid 200kr (lottery)
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Fixed costs}
+    \begin{itemize}\itemsep1em
+        \item<2-> Buying sampling frame: 0kr
+        \item<2-> Sampling plan: 0kr
+        \item<2-> Staff salaries (200kr/hour): 200 * 150 hours = 30.000kr
+        \item<2-> Interviewer training:
+            \begin{itemize}
+            \item<2-> Trainer (8 hours): 1.400kr
+            \item<2-> Interviewers (5 IWRs x 2 hours): 2.000kr
+            \end{itemize}
+        \item Lottery (10 x 200kr): 2.000kr
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Variable (per-attempt) costs}
+    \begin{itemize}\itemsep1em
+        \item<2-> Interviewer salary (6min * 200kr/hour): 20kr/attempt
+        \item<2-> No other costs
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Variable (per-interview) costs}
+    \begin{itemize}\itemsep1em
+        \item<2-> Interviewer salary (15min * 200kr/hour): 50kr/interview
+        \item<2-> Questionnaire materials: 25kr/interview
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Incidental costs}
+    \begin{itemize}\itemsep1em
+        \item<2-> Contingency for computer failure: 10.000kr
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Add it all up}
+    \begin{itemize}\itemsep1em
+        \item Fixed costs: 33.400 kr
+        \item Per-attempt costs: 20kr/attempt
+        \item Per-interview costs: 75kr/complete IW
+        \item Incidental costs: 10.000kr
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Add it all up}
+    \small
+    \begin{tabular}{p{1in} p{.7in} p{.7in} p{.7in} p{1in}}
+    	\hline\hline
+    	Item                                 & Cost   & Sample Size & Response\newline Rate & Subtotal     \\ \hline\hline
+    	Fixed costs                          & 35.400 & --          & --                    & 35.400       \\ \hline
+    	Per-attempt                          & 20     & 1000        & \textbf{???}          & \textbf{???} \\ \hline
+    	Per-interview                        & 75     & 1000        & --                    & 75.000       \\ \hline\hline
+    	Budget Total\newline w/o incidentals & --     & --          & --                    & \textbf{???} \\ \hline\hline
+    	Incidental costs                     & 10.000 & --          & --                    & 10.000       \\ \hline
+    	Budget Total\newline w/ incidentals  & --     & --          & --                    & \textbf{???} \\ \hline\hline
+    \end{tabular}
+}
+
+\frame{
+    \frametitle{Add it all up}
+    \small
+    \begin{tabular}{p{1in} p{.7in} p{.7in} p{.7in} p{1in}}
+    	\hline\hline
+    	Item                                 & Cost   & Sample Size & Response\newline Rate & Subtotal        \\ \hline\hline
+    	Fixed costs                          & 35.400 & --          & --                    & 35.400          \\ \hline
+    	Per-attempt                          & 20     & 1000        & \textbf{1.00}         & \textbf{20.000} \\ \hline
+    	Per-interview                        & 75     & 1000        & --                    & 75.000          \\ \hline\hline
+    	Budget Total\newline w/o incidentals & --     & --          & --                    & 130.400         \\ \hline\hline
+    	Incidental costs                     & 10.000 & --          & --                    & 10.000          \\ \hline
+    	Budget Total\newline w/ incidentals  & --     & --          & --                    & 140.400         \\ \hline\hline
+    \end{tabular}
+}
+
+\frame{
+    \frametitle{Add it all up}
+    \small
+    \begin{tabular}{p{1in} p{.7in} p{.7in} p{.7in} p{1in}}
+    	\hline\hline
+    	Item                                 & Cost   & Sample Size & Response\newline Rate & Subtotal        \\ \hline\hline
+    	Fixed costs                          & 35.400 & --          & --                    & 35.400          \\ \hline
+    	Per-attempt                          & 20     & 1000        & \textbf{0.50}         & \textbf{40.000} \\ \hline
+    	Per-interview                        & 75     & 1000        & --                    & 75.000          \\ \hline\hline
+    	Budget Total\newline w/o incidentals & --     & --          & --                    & 150.400         \\ \hline\hline
+    	Incidental costs                     & 10.000 & --          & --                    & 10.000          \\ \hline
+    	Budget Total\newline w/ incidentals  & --     & --          & --                    & 160.400         \\ \hline\hline
+    \end{tabular}
+}
+
+
+
+\frame{\frametitle{Questions about survey budgeting?}}
+
+
+\frame{
 	\frametitle{Activity}
 	\begin{itemize}\itemsep2em
     	\item Estimate the costs of implementing your survey design
@@ -178,9 +287,6 @@
 }
 
 
-
-
-\frame{\frametitle{Questions about survey budgeting?}}
 
 
 \section{Preview of Next Time}
