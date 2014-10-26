@@ -48,7 +48,7 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
 ---
 ### Exam, assignments, and one-on-one meetings ###
 
-The exam for the course involves a home assignment (total 8000 words) that describes the sampling design, questionnaire, implementation plan, and pretesting of a proposed survey. The syllabus describes the requirements for this assignment in detail.
+The exam for the course involves a home assignment (total 6000 words) that describes the sampling design, questionnaire, implementation plan, and pretesting of a proposed survey. The syllabus describes the requirements for this assignment in detail.
 
 In preparation for the exam, students will complete short assignments throughout the term that fulfill portions of the final exam requirements. In other words, the final exam is largely a portfolio of work that students will progressively develop as they learn new skills during the course. The short assignments will be used in class either in small-group discussions or large-group presentations in order to receive early and frequent feedback. **Students do not need to submit assignments to the instructor in advance.**
 
