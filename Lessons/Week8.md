@@ -34,13 +34,16 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
         - Dropoff and unit or item nonresponse
     - Types
       - Informal discussion
+      - Expert and/or peer review
       - Validation using administrative records
       - Focus groups
       - Cognitive interviewing
   
   - Activity II
     - Cognitive interviewing in pairs
-  
+    
+  - Activity III
+    - Focus groups
   
   - Preview of next week
     - Interviewers and Instruments
