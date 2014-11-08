@@ -14,6 +14,7 @@ The course website can be found at: http://www.thomasleeper.com/surveycourse
  - [Week 6](Lessons/Week6.md)
  - [Week 7](Lessons/Week7.md)
  - [Week 8](Lessons/Week8.md)
+ - [Week 9](Lessons/Week9.md)
 
 ## Why GitHub? ##
 

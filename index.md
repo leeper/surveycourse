@@ -45,6 +45,7 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
  - Week 6: [Slides](Slides/Week6.pdf), [Activity](Activities/Week6.pdf)
  - Week 7: [Slides](Slides/Week7.pdf), [Activity](Activities/Week7.pdf)
  - Week 8: [Slides](Slides/Week8.pdf), [Cognitive Interviewing Activity](Activities/Week8a.pdf) [Focus Group Activity](Activities/Week8b.pdf)
+ - Week 9: [Slides](Slides/Week9.pdf), Activity: [Most Important Problem](Activities/ANES2012OpenEndedMIP.txt), [Gordon Brown](Activities/ANES2012OpenEndedGordonBrown.txt)
 
 ---
 ### Exam, assignments, and one-on-one meetings ###
