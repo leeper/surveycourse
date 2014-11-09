@@ -16,19 +16,45 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
     - Surveys are an intervention into a respondent's life
     - What are the limits of what we can do and what we can ask?
     - What are ethical principles that we should apply in our own work?
+      - Justice
+      - Beneficence
+      - Respect for persons
+    - Risks and benefits
+      - Are risks constant across individuals?
+      - Are benefits constant across individuals?
+      - How do we assess risks?
+      - How do we assess benefits?
+    - Scenarios
+      - Mislead about the sponsor of the study
+      - Mislead about the purpose of the study
+      - Mislead about the survey design (e.g., the target population)
+      - Ask sensitive questions
+      - Use experiments
+      - Use particular modes
+      - Use particular measures (e.g., biometrics)
+      - Use particular interviewers
+      - Operate in particular geographical locales
+      - Ask particular research questions
+      - Others?
   
   - Interviewing
     - Why are surveys difficult for respondents?
     - How can interviewers help?
-    - Interpreting responses
+    - Interviewing is a conversation
+      - It is a strange conversation, but a conversation nonetheless
+      - Respondents have to interpret questions
+      - Interviewers have to interpret answers
+    - Activity II: Interpreting responses
       - Interpreting responses live
       - Interpreting responses post-hoc
   
   - Interviewer training
     - What do interviewers need to know to be effective?
-    
-  - Activity
-    - Brainstorm what you might want to tell your interviewers
+    - Activity III
+      - Brainstorm what you might want to tell your interviewers
+      - How much should they know about the purpose of the study?
+      - How much should they know about the survey design?
+      - Should they know about experimental elements in the questionnaire?
   
   - Preview of next week
     - Notes about syllabus
