@@ -48,7 +48,7 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
  - Week 9: No Slides, [Activity](Activities/Week9.pdf) ([Most Important Problem](Activities/ANES2008OpenEndedMIP.txt), [Gordon Brown](Activities/ANES2008OpenEndedGordonBrown.txt))
 
 ---
-### Exam, assignments, and one-on-one meetings ###
+## Exam, assignments, and one-on-one meetings ##
 
 The exam for the course involves a home assignment (total 6000 words) that describes the sampling design, questionnaire, implementation plan, and pretesting of a proposed survey. The syllabus describes the requirements for this assignment in detail.
 
