@@ -6,15 +6,16 @@ The course website can be found at: http://www.thomasleeper.com/surveycourse
 
 ## Lesson Plans ##
 
- - [Week 1](Lessons/Week1.md)
- - [Week 2](Lessons/Week2.md)
- - [Week 3](Lessons/Week3.md)
- - [Week 4](Lessons/Week4.md)
- - [Week 5](Lessons/Week5.md)
- - [Week 6](Lessons/Week6.md)
- - [Week 7](Lessons/Week7.md)
- - [Week 8](Lessons/Week8.md)
- - [Week 9](Lessons/Week9.md)
+ - [Week 01](Lessons/Week1.md)
+ - [Week 02](Lessons/Week2.md)
+ - [Week 03](Lessons/Week3.md)
+ - [Week 04](Lessons/Week4.md)
+ - [Week 05](Lessons/Week5.md)
+ - [Week 06](Lessons/Week6.md)
+ - [Week 07](Lessons/Week7.md)
+ - [Week 08](Lessons/Week8.md)
+ - [Week 09](Lessons/Week9.md)
+ - [Week 10](Lessons/Week10.md)
 
 ## Why GitHub? ##
 
