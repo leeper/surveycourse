@@ -37,15 +37,16 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
 ---
 ## Slides, Notes, and In-class Activities ##
 
- - Week 1: [Slides](Slides/Week1.pdf), [Activity](Activities/Week1.pdf)
- - Week 2: [Slides](Slides/Week2.pdf), [Activity](Activities/Week2.pdf)
- - Week 3: [Slides](Slides/Week3.pdf)
- - Week 4: [Slides](Slides/Week4.pdf), [Activity](Activities/Week4.pdf)
- - Week 5: [Slides](Slides/Week5.pdf), Activity [(Version A)](Activities/Week5a.pdf) [(Version B)](Activities/Week5b.pdf)
- - Week 6: [Slides](Slides/Week6.pdf), [Activity](Activities/Week6.pdf)
- - Week 7: [Slides](Slides/Week7.pdf), [Activity](Activities/Week7.pdf)
- - Week 8: [Slides](Slides/Week8.pdf), [Cognitive Interviewing Activity](Activities/Week8a.pdf) [Focus Group Activity](Activities/Week8b.pdf)
- - Week 9: No Slides, [Activity](Activities/Week9.pdf) ([Most Important Problem](Activities/ANES2008OpenEndedMIP.txt), [Gordon Brown](Activities/ANES2008OpenEndedGordonBrown.txt))
+ - Week 01: [Slides](Slides/Week1.pdf), [Activity](Activities/Week1.pdf)
+ - Week 02: [Slides](Slides/Week2.pdf), [Activity](Activities/Week2.pdf)
+ - Week 03: [Slides](Slides/Week3.pdf)
+ - Week 04: [Slides](Slides/Week4.pdf), [Activity](Activities/Week4.pdf)
+ - Week 05: [Slides](Slides/Week5.pdf), Activity [(Version A)](Activities/Week5a.pdf) [(Version B)](Activities/Week5b.pdf)
+ - Week 06: [Slides](Slides/Week6.pdf), [Activity](Activities/Week6.pdf)
+ - Week 07: [Slides](Slides/Week7.pdf), [Activity](Activities/Week7.pdf)
+ - Week 08: [Slides](Slides/Week8.pdf), [Cognitive Interviewing Activity](Activities/Week8a.pdf) [Focus Group Activity](Activities/Week8b.pdf)
+ - Week 09: No Slides, [Activity](Activities/Week9.pdf) ([Most Important Problem](Activities/ANES2008OpenEndedMIP.txt), [Gordon Brown](Activities/ANES2008OpenEndedGordonBrown.txt))
+ - Week 10: [Slides](Slides/Week10.pdf)
 
 ---
 ## Exam, assignments, and one-on-one meetings ##

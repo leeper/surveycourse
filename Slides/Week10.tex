@@ -1,0 +1,239 @@
+\documentclass[compress, 12pt]{beamer} %Makes presentation
+
+\input{preamble}
+
+\title{Fielding and Recruitment}
+
+\date[]{November 17, 2014}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{\tableofcontents}
+
+
+\section{Pilot Testing}
+\frame{\tableofcontents[currentsection]}
+
+\frame{
+	\frametitle{Pilot Testing}
+	\begin{itemize}\itemsep2em
+		\item Has anyone tried pilot testing yet?
+		\item What have been your experiences so far?
+	\end{itemize}
+}
+
+\section{Recruitment}
+\frame{\tableofcontents[currentsection]}
+
+\frame{
+	\frametitle{Recruitment}
+	\begin{itemize}\itemsep1em
+		\item Often tied to mode
+		\item Not always the same as mode
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Methods of Recruitment}
+	\begin{itemize}\itemsep2em
+		\item Postal mail: Letter, postcard, etc.
+		\item Telephone call
+		\item Email
+		\item Opt-in recruitment (ads, posters, etc.)
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Think--Pair--Share: Recruitment}
+	\begin{itemize}\itemsep2em
+		\item How can we encourage participation?
+		\item What are the advantages and disadvantages of different recruitment techniques and methods?
+	\end{itemize}
+}
+
+
+
+\section{Response Rates}
+\frame{\tableofcontents[currentsection]}
+
+\frame{
+    \frametitle{Response Rates}
+    \begin{itemize}
+        \item Why do we care?
+        \item<2-> Survey Error
+            \begin{itemize}
+                \item<2-> Variance
+                \item<2-> Bias
+            \end{itemize}
+        \item<3-> Sample size calculations (and design effects) are based on completed interviews
+        \item<4-> Cost, time, and effort
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Response Rates}
+    \begin{itemize}
+        \item Imagine we need $n=1000$
+        \item How many attempts to obtain that sample:\\
+        \vspace{1em}
+        \begin{tabular}{l r}\toprule
+        Response Rate & Needed Attempts\\ \midrule
+        1.00 & 1000 \\
+        0.75 & 1333 \\
+        0.50 & 2000 \\
+        0.25 & 4000 \\
+        0.10 & 10,000 \\ \bottomrule
+        \end{tabular}
+    \end{itemize}
+}
+
+
+\frame{
+	\frametitle{Response Rate}
+	\begin{itemize}\itemsep1em
+		\item Interviews divided by eligibles
+		\item $RR = \frac{I}{E}$
+		\item Challenges
+    		\begin{itemize}
+        		\item Unknown eligibility
+        		\item Partial interviews
+        		\item Non-probability samples
+        		\item Complex survey designs
+    		\end{itemize}
+        \item Cooperation Rate (I's divided by contacts)
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Disposition Codes}
+	\begin{itemize}\itemsep2em
+		\item Interviews
+		\item Refusals
+		\item Unknowns
+		\item Ineligibles
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Disposition Codes}
+	\begin{itemize}\itemsep1em
+		\item Complete Interview (I)
+		\item Partial Interview (P)
+		\item Non-interviews
+    		\begin{itemize}
+        		\item Refusal (R)
+        		\item Non-contact (NC)
+        		\item Other (O)
+    		\end{itemize}
+		\item Unknowns (U)
+		\item Ineligibles
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Response Rate 1\footnote{Note: Simplified slightly}}
+	\Large
+	\begin{itemize}\itemsep2em
+		\item $RR1 = \frac{I}{(I + P) + (R + NC) + U}$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Response Rate 2\footnote{Note: Simplified slightly}}
+    \Large
+	\begin{itemize}\itemsep2em
+		\item $RR2 = \frac{I + P}{(I + P) + (R + NC) + U}$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Response Rates 3 and 4\footnote{Note: Simplified slightly}}
+	\Large
+    \begin{itemize}\itemsep2em
+		\item $RR3 = \frac{I}{(I + P) + (R + NC) + (e*U)}$
+		\item $RR4 = \frac{I + P}{(I + P) + (R + NC) + (e*U)}$
+		\vspace{1em}
+		\item $e$ is estimated proportion eligible among unknowns
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Cooperation Rates}
+	\Large
+    \begin{itemize}\itemsep2em
+		\item $COOP1 = \frac{I}{(I + P) + R}$
+		\item $COOP2 = \frac{I + P}{(I + P) + R}$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Refusal Rates}
+	\begin{itemize}\itemsep2em
+		\item Related to response rate
+		\item Numerator is refusals
+		\item E.g., {\Large $REF1 = \frac{I}{(I + P) + (R + NC) + U}$}
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Complex Survey Designs}
+	\begin{itemize}\itemsep2em
+		\item Stratified Sampling
+    		\begin{itemize}
+        		\item Sums of codes weighted by $\frac{1}{p}$
+        		\item $p$ is probability of selection
+    		\end{itemize}
+    	\item Multi-stage sampling
+        	\begin{itemize}
+            	\item E.g., cluster sampling
+            	\item RR is product of cluster cooperation and within-cluster response rate
+        	\end{itemize}
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Internet Surveys}
+	\begin{itemize}\itemsep2em
+		\item For \textit{probability-based samples}, RR is a product of:
+    		\begin{itemize}
+        		\item Recruitment Rate (RR for panel enrollment)
+        		\item Completion Rate (RR for specific survey)
+        		\item Profile Rate (in some cases)
+        		\item E.g., if Recruitment Rate is 30\% and Completion Rate is 80\%, $RR = 0.3 * 0.8 =$ 24\%
+    		\end{itemize}
+    	\item For \textit{non-probability samples}, RR is undefined
+        	\begin{itemize}
+            	\item No sampling involved (so no denominator)
+            	\item If from panel, report Completion Rate
+            	\item If fully opt-in, there's nothing you can do
+        	\end{itemize}
+	\end{itemize}
+}
+
+
+\section{Fielding}
+\frame{\tableofcontents[currentsection]}
+
+
+
+
+\section{Preview of Next Time}
+\frame{\tableofcontents[currentsection]}
+
+\frame{
+	\frametitle{Agenda for next class}
+	\begin{itemize}\itemsep2em
+		\item Data management and codebooks
+		\item Missing data and imputation
+		\item Weighting
+	\end{itemize}
+}
+
+\appendix
+\frame{}
+
+\end{document}
