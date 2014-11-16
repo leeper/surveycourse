@@ -1,0 +1,43 @@
+\documentclass[12pt, a4]{article}
+\usepackage[top=0cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{setspace}
+
+\title{Response Rate Calculations\vspace{-2em}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\noindent Calculating response rates is an essential aspect of survey reporting. While the response rate alone is not sufficient evidence to indicate biases, a low response rate may hint at response bias (whereby the sample estimates deviate from the population parameters, potentially in unknown ways). This activity asks you to calculate response rates, cooperation rates, and refusal rates for different survey fielding periods.
+
+\vspace{1em}
+\noindent As a reminder, definitions of each response rate used above are as follows, along with example calculations using the data from the first row of the below table:
+
+{{\large }
+	\begin{itemize}
+		\item $RR1 = \frac{I}{(I + P) + (R + NC) + U} = \frac{2300}{2300+200 + 1000 + 1000 + 5000} = 24.2\%$
+		\item $RR3 = \frac{I}{(I + P) + (R + NC) + (e*U)} = \frac{2300}{2300+200 + 1000 + 1000 + (e*5000)} = \frac{2300}{4500 +(e*5000)} = (24.2\%, 51.1\%)$
+		\item $COOP1 = \frac{I}{(I + P) + R} = \frac{2300}{2300+200+1000} = 65.7\%$
+		\item $REF1 = \frac{R}{(I + P) + (R + NC) + U} = \frac{1000}{2300+200 + 1000 + 1000 + 5000} = 10.5\%$
+	\end{itemize}
+}
+
+\begin{center}
+\def\arraystretch{3}
+\begin{tabular}{| l || p{0.4in}|p{0.4in}|p{0.4in}|p{0.4in}|p{0.4in} || p{0.7in} | p{1.1in} | p{.7in} | p{.7in} ||}
+	\hline
+& \textbf{I} & \textbf{P} & \textbf{Ref.} & \textbf{NC} & \textbf{Unk.} & \textbf{RR1} & \textbf{RR3} & \textbf{COOP1} & \textbf{REF1} \\ \hline
+\textit{Example} & 2300 & 200 & 1000 & 1000 & 5000 & 24.2\%& (24.2\%, 51.1\%) & 65.7\%& 10.5\% \\ \hline
+Sample 1 & 800        & 100        & 200           & 0           & 0 &&&&\\ \hline
+Sample 2 & 800        & 400        & 100           & 0           & 100 &&&&\\ \hline
+Sample 3 & 1200       & 0          & 3500          & 800         & 2000 &&&&\\ \hline
+Sample 4 & 600        & 50         & 50            & 100         & 200 &&&&\\ \hline
+Sample 5 & 350        & 650        & 150           & 0           & 100 &&&&\\ \hline
+Sample 6 & 22000      & 2500       & 14000         & 5000        & 20000 &&&&\\ \hline
+\end{tabular}
+\end{center}
+
+
+\end{document}

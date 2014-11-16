@@ -60,7 +60,7 @@
 
 \frame{
     \frametitle{Response Rates}
-    \begin{itemize}
+    \begin{itemize}\itemsep1em
         \item Why do we care?
         \item<2-> Survey Error
             \begin{itemize}
@@ -116,7 +116,7 @@
 	\end{itemize}
 }
 
-\frame{
+\frame<1>[label=codes]{
 	\frametitle{Disposition Codes}
 	\begin{itemize}\itemsep1em
 		\item Complete Interview (I)
@@ -127,10 +127,46 @@
         		\item Non-contact (NC)
         		\item Other (O)
     		\end{itemize}
-		\item Unknowns (U)
-		\item Ineligibles
+		\item<2> Unknowns (U)
+		\item<2> Ineligibles
 	\end{itemize}
 }
+
+\frame{
+	\frametitle{What is a refusal?}
+	\begin{itemize}\itemsep2em
+		\item<1-> How do categorize a respondent as a refusal?
+		\item<2-> When can we try to convert an apparent refusal?
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{What is a refusal?}
+	\begin{itemize}\itemsep1em
+		\item<1-> ``I don't want to participate.''
+		\item<2-> ``I'm too busy to do this right now.''
+		\item<3-> ``What do I get for my time?''
+		\item<4-> (Hang-up phone without saying anything.)
+		\item<5-> ``Okay, but I only have 5 minutes.''
+		\item<6-> ``My husband can do it if you call back.''
+		\item<7-> ``How did you get my number?''
+		\item<8-> ``Go f' yourself.''
+	\end{itemize}
+}
+
+
+\againframe{codes}
+
+\frame{
+	\frametitle{Eligibility}
+	\begin{itemize}\itemsep2em
+		\item<1-> Why would an ineligible unit be in our sample?
+		\item<2-> How do we determine ineligibility?
+		\item<3-> What do we do with ``unknowns''?
+	\end{itemize}
+}
+
 
 \frame{
 	\frametitle{Response Rate 1\footnote{Note: Simplified slightly}}
@@ -173,22 +209,21 @@
 	\begin{itemize}\itemsep2em
 		\item Related to response rate
 		\item Numerator is refusals
-		\item E.g., {\Large $REF1 = \frac{I}{(I + P) + (R + NC) + U}$}
+		\item E.g., {\Large $REF1 = \frac{R}{(I + P) + (R + NC) + U}$}
 	\end{itemize}
 }
-
 
 \frame{
 	\frametitle{Complex Survey Designs}
 	\begin{itemize}\itemsep2em
-		\item Stratified Sampling
+		\item Stratified Sampling (unequal allocation)
     		\begin{itemize}
         		\item Sums of codes weighted by $\frac{1}{p}$
         		\item $p$ is probability of selection
+        		\item May want to report stratum-specific rates
     		\end{itemize}
-    	\item Multi-stage sampling
+    	\item Multi-stage sampling (e.g., cluster sampling)
         	\begin{itemize}
-            	\item E.g., cluster sampling
             	\item RR is product of cluster cooperation and within-cluster response rate
         	\end{itemize}
 	\end{itemize}
@@ -218,7 +253,34 @@
 \section{Fielding}
 \frame{\tableofcontents[currentsection]}
 
+\frame{
+	\frametitle{Fielding}
+	\begin{itemize}\itemsep2em
+		\item<1-> What can go wrong during fielding?
+		\item<2-> How do you know if something goes wrong?
+		\item<3-> What should you do about it?
+	\end{itemize}
+}
 
+
+\frame{
+	\frametitle{Differential Response Rates}
+	\begin{itemize}\itemsep2em
+		\item Respondent subgroups may respond at different rates
+		\item If known in advance, you can:
+			\begin{itemize}
+				\item Oversample
+				\item Differential incentives
+				\item Mode differences
+			\end{itemize}
+		\item If discovered in field, you can:
+			\begin{itemize}
+				\item Add/modify incentives
+				\item Refusal conversion
+				\item Reallocate resources
+			\end{itemize}
+	\end{itemize}
+}
 
 
 \section{Preview of Next Time}
