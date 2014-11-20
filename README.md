@@ -6,15 +6,15 @@ The course website can be found at: http://www.thomasleeper.com/surveycourse
 
 ## Lesson Plans ##
 
- - [Week 01](Lessons/Week1.md)
- - [Week 02](Lessons/Week2.md)
- - [Week 03](Lessons/Week3.md)
- - [Week 04](Lessons/Week4.md)
- - [Week 05](Lessons/Week5.md)
- - [Week 06](Lessons/Week6.md)
- - [Week 07](Lessons/Week7.md)
- - [Week 08](Lessons/Week8.md)
- - [Week 09](Lessons/Week9.md)
+ - [Week 01](Lessons/Week01.md)
+ - [Week 02](Lessons/Week02.md)
+ - [Week 03](Lessons/Week03.md)
+ - [Week 04](Lessons/Week04.md)
+ - [Week 05](Lessons/Week05.md)
+ - [Week 06](Lessons/Week06.md)
+ - [Week 07](Lessons/Week07.md)
+ - [Week 08](Lessons/Week08.md)
+ - [Week 09](Lessons/Week09.md)
  - [Week 10](Lessons/Week10.md)
  - [Week 11](Lessons/Week11.md)
 
