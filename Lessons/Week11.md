@@ -21,7 +21,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
  - Missing data imputation
    - Why imputation?
      - Casewise deletion results in huge loss of information due to small missingness
-     - 
+     - Retain design-based sampling variances
    - Assumptions
      - Missing completely at random
      - Missing at random
@@ -31,7 +31,15 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
      - Top or bottom category imputation
      - Random imputation
      - Hot deck imputation
+     - Regression imputation
    - Multiple imputation
+     - Advantages
+       - Account for uncertainty due to missingness
+     - Challenges
+       - A bit analytically complex
+       - Many different approaches
+     
+   - Should we impute missing data?
    
  - Weighting
    - Sampling designs assign different selection probabilities to different units
@@ -39,20 +47,40 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
      - SRS, proportional allocation stratified sampling, opt-in samples
    - Disproportionate, cluster, and multi-stage sampling produce varying selection probabilities
      - Analysis has to involve weighted data
-     - 
    - Sampling design is not the only reason to weight
      - Undercoverage in our sampling frame
      - Intentional oversamples of particular subpopulations
      - Missing data (unit nonresponse, item nonresponse, breakoff, attrition)
      - Nonprobability sample is not descriptively representative
    - Kinds of weighting
-     - Ratio adjustment
      - Selection probabilities (i.e., sampling design)
      - Nonresponse
      - Poststratification
    - Weighting for nonresponse
-     - Requires missing at random assumption
-     - Similar to mean or random imputation of missing data
+     - Requirements
+       - Missing at random assumption
+       - Some information about nonrespondents
+     - Similar in some sense to mean or random imputation of missing data
+     - Two methods
+       - "Weighting classes"
+       - "Propensity subclassification"
+   - Poststratification weights
+     - Like stratification in a sampling design
+     - Identify strata and weight observations within each strata so sample matches population
+     - Basis for inference in non-probability samples
+       - Because selection probabilities are unknown, can only weight for nonresponse and poststratification
+       - This makes a face-value representative dataset
+     - Limitations
+       - What features do we know about the population as a whole? Can only poststratify if variables in population and sample
+       - Only weights for representativeness on specified variables
+   - Consequences
+     - Weighting can affect sampling variances (and thus Standard Errors)
+     - Size of effect depends on data, but one can assume that variance increases with weighting
+     
+   - Adaptive design
+     - Monitor response rates during data collection
+     - Adapt data collection efforts to minimize sampling variances accordingly
+     - That may require weighting calculations at intermediate stages of data collection
    
  - Coding
    - Types
@@ -99,6 +127,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
  - Anonymizing data
    - Reasons to anonymize
    - What counts as anonymity?
+     - "Statistically identifiable"
  
  - Data formats and file sharing
    - Open versus proprietary formats
@@ -108,6 +137,7 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
      - Variable labels
      - Variable names
      - Missing data categories
+     - Imputation information
      - Data types
    - Metadata
      - Dublin Core
@@ -128,3 +158,19 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
         Rights
      - Data Documentation Initiative
         
+ - Total Survey Error
+   - Design-related errors
+     - Coverage error
+     - Sampling error
+     - Nonresponse error
+     - Adjustment error
+   - Measurement errors
+     - Construct validity
+     - Measurement error and response biases
+     - Processing error
+     
+   - Our goal as survey researchers is to minimize errors of all kinds
+     - Achieving this goal requires trade-offs
+     - Some trade-offs involve time, money, and resources
+     - Other trade-offs are substantive (e.g., question wordings; sampling design)
+     - Always think about errors and their impact on data quality
