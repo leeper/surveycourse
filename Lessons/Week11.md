@@ -82,7 +82,10 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
      - Adapt data collection efforts to minimize sampling variances accordingly
      - That may require weighting calculations at intermediate stages of data collection
    
- - Coding
+
+ - Data processing and sharing
+
+  - Coding
    - Types
      - Open-ended responses
      - Summary categories
@@ -124,12 +127,13 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
        - Multiple choice and multiple response
        - Numeric
  
- - Anonymizing data
+
+  - Anonymizing data
    - Reasons to anonymize
    - What counts as anonymity?
      - "Statistically identifiable"
  
- - Data formats and file sharing
+  - Data formats and file sharing
    - Open versus proprietary formats
    - What data are contained in a file format
      - Codes
