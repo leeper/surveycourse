@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<dta>
+<header>
+<ds_format>113</ds_format>
+<byteorder>LOHI</byteorder>
+<filetype>1</filetype>
+<nvar>16</nvar>
+<nobs>8</nobs>
+<data_label></data_label>
+<time_stamp>23 Nov 2014 12:23</time_stamp>
+</header>
+<descriptors>
+<typelist>
+<type varname='responseid'>str17</type>
+<type varname='startdate'>str19</type>
+<type varname='enddate'>str19</type>
+<type varname='dv'>long</type>
+<type varname='dvcert'>long</type>
+<type varname='dvimp'>long</type>
+<type varname='percept'>long</type>
+<type varname='govcare'>long</type>
+<type varname='govrun'>long</type>
+<type varname='female'>long</type>
+<type varname='age'>long</type>
+<type varname='edu'>long</type>
+<type varname='race'>long</type>
+<type varname='immig'>long</type>
+<type varname='partyid'>long</type>
+<type varname='ideo'>long</type>
+</typelist>
+<varlist>
+<variable varname='responseid'/>
+<variable varname='startdate'/>
+<variable varname='enddate'/>
+<variable varname='dv'/>
+<variable varname='dvcert'/>
+<variable varname='dvimp'/>
+<variable varname='percept'/>
+<variable varname='govcare'/>
+<variable varname='govrun'/>
+<variable varname='female'/>
+<variable varname='age'/>
+<variable varname='edu'/>
+<variable varname='race'/>
+<variable varname='immig'/>
+<variable varname='partyid'/>
+<variable varname='ideo'/>
+</varlist>
+<srtlist>
+</srtlist>
+<fmtlist>
+<fmt varname='responseid'>%17s</fmt>
+<fmt varname='startdate'>%19s</fmt>
+<fmt varname='enddate'>%19s</fmt>
+<fmt varname='dv'>%18.0g</fmt>
+<fmt varname='dvcert'>%18.0g</fmt>
+<fmt varname='dvimp'>%20.0g</fmt>
+<fmt varname='percept'>%33.0g</fmt>
+<fmt varname='govcare'>%17.0g</fmt>
+<fmt varname='govrun'>%37.0g</fmt>
+<fmt varname='female'>%8.0g</fmt>
+<fmt varname='age'>%8.0g</fmt>
+<fmt varname='edu'>%62.0g</fmt>
+<fmt varname='race'>%14.0g</fmt>
+<fmt varname='immig'>%8.0g</fmt>
+<fmt varname='partyid'>%26.0g</fmt>
+<fmt varname='ideo'>%22.0g</fmt>
+</fmtlist>
+<lbllist>
+<lblname varname='responseid'></lblname>
+<lblname varname='startdate'></lblname>
+<lblname varname='enddate'></lblname>
+<lblname varname='dv'>dv</lblname>
+<lblname varname='dvcert'>dvcert</lblname>
+<lblname varname='dvimp'>dvimp</lblname>
+<lblname varname='percept'>percept</lblname>
+<lblname varname='govcare'>govcare</lblname>
+<lblname varname='govrun'>govrun</lblname>
+<lblname varname='female'>female</lblname>
+<lblname varname='age'>age</lblname>
+<lblname varname='edu'>edu</lblname>
+<lblname varname='race'>race</lblname>
+<lblname varname='immig'>immig</lblname>
+<lblname varname='partyid'>partyid</lblname>
+<lblname varname='ideo'>ideo</lblname>
+</lbllist>
+</descriptors>
+<variable_labels>
+<vlabel varname='responseid'>ResponseID</vlabel>
+<vlabel varname='startdate'>StartDate</vlabel>
+<vlabel varname='enddate'>EndDate</vlabel>
+<vlabel varname='dv'></vlabel>
+<vlabel varname='dvcert'>dv.cert</vlabel>
+<vlabel varname='dvimp'>dv.imp</vlabel>
+<vlabel varname='percept'></vlabel>
+<vlabel varname='govcare'>gov.care</vlabel>
+<vlabel varname='govrun'>gov.run</vlabel>
+<vlabel varname='female'></vlabel>
+<vlabel varname='age'></vlabel>
+<vlabel varname='edu'></vlabel>
+<vlabel varname='race'></vlabel>
+<vlabel varname='immig'></vlabel>
+<vlabel varname='partyid'></vlabel>
+<vlabel varname='ideo'></vlabel>
+</variable_labels>
+<expansion>
+</expansion>
+<data>
+<o>
+<v>R_9XLBzgta9iyhipn</v>
+<v>2012-12-19 10:33:02</v>
+<v>2012-12-19 10:34:24</v>
+<v>4</v>
+<v>2</v>
+<v>4</v>
+<v>1</v>
+<v>1</v>
+<v>1</v>
+<v>2</v>
+<v>1</v>
+<v>1</v>
+<v>2</v>
+<v>2</v>
+<v>3</v>
+<v>2</v>
+</o>
+<o>
+<v>R_0cvN510tGF9wDsN</v>
+<v>2012-12-19 10:33:19</v>
+<v>2012-12-19 10:34:47</v>
+<v>1</v>
+<v>2</v>
+<v>2</v>
+<v>1</v>
+<v>2</v>
+<v>2</v>
+<v>2</v>
+<v>1</v>
+<v>3</v>
+<v>2</v>
+<v>1</v>
+<v>4</v>
+<v>1</v>
+</o>
+<o>
+<v>R_5BbOmSVFxZn6sxT</v>
+<v>2012-12-19 10:34:53</v>
+<v>2012-12-19 10:36:25</v>
+<v>4</v>
+<v>2</v>
+<v>5</v>
+<v>3</v>
+<v>3</v>
+<v>1</v>
+<v>2</v>
+<v>3</v>
+<v>2</v>
+<v>2</v>
+<v>1</v>
+<v>2</v>
+<v>5</v>
+</o>
+<o>
+<v>R_79h5iI4OuUv7QVL</v>
+<v>2012-12-19 10:33:49</v>
+<v>2012-12-19 10:36:46</v>
+<v>3</v>
+<v>3</v>
+<v>5</v>
+<v>1</v>
+<v>1</v>
+<v>1</v>
+<v>2</v>
+<v>3</v>
+<v>4</v>
+<v>2</v>
+<v>1</v>
+<v>2</v>
+<v>5</v>
+</o>
+<o>
+<v>R_af3zDKxd7O9vDAp</v>
+<v>2012-12-19 10:33:10</v>
+<v>2012-12-19 10:36:53</v>
+<v>2</v>
+<v>3</v>
+<v>2</v>
+<v>2</v>
+<v>3</v>
+<v>1</v>
+<v>2</v>
+<v>2</v>
+<v>3</v>
+<v>2</v>
+<v>1</v>
+<v>1</v>
+<v>4</v>
+</o>
+<o>
+<v>R_d4Ep47jSqj2c1xz</v>
+<v>2012-12-19 10:34:44</v>
+<v>2012-12-19 10:36:54</v>
+<v>6</v>
+<v>1</v>
+<v>1</v>
+<v>3</v>
+<v>3</v>
+<v>2</v>
+<v>2</v>
+<v>3</v>
+<v>1</v>
+<v>2</v>
+<v>1</v>
+<v>2</v>
+<v>3</v>
+</o>
+<o>
+<v>R_6YkB4FCMiO0DZJz</v>
+<v>2012-12-19 10:33:37</v>
+<v>2012-12-19 10:37:12</v>
+<v>5</v>
+<v>1</v>
+<v>5</v>
+<v>2</v>
+<v>1</v>
+<v>2</v>
+<v>1</v>
+<v>2</v>
+<v>4</v>
+<v>2</v>
+<v>1</v>
+<v>3</v>
+<v>2</v>
+</o>
+<o>
+<v>R_8xjgNEzNl6TkHmR</v>
+<v>2012-12-19 10:34:46</v>
+<v>2012-12-19 10:37:15</v>
+<v>4</v>
+<v>3</v>
+<v>3</v>
+<v>1</v>
+<v>3</v>
+<v>2</v>
+<v>2</v>
+<v>2</v>
+<v>1</v>
+<v>1</v>
+<v>2</v>
+<v>3</v>
+<v>5</v>
+</o>
+</data>
+<value_labels>
+<vallab name='ideo'>
+<label value='1'>Extremely Conservative</label>
+<label value='2'>Extremely liberal</label>
+<label value='3'>Liberal</label>
+<label value='4'>Moderate</label>
+<label value='5'>Slightly Liberal</label>
+</vallab>
+<vallab name='partyid'>
+<label value='1'>Independent</label>
+<label value='2'>Independent Leans Democrat</label>
+<label value='3'>Strong Democrat</label>
+<label value='4'>Strong Republican</label>
+</vallab>
+<vallab name='immig'>
+<label value='1'>No</label>
+<label value='2'>Yes</label>
+</vallab>
+<vallab name='race'>
+<label value='1'>Asian American</label>
+<label value='2'>White</label>
+</vallab>
+<vallab name='edu'>
+<label value='1'>College graduate  </label>
+<label value='2'>Post-graduate training or professional schooling after college</label>
+<label value='3'>Some college  </label>
+<label value='4'>Technical, trade, or vocational school after high school  </label>
+</vallab>
+<vallab name='age'>
+<label value='1'>18-24</label>
+<label value='2'>25-34</label>
+<label value='3'>35-50</label>
+</vallab>
+<vallab name='female'>
+<label value='1'>Female</label>
+<label value='2'>Male</label>
+</vallab>
+<vallab name='govrun'>
+<label value='1'>Government run by a few big interests</label>
+<label value='2'>Government run for the benefit of all</label>
+</vallab>
+<vallab name='govcare'>
+<label value='1'>A little</label>
+<label value='2'>A lot</label>
+<label value='3'>A moderate amount</label>
+</vallab>
+<vallab name='percept'>
+<label value='1'>Even numbers oppose and support  </label>
+<label value='2'>Many oppose but some support  </label>
+<label value='3'>Many support but some oppose  </label>
+</vallab>
+<vallab name='dvimp'>
+<label value='1'>Extremely important</label>
+<label value='2'>Highly important</label>
+<label value='3'>Moderately important</label>
+<label value='4'>Not too important</label>
+<label value='5'>Somewhat important</label>
+</vallab>
+<vallab name='dvcert'>
+<label value='1'>Extremely certain</label>
+<label value='2'>Highly certain</label>
+<label value='3'>Moderately certain</label>
+</vallab>
+<vallab name='dv'>
+<label value='1'>Moderately oppose</label>
+<label value='2'>Moderately support</label>
+<label value='3'>Somewhat oppose</label>
+<label value='4'>Somewhat support</label>
+<label value='5'>Strongly oppose</label>
+<label value='6'>Strongly support</label>
+</vallab>
+</value_labels>
+</dta>

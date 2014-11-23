@@ -8,39 +8,6 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
 
 ## Outline ##
 
- - Missing data
-   - Sources
-     - Nonresponse
-     - Attrition
-     - Data loss
-   - Impacts
-     - Effective sample size and sampling variance
-     - Scale construction
-     - Bias
-   
- - Missing data imputation
-   - Why imputation?
-     - Casewise deletion results in huge loss of information due to small missingness
-     - Retain design-based sampling variances
-   - Assumptions
-     - Missing completely at random
-     - Missing at random
-     - Missing not at random
-   - Single imputation
-     - Mean imputation (grand mean, subgroup mean, interpolation in a panel)
-     - Top or bottom category imputation
-     - Random imputation
-     - Hot deck imputation
-     - Regression imputation
-   - Multiple imputation
-     - Advantages
-       - Account for uncertainty due to missingness
-     - Challenges
-       - A bit analytically complex
-       - Many different approaches
-     
-   - Should we impute missing data?
-   
  - Weighting
    - Sampling designs assign different selection probabilities to different units
      - Self-weighting samples are nice because the analysis is simple
@@ -83,6 +50,39 @@ ghurl: https://github.com/leeper/surveycourse/tree/gh-pages
      - That may require weighting calculations at intermediate stages of data collection
    
 
+ - Missing data
+   - Sources
+     - Nonresponse
+     - Attrition
+     - Data loss
+   - Impacts
+     - Effective sample size and sampling variance
+     - Scale construction
+     - Bias
+   
+ - Missing data imputation
+   - Why imputation?
+     - Casewise deletion results in huge loss of information due to small missingness
+     - Retain design-based sampling variances
+   - Assumptions
+     - Missing completely at random
+     - Missing at random
+     - Missing not at random
+   - Single imputation
+     - Mean imputation (grand mean, subgroup mean, interpolation in a panel)
+     - Top or bottom category imputation
+     - Random imputation
+     - Hot deck imputation
+     - Regression imputation
+   - Multiple imputation
+     - Advantages
+       - Account for uncertainty due to missingness
+     - Challenges
+       - A bit analytically complex
+       - Many different approaches
+     
+   - Should we impute missing data?
+   
  - Data processing and sharing
 
   - Coding

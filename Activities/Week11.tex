@@ -1,0 +1,107 @@
+\documentclass[12pt, a4]{article}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\setlength{\parindent}{0cm}
+
+\title{Final Quiz\vspace{-2em}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\noindent Please try to answer all of the following questions.
+
+\begin{enumerate}
+	
+\subsection*{Sampling Design}
+
+\item What is coverage? When does a sampling frame overcover or undercover a population? What implications does this have for survey design and analysis?
+\item Generally speaking, if we use stratified sampling, will we need to recruit a sample that is larger or smaller than a simple random sample in order to obtain an comparable sampling variance (and thus comparable standard errors)?
+\item What is a design effect? Why is it useful to know?
+\item What is the difference between sampling variance and item (or element) variance?
+
+\subsection*{Design Weights}
+
+\item What kinds of sampling designs produce self-weighted samples?
+\item What kinds of sampling designs do not produce self-weighted samples?
+\item Why would we choose a sampling design that is not self-weighting? What trade-offs are involved in that decision?
+\item What determines the probability that a unit is selected in \textit{stratified} sample?
+\item What determines the probability that a unit is selected in \textit{cluster} sample?
+\item Consider a survey where women are intentionally oversampled in the survey design. If we simply analyze the unweighted data, treating all respondents equally, will the results overrepresent (i.e., weight more heavily) or underrepresent (i.e., weight less heavily) responses from women, or does the design not matter for calculating sample estimates?
+
+\subsection*{Nonresponse Weights}
+
+\item What is the purpose of nonresponse weights? How do they differ from design weights?
+\item Do nonresponse weights solve the problem of nonresponse bias?
+\item Consider a survey where women and men are sampled equally (i.e., all men and women in the sampling frame each have an equal probability of selection into the sample) and assume for purposes of this exercise, that the population as a whole is 50\% women and 50\% men. If our final sample after data collection includes 60\% women and 40\% men, will design weights correct for the overrepresentation of women in the sample?
+\item To calculate nonresponse weights, we need data about respondents and nonrespondents. Why do we need information about nonrespondents? What information do we need?
+\item What are some situations in which we might have the information necessary to calculate nonresponse weights?
+
+%Note: Nonresponse weights can be difficult to calculate because we often know very little about sample units before being interviewed. For example, in a random digit dial (RDD) telephone survey, we may have no information about a potential respondent unless they answer the telephone. Thus, there many applications where it is not possible to calculate nonresponse weights. In some situations, however, we may have information about units. Household surveys provide information (e.g., about their geographical location), registry-based samples provide a wealth of possible information about nonrespondents, surveys of public officials know a considerable amount of nonrespondents (e.g., age, gender, party affiliation, etc.), and organizational surveys may have access to public records about the businesses, governmental units, or other organizations being studied even if they do not respond to the survey.
+
+\subsection*{Post-stratification}
+
+\item How do post-stratification weights differ from nonresponse weights?
+
+\item In the table below, who is overrepresented and who is underrepresented in the sample (relative to the population)? What are the appropriate post-stratification weights for men and women?
+
+\begin{center}
+\begin{tabular}{lcc}\hline
+&Men&Women\\ \hline
+Population&50\%&50\%\\
+Sample&35\%&65\%\\ \hline
+Weight&&\\ \hline
+\end{tabular}
+\end{center}
+
+\item Imagine a survey that is designed using stratified sampling (with disproportionate allocation to strata) and assume that there are uniform response rates across strata. What kind of weights do need to calculate for this sample? Do we need to post-stratify?
+\item Why should we always need to post-stratify a non-probability sample in order to estimate population quantities of interest?
+
+
+\subsection*{Questionnaire Design}
+
+\item How do we determine the best way to measure a construct using a survey instrument?
+\item What can pretesting tell us about a survey?
+\item What effect does mode have on survey participation and response behavior?
+\item What advantages and disadvantages do interviewers bring to a survey interview?
+
+\subsection*{Budgeting}
+
+\item How do we estimate the cost of implementing a survey?
+\item Compared to a simple random sample of the same population, is a stratified sample likely to cost more or less?
+\item Compared to a simple random sample of the same population, is a cluster sample likely to cost more or less?
+
+\subsection*{Nonresponse}
+
+\item Does a low response rate necessarily mean a survey sample is biased?
+\item How do we calculate a response rate for a probability-based sample survey?
+\item How do we calculate a response rate for a non-probability survey?
+\item How do we calculate a response rate for a sample recruited from an online panel constructed from probability sampling?
+\item What can a survey researcher (or survey interviewer) do to when a respondent refuses to participate in a survey or breaks off from participating in a survey?
+
+\subsection*{Coding and Editing}
+
+\item If we have removed names, birthdates, addresses, and identification numbers from a dataset, have we guaranteed the anonymity of respondents?
+\item What are some situations where it would be appropriate to edit or change the response supplied by a respondent?
+
+\subsection*{Missing Data}
+
+\item What is the difference between unit nonresponse and item nonresponse?
+\item Which is worse: unit nonresponse or item nonresponse?
+\item What is complete case analysis?
+\item What assumptions do we need to make in order to justify the imputation of missing data? How do we know if a particular missing data assumption is satisfied?
+\item How does single imputation differ from multiple imputation? What are the advantages and disadvantages of each?
+
+\subsection*{Codebooks}
+
+\item What information needs to be included in a codebook for each question asked on the survey?
+\item What kinds of supplemental data (i.e., data not supplied by the respondent) might need to be documented in a codebook?
+\item What kind of study-level metadata should be recorded?
+\item Should that data be included in a codebook file, or separately?
+
+\end{enumerate}
+
+\end{document}

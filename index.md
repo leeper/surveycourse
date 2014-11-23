@@ -45,8 +45,17 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
  - Week 06: [Slides](Slides/Week06.pdf), [Activity](Activities/Week06.pdf)
  - Week 07: [Slides](Slides/Week07.pdf), [Activity](Activities/Week07.pdf)
  - Week 08: [Slides](Slides/Week08.pdf), [Cognitive Interviewing Activity](Activities/Week08a.pdf) [Focus Group Activity](Activities/Week08b.pdf)
- - Week 09: No Slides, [Activity](Activities/Week09.pdf) ([Most Important Problem](Activities/ANES2008OpenEndedMIP.txt), [Gordon Brown](Activities/ANES2008OpenEndedGordonBrown.txt))
+ - Week 09: No Slides, [Activity](Activities/Week09.pdf)
+   - [Most Important Problem](Activities/ANES2008OpenEndedMIP.txt)
+   - [Gordon Brown](Activities/ANES2008OpenEndedGordonBrown.txt)
  - Week 10: [Slides](Slides/Week10.pdf), [Activity](Activities/Week10.pdf)
+ - Week 11: [Slides](Slides/Week11.pdf), [Activity](Activities/Week11.pdf)
+   - [Comma-separated values (labels)](Activities/data/DataLabels.csv)
+   - [Comma-separated values (numeric)](Activities/data/DataValues.csv)
+   - [Tab-separated values (labels)](Activities/data/DataLabels.tsv)
+   - [Fixed-width format](Activities/data/DataFWF.txt)
+   - [Stata (.dta)](Activities/data/DataStata.dta)
+   - [XML](Activities/data/DataXML.xml)
 
 ---
 ## Exam, assignments, and one-on-one meetings ##

@@ -1,6 +1,7 @@
 \documentclass[compress, 12pt]{beamer} %Makes presentation
 
 \input{preamble}
+\usepackage{alltt}
 
 \title{Data Management}
 
@@ -10,48 +11,555 @@
 
 \frame{\titlepage}
 
+\frame{
+	\frametitle{Data Management}
+	\begin{itemize}\itemsep0.5em
+		\item Weighting
+		\item Handling missing data
+		\begin{itemize}
+			\item Categorizing missing data types
+			\item Imputation
+		\end{itemize}
+		\item Summary measures
+		\begin{itemize}
+			\item Scale construction
+			\item Combining question branches
+		\end{itemize}
+		\item Coding and editing
+		\begin{itemize}
+			\item Open-ended questions
+			\item Marking problematic data
+		\end{itemize}
+		\item Data preparation
+		\begin{itemize}
+			\item Codebook creation
+			\item File formats
+			\item Archiving, access, and rights
+		\end{itemize}
+	\end{itemize}
+}
+
+
+
 \frame{\tableofcontents}
-
-
-\section{Missing Data}
-\frame{\tableofcontents[currentsection]}
-
-% Sources
-
-% Assumptions
-
-% Imputation
-
 
 \section{Weighting}
 \frame{\tableofcontents[currentsection]}
 
 
-% Design
+\frame{
+	\frametitle{Goal of Survey Research}
+	\begin{itemize}\itemsep2em
+		\item The goal of survey research is to estimate population-level quantities (e.g., means, proportions, totals)
+		\item Samples estimate those quantities with uncertainty (sampling error)
+		\item Sample estimates are unbiased if they match population quantities
+	\end{itemize}
+}
 
-% Nonresponse
+\frame{
+	\frametitle{Realities of Survey Research}
+	\begin{itemize}\itemsep1em
+		\item Sample may not match population for a variety of reasons:
+			\begin{itemize}
+				\item Due to constraints on design
+				\item Due to sampling frame coverage
+				\item Due to intentional over/under-sampling
+				\item Due to nonresponse
+				\item Due to sampling error
+			\end{itemize}
+		\item<2-> Weights can be used to ``correct'' a sample
+		\item<3-> Weighting is never perfect
+			\begin{itemize}
+				\item Limited to work with observed variables
+				\item Rarely have good knowledge of coverage, nonresponse, or sampling error
+				\item Weighting can increase sampling variance
+			\end{itemize}
+	\end{itemize}
+}
 
-% Post-stratification
- 
+\frame{
+	\frametitle{Three Kinds of Weights}
+	\begin{itemize}\itemsep2em
+		\item Design Weights
+		\item Nonresponse Weights
+		\item Post-Stratification Weights
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Design Weights}
+	\begin{itemize}\itemsep2em
+		\item Address design-related unequal probability of selection into a sample
+		\item Applied to \textit{complex survey designs}:
+			\begin{itemize}
+				\item Disproportionate allocation stratified sampling
+				\item Oversampling of subpopulations
+				\item Cluster sampling
+				\item Combinations thereof
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Design Weights: Simple Random Sampling}
+	\begin{itemize}\itemsep1em
+		\item Imagine sampling frame of 100,000 units
+		\item Sample size will be 1,000 
+		\item What is the probability that a unit in the sampling frame is included in the sample?
+		\item<2-> $p = \frac{1000}{100,000} = .01$
+		\item<3-> Design weight for all units is $w = 1/p = 100$
+		\item<3-> SRS is \textit{self-weighting}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Design Weights: Stratified Sample}
+	\begin{itemize}\itemsep1em
+		\item Imagine sampling frame of 100,000 units
+			\begin{itemize}
+				\item 90,000 Danes \& 10,000 Immigrants
+			\end{itemize}
+		\item Sample size will be 1,000 (proportionate allocation)
+			\begin{itemize}
+				\item 900 Danes \& 100 Immigrants
+			\end{itemize}
+		\item What is the probability that a unit in the sampling frame is included in the sample?
+			\begin{itemize}
+				\item<2-> $p_{Danish} = \frac{900}{90,000} = .01$
+				\item<2-> $p_{Imm} = \frac{100}{10,000} = .01$
+			\end{itemize}
+		\item<3-> Design weight for all units is $w = 1/p = 100$
+		\item<3-> Proportionate allocation is \textit{self-weighting}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Design Weights: Stratified Sample}
+	\begin{itemize}\itemsep0.75em
+		\item Imagine sampling frame of 100,000 units
+		\begin{itemize}
+			\item 90,000 Danes \& 10,000 Immigrants
+		\end{itemize}
+		\item Sample size will be 1,000 (disproportionate allocation)
+		\begin{itemize}
+			\item 500 Danes \& 500 Immigrants
+		\end{itemize}
+		\item What is the probability that a unit in the sampling frame is included in the sample?
+		\begin{itemize}
+			\item<2-> $p_{Danish} = \frac{500}{90,000} = .0056$
+			\item<2-> $p_{Imm} = \frac{500}{10,000} = .05$
+		\end{itemize}
+		\item<3-> Design weights differ across units: 
+			\begin{itemize}
+				\item $w_{Danish} = 1/p_{Danish} = 178.57$
+				\item $w_{Imm} = 1/p_{Imm} = 20$
+			\end{itemize}
+		\item<3-> Disproportionate allocation is not \textit{self-weighting}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Design Weights: Cluster Sample}
+	\begin{itemize}\itemsep0.75em
+		\item Imagine sampling frame of 1000 units in 5 clusters of varying sizes
+		\item Sample size will be 10 each from 3 clusters
+		\item What is the probability that a unit in the sampling frame is included in the sample?
+			\begin{itemize}
+				\item $p = n_{clusters}/N_{clusters} * 1/n_{cluster} = \frac{3}{5} * 1/n_{cluster}$
+			\end{itemize}
+		\item<3-> Design weights differ across units: 
+		\begin{itemize}
+			\item Clusters are equally likely to be sampled
+			\item Probability of selection within cluster varies with cluster size
+		\end{itemize}
+		\item<3-> Cluster sampling is rarely \textit{self-weighting}
+	\end{itemize}
+}
 
 
-\section{Data Preparation}
+\frame{
+	\frametitle{Nonresponse Weights}
+	\begin{itemize}\itemsep2em
+		\item Correct for nonresponse
+		\item Require knowledge of nonrespondents on variables that have been measured for respondents
+		\item Requires data are \textit{missing at random}
+		\item Two common methods
+			\begin{itemize}
+				\item Weighting classes
+				\item Propensity score subclassification
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Nonresponse Weights: Example}
+	\begin{itemize}\itemsep2em
+		\item Imagine immigrants end up being less likely to respond\footnote{{\scriptsize This refers to a lower RR in this particular survey sample, not in general.}}
+			\begin{itemize}
+				\item $RR_{Danish} = 1.0$
+				\item $RR_{Imm} = 0.8$
+			\end{itemize}
+		\item<2-> Using weighting classes:
+			\begin{itemize}
+				\item $w_{rr,Danish} = 1/1 = 1$
+				\item $w_{rr,Imm} = 1/0.8 = 1.25$
+			\end{itemize}
+		\item<2-> Can generalize to multiple variables and strata
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Post-Stratification}
+	\begin{itemize}\itemsep1em
+		\item Correct for nonresponse, coverage errors, and sampling errors
+		\item<2-> Reweight sample data to match population distributions
+			\begin{itemize}
+				\item Divide sample and population into strata
+				\item Weight units in each stratum so that the weighted sample stratum contains the same proportion of units as the population stratum does
+			\end{itemize}
+		\item<3-> There are numerous other related techniques
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Post-Stratification: Example}
+	\begin{itemize}\itemsep1em
+		\item Imagine our sample ends up skewed on immigration status and gender relative to the population\\
+		\vspace{1em}
+		\small
+		\begin{tabular}{lrrlr}
+			\hline
+			Group             & Pop. & Sample & Rep.                &              Weight \\ \hline
+			Danish, Female    &  .45 &     .5 & \onslide<2->{Over}  & \onslide<3->{0.900} \\
+			Danish, Male      &  .45 &     .4 & \onslide<2->{Under} & \onslide<4->{1.125} \\
+			Immigrant, Female &  .05 &    .07 & \onslide<2->{Over}  & \onslide<5->{0.714} \\
+			Immigrant, Male   &  .05 &    .03 & \onslide<2->{Under} & \onslide<6->{1.667}\\  \hline
+		\end{tabular}
+		\item PS weight is just $w_{ps} = N_l / n_l$
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Post-Stratification}
+	\begin{itemize}\itemsep2em
+		\item Should only be done after correcting for sampling design
+		\item Strata must be large ($n>15$)
+		\item Need accurate population-level stratum sizes
+		\item Only useful if stratifying variables are related to key constructs of interest		
+		\item<2-> This is the basis for inference in non-probability samples
+		\begin{itemize}
+			\item Probability samples make design-based inferences
+			\item Non-probability samples post-stratify to obtain descriptive representativeness
+		\end{itemize}
+	\end{itemize}
+}
+
+
+\frame{\frametitle{Questions about weighting?}}
+
+\section{Missing Data}
 \frame{\tableofcontents[currentsection]}
 
 
-% Coding
+\frame{
+	\frametitle{Sources of Missing Data}
+	\begin{itemize}\itemsep2em
+		\item Unit or item nonresponse
+		\item Attrition or break-off
+		\item Data loss
+	\end{itemize}
+}
 
-% Editing
+\frame{
+	\frametitle{Effects of Missing Data}
+	\begin{itemize}\itemsep2em
+		\item<1-> Sampling variance and effective sample size
+		\item<2-> Scale construction and multi-variate analysis
+		\item<3-> Bias in estimates
+	\end{itemize}
+}
 
-% Anonymizing
+\frame{
+	\frametitle{Imputation}
+	\begin{itemize}\itemsep2em
+		\item<1-> Definition\onslide<2->{: Systematic replacement of missing values}
+		\item<3-> Why?
+		\begin{itemize}
+			\item Casewise deletion creates loss of information
+			\item Preserve sampling variances (i.e., no loss of precision)
+		\end{itemize}
+		\item<4-> Considerations
+		\begin{itemize}
+			\item Why are data missing?
+			\item How do we impute?
+			\item What are the consequences of imputation?
+		\end{itemize}
+	\end{itemize}
+}
 
-% Formats and data sharing
+\frame{
+	\frametitle{Missing Data Assumptions}
+	\begin{itemize}\itemsep2em
+		\item Missing Completely At Random (MCAR)
+		\item Missing At Random (MAR)
+		\item Missing Not At Random (MNAR)
+	\end{itemize}
+}
 
+\frame{
+	\frametitle{Imputation Methods}
+	\begin{itemize}\itemsep2em
+		\item<1-> Single Imputation
+		\begin{itemize}
+			\item<2-> Mean imputation
+			\item<2-> Top/bottom category imputation
+			\item<2-> Random imputation
+			\item<2-> Hot deck imputation
+			\item<2-> Regression imputation
+		\end{itemize}
+		\item<3-> Multiple Imputation
+		\begin{itemize}
+			\item<4-> Single imputation multiple times, combining results across data sets
+			\item<4-> Can apply numerous imputation methods
+			\item<4-> Accounts for uncertainty due to missingness
+		\end{itemize}
+	\end{itemize}
+}
+
+
+\section{Coding and Data Preparation}
+\frame{\tableofcontents[currentsection]}
+
+
+\frame{
+	\frametitle{Coding}
+	\begin{itemize}\itemsep2em
+		\item What is coding?
+			\begin{itemize}
+				\item Categorizing responses
+				\item Assigning numeric values to categories
+			\end{itemize}
+		\item<2-> When in the data collection process do we code?
+			\begin{itemize}
+				\item In the field
+				\item After data collection
+			\end{itemize}
+		\item<3-> How do we code?
+			\begin{itemize}
+				\item Create set of \textit{exhaustive}, \textit{mutually exclusive} categories
+				\item Assign responses to categories
+				\item Add new categories, as needed
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Practice Coding}
+	\begin{enumerate}\itemsep2em
+		\item Code the Gordon Brown responses as:
+			\begin{itemize}
+				\item Correct
+				\item Incorrect
+				\item ``Don't know''
+			\end{itemize}
+		\item Code the MIP responses into issue categories
+	\end{enumerate}
+}
+
+
+\frame{
+	\frametitle{Data Editing}	
+	\begin{itemize}\itemsep2em
+		\item Leftover of manual data recording
+		\item Software handles most data editing now
+			\begin{itemize}
+				\item Online survey tools (e.g., Qualtrics)
+				\item CATI systems
+			\end{itemize}
+		\item May still have problematic data points that need to be marked or changed
+			\begin{itemize}
+				\item If still in field, may clarify answers with respondents
+			\end{itemize}
+	\end{itemize}
+}
+
+
+
+\frame{
+	\frametitle{Anonymizing Data}
+	\begin{itemize}\itemsep2em
+		\item<1-> Why do data need to be anonymous?
+			\begin{itemize}
+				\item<2->Guarantees of anonymity
+				\item<2->Sensitive data
+			\end{itemize}
+		\item<3-> When are data non-anonymous?
+			\begin{itemize}
+				\item<4->Identifying information
+				\item<4->Statistical identifiability
+			\end{itemize}
+		\item<5-> How do we anonymize?
+			\begin{itemize}
+				\item<6->Restrict data access
+				\item<6->Remove identifying variables
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Data Storage, Archiving, and Sharing}
+	\begin{itemize}\itemsep2em
+		\item<1->In what formats can we store survey data?
+			\begin{itemize}
+				\item<2->Paper
+				\item<2->Punchcards
+				\item<2->Digitally
+			\end{itemize}
+		\item<3->Considerations in digital formats
+			\begin{itemize}
+				\item \textit{Open} versus \textit{proprietary}
+				\item \textit{Human-readable} versus \textit{machine-readable}
+				\item File sizes
+				\item Study-level metadata
+				\item Question-level metadata
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Study-level Metadata}
+	\begin{itemize}
+		\item Title
+		\item Creator/Author
+		\item Sponsor
+		\item Description
+		\item Date of publication
+		\item Dates of data collection
+		\item Population, sampling frame, etc.
+		\item Sampling design
+		\item Sample size
+		\item Recruitment details
+		\item Mode
+		\item Rights
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Question-level Metadata}
+	\begin{itemize}\itemsep1em
+		\item Response codes
+		\item Response labels
+		\item Variable labels
+		\item Variable names
+		\item Missing data categories
+		\item Variable types
+		\item Mode
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Question-level Metadata II}
+	\begin{itemize}\itemsep1em
+		\item Details of randomization or question order
+		\item Exclusion criteria
+		\item Source of data (if not from R)
+		\item Frequencies or summary statistics
+		\item Interviewer instructions
+		\item Constraints on responses
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Example Codebook\footnote{{\tiny From: \href{http://www.europeansocialsurvey.org/docs/round6/survey/ESS6\_appendix\_a7\_e02\_0.pdf}{http://www.europeansocialsurvey.org/docs/round6/survey/ESS6\_appendix\_a7\_e02\_0.pdf}}}}
+	\scriptsize
+	\begin{alltt}
+		Question B 10 DK\\
+		Which party did you vote for in that election? (Denmark)\\
+		Variable name and label: prtvtcdk Party voted for in last national election, Denmark\\
+		Values and categories\\
+		01 Socialdemokraterne - the Danish social democtrats\\
+		02 Det Radikale Venstre - Danish Social-Liberal Party\\
+		03 Det Konservative Folkeparti - Conservative\\
+		04 SF Socialistisk Folkeparti - Socialist People's Party\\
+		05 Dansk Folkeparti - Danish peoples party\\
+		06 Kristendemokraterne - Christian democtrats\\
+		07 Venstre, Danmarks Liberale Parti - Venstre\\
+		08 Liberal Alliance - Liberal Alliance\\
+		09 Enhedslisten - Unity List - The Red-Green Alliance\\
+		10 Andet - other\\
+		66 Not applicable\\
+		77 Refusal\\
+		88 Don't know\\
+		99 No answer\\
+		Filter: If code 1 at B9\\
+	\end{alltt}
+}
+
+\frame{
+	\frametitle{File Formats}
+	\begin{itemize}\itemsep2em
+		\item Go to the course website
+		\item Open data files under Week 11
+		\item All contain the same data
+		\item What do you notice about the different files?
+	\end{itemize}
+}
+
+
+\frame{
+	\frametitle{Metadata Standards}
+	\begin{itemize}
+		\item Most survey data are stored in proprietary formats using codebooks constructed in arbitrary formats
+			\begin{itemize}
+				\item This makes it hard to work with survey data
+			\end{itemize}
+		\item There are common standards for metadata
+			\begin{itemize}
+				\item Dublin Core (DC)
+				\item Data Documentation Initiative (DDI)
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{For Your Project}	
+	\begin{itemize}\itemsep2em
+		\item Discuss appropriate file format for data storage/sharing
+		\item Discuss how data can be used after collection (i.e., rights)
+		\item Discuss codebook creation
+			\begin{itemize}
+				\item When do you create a codebook
+				\item What goes in your codebook
+				\item Where do you record study-level metadata
+			\end{itemize}
+	\end{itemize}
+}
+
+\frame{\frametitle{Questions about handling survey data?}}
 
 \section{Wrap-up}
 \frame{\tableofcontents[currentsection]}
 
-% Total Survey Error
+\frame{
+\frametitle{Total Survey Error}
+	\begin{itemize}\itemsep1em
+		\item Design-Related Errors
+			\begin{itemize}
+				\item Coverage Error
+				\item Sampling Error
+				\item Nonresponse Error
+				\item Adjustment Error
+			\end{itemize}
+		\item<2-> Measurement Errors
+			\begin{itemize}
+				\item Construct Validity
+				\item Measurement Error and Response Biases
+				\item Processing Error
+			\end{itemize}
+		\item<3-> Our goal: Minimize \textit{total} error (thus maximizing data quality), within the constraints of time, cost, and other resources
+	\end{itemize}
+}
 
 
 \section{Preview of Next Time}
