@@ -12,7 +12,6 @@ How do we conduct surveys well so that they provide meaningful insights? How do 
 
 This course is being taught as a master seminar at Aarhus University during Fall term 2014. We meet Mondays from 11:00-14:00 in Building 1325 room 336.
 
----
 ## Course Objectives and Syllabus ##
 
 The objectives for the course are as follows:
@@ -26,7 +25,6 @@ The objectives for the course are as follows:
 
 You can find a schedule for the course, details of the exam structure, and assigned readings in the [Syllabus](Syllabus/Syllabus.pdf).
 
----
 ## Readings ##
 
 In addition to journal articles on the syllabus, the course will use the following textbook:
@@ -34,7 +32,6 @@ In addition to journal articles on the syllabus, the course will use the followi
 Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tourangeau, R. (2009). *Survey Methodology.* Second edition. New York: Wiley-Interscience.
 
 
----
 ## Slides, Notes, and In-class Activities ##
 
  - Week 01: [Slides](Slides/Week01.pdf), [Activity](Activities/Week01.pdf)
@@ -57,7 +54,6 @@ Groves, R. M.; Fowler, F. J.; Couper, M. P.; Lepkowski, J. M.; Singer, E. & Tour
    - [Stata (.dta)](Activities/data/DataStata.dta)
    - [XML](Activities/data/DataXML.xml)
 
----
 ## Exam, assignments, and one-on-one meetings ##
 
 *The exam is due via Wiseflow on January 9, 2015.*
@@ -68,7 +64,6 @@ In preparation for the exam, students will complete short assignments throughout
 
 Students can then, optionally, meet individually with the instructor before the exam is due to receive additional feedback.
 
----
 ## Why GitHub? ##
 
 Read more about why this course is hosted on GitHub [here](fork.html).
